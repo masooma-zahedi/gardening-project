@@ -1,0 +1,45 @@
+.header{
+    background:rgb(121 166 66) url(../../asset/images/headbggreen.jpg);
+}
+Link{
+    padding: 130px;
+}
+
+/* nav bottom */
+.navb{
+    border: 2px solid red;
+}
+.navul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.liclass{
+    float: left;
+    border: 3px solid rgb(61, 74, 146);
+    
+}
+.liclass::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.topmenu{
+    display: inline-block;
+    padding: 7px 16px;
+    text-decoration: none;
+    border: 2px solid red;
+}
+.subdiv{
+    border: 1px solid yellow;
+    position: absolute;
+    display: none;
+}
+.submenue{
+    display:block;
+    border: 1px solid #333;
+    padding: 5px 14px;
+    text-decoration: none;
+    color: rgb(121 166 66);
+}

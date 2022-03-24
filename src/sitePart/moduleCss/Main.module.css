@@ -1,0 +1,33 @@
+.textTitle{
+    color: rgb(87 161 195);
+}
+.bgLink{
+    background: rgb(190, 182, 182);
+}
+.leftarticle{
+    background: rgb(251 250 249);
+    margin-bottom: 20px;
+    
+}
+.desLeft{
+    /* padding: 0 15px; */
+    color: rgb(58 109 37);
+}
+
+/* Section1 rightSide */
+.leftFlo, .rightFlo{
+    background: url(https://www.gardeningknowhow.com/wp-content/themes/yourgardenx/imgs/homegraphics.png) 0 -220px no-repeat;
+    width: 75px;
+    height: 35px;
+}
+.textMid{
+    font-family: 'Seaweed Script',cursive;
+    font-size: 2.5rem;
+    color:rgb(87,161,195);
+    margin-bottom: 20px;
+}
+.sec1Para{
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom: #999;
+}

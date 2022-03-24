@@ -1,80 +1,274 @@
-import React from "react";
+import React ,{useState}from "react";
+import {Link} from "react-router-dom";
+import headercss from "./moduleCss/Header.module.css";
 
 
 import './style.css'
 
-export default function Header() {
+const NavTop = ()=>{
   return (
-    <header className="header">
-      <div className="container">
-        <nav className="">
-          <div
-            className="d-flex justify-content-between "
-            style={{ border: "1px solid blue" }}
-          >
-            {/* for brand */}
-            <div style={{ border: "2px solid red" }}>
-              <img
-                itemprop="logo"
-                src="https://www.gardeningknowhow.com/wp-content/uploads/2018/03/minLogo.png"
-                url="https://www.gardeningknowhow.com/"
-                alt="Gardening Know How"
-                style={{width:"200px"}}
-              ></img>
-            </div>
-            {/* for top nav-right */}
-            <div className="border border-white d-flex align-items-center ">
-              <div className="d-flex ">
-                <div className="d-flex justify-content-center ">
-                  <div class="d-flex  justify-content-center px-3">
-                    <div class="input-group input-group-lg h-25">
-                      <input
-                        type="text"
-                        class="form-control form-control-lg rounded h-25"
-                        placeholder="ENHANNCED BY Google"
-                        aria-label="Type Keywords"
-                        aria-describedby="basic-addon2"
-                      />
-                      <span
-                        class="input-group-text border-0 "
-                        id="basic-addon2"
-                      >
-                        <i class="fa fa-search "></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="border border-danger p-2 "
-                  style={{ color: "yellow" }}
-                >
-                  <i
-                    class="fa fa-envelope-open px-2 fa-lg"
-                    style={{ color: "yellow" }}
-                  ></i>
-                  <span>Sing Up</span>
-                </div>
-                {/* social Media Icons */}
-                <div className=" border border-warning d-flex align-items-center ">
-                  <ul className=" m-0 p-0 ">
-                    <a href="google.com" className="text-dark" >
-                      <li className="fa fa-facebook fa-lg px-2"></li>
-                    </a>
-                    <a href="google.com" className="text-dark">
-                      <li className="fa fa-twitter fa-lg px-2"></li>
-                    </a>
-                    <a href="google.com" className="text-dark">
-                      <li className="fa fa-instagram fa-lg px-2"></li>
-                    </a>
-                    <a href="google.com" className="text-dark">
-                      <li className="fa fa-video-camera fa-lg px-2"></li>
-                    </a>
-                  </ul>
-                </div>
+    <div
+      className="d-flex justify-content-between align-self-stretch"
+      style={{ border: "1px solid blue" }}
+    >
+      {/* for brand */}
+      <div style={{ border: "2px solid red" }}>
+        <img
+          // itemprop="logo"
+          src="https://www.gardeningknowhow.com/wp-content/uploads/2018/03/minLogo.png"
+          url="https://www.gardeningknowhow.com/"
+          alt="Gardening Know How"
+          style={{ width: "200px" }}
+        ></img>
+      </div>
+      {/* for top nav-right */}
+      <div className="border border-white d-flex align-items-center ">
+        <div className="d-flex ">
+          <div className="d-flex justify-content-center ">
+            <div className="d-flex  justify-content-center px-3">
+              <div className="input-group input-group-lg h-25">
+                <input
+                  type="text"
+                  className="form-control form-control-lg rounded h-25"
+                  placeholder="ENHANNCED BY Google"
+                  aria-label="Type Keywords"
+                  aria-describedby="basic-addon2"
+                />
+                <span className="input-group-text border-0 " id="basic-addon2">
+                  <i className="fa fa-search "></i>
+                </span>
               </div>
             </div>
           </div>
-          <div>menue</div>
+          <div
+            className="border border-danger p-2 "
+            style={{ color: "yellow" }}
+          >
+            <Link to="kj">
+              <i
+                className="fa fa-envelope-open px-2 fa-lg"
+                style={{ color: "yellow" }}
+              ></i>
+              <span>Sing Up</span>
+            </Link>
+          </div>
+          {/* social Media Icons */}
+          <div className=" border border-warning d-flex align-items-center ">
+            <ul className=" m-0 p-0 ">
+              <Link
+                to="https://www.facebook.com/gardeningknowhow"
+                className="text-dark"
+              >
+                <li className="fa fa-facebook fa-lg px-2"></li>
+              </Link>
+              <Link to="google.com" className="text-dark">
+                <li className="fa fa-twitter fa-lg px-2"></li>
+              </Link>
+              <Link to="google.com" className="text-dark">
+                <li className="fa fa-instagram fa-lg px-2"></li>
+              </Link>
+              <Link to="google.com" className="text-dark">
+                <li className="fa fa-video-camera fa-lg px-2"></li>
+              </Link>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// 888888888888888888888888888888888888888888888888888888888888888888
+const Navbottom =()=>{
+  const [hover, setHover] = useState(true);
+  const handleMouseEnter = (e) =>{ 
+    // setHover(false)
+    const ele = e.target;
+    console.log(ele);
+    ele.nextSibling.style.display="block"
+  }
+  const handleMouseOut = (e) => {
+    // setHover(false)
+    const ele = e.target;
+    console.log(ele);
+    ele.nextSibling.style.display = "none";
+  };
+  
+  return (
+    <div className={headercss.navb}>
+      <ul className={headercss.navul}>
+        <li className={headercss.liclass}>
+          <Link to="er" className={headercss.topmenu}>
+            Home
+          </Link>
+        </li>
+        <li
+          className={headercss.liclass}
+          onMouseEnter={handleMouseEnter}
+          onMouseOut={handleMouseOut}
+        >
+          <Link to="er" className={headercss.topmenu}>
+            Gardens
+          </Link>
+          <div
+            className={headercss.subdiv}
+            // style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              Edible Gardens
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Gardening How To
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Ornamental Gardens
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Special Gardens
+            </Link>
+          </div>
+        </li>
+        <li
+          className={headercss.liclass}
+          onMouseEnter={handleMouseEnter}
+          onMouseOut={handleMouseOut}
+        >
+          <Link to="er" className={headercss.topmenu}>
+            Houseplant
+          </Link>
+          <div
+            className={headercss.subdiv}
+            style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              Specific Houseplants
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              General Houseplants Care
+            </Link>
+          </div>
+        </li>
+
+        <li className={headercss.liclass}>
+          <Link
+            to="er"
+            className={headercss.topmenu}
+            onMouseEnter={handleMouseEnter}
+            onMouseOut={handleMouseOut}
+          >
+            Problems
+          </Link>
+          <div
+            className={headercss.subdiv}
+            style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              Plant Diseases
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Enviromental Problems
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Garden Pests
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Weeds
+            </Link>
+          </div>
+        </li>
+        <li className={headercss.liclass}>
+          <Link
+            to="er"
+            className={headercss.topmenu}
+            onMouseEnter={handleMouseEnter}
+            onMouseOut={handleMouseOut}
+          >
+            Lawn Care
+          </Link>
+          <div
+            className={headercss.subdiv}
+            style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              General Lawn Care
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Lawn Substitutes
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Specific Lawn Grasses
+            </Link>
+          </div>
+        </li>
+        <li className={headercss.liclass}>
+          <Link
+            to="er"
+            className={headercss.topmenu}
+            onMouseEnter={handleMouseEnter}
+            onMouseOut={handleMouseOut}
+          >
+            Composting
+          </Link>
+          <div
+            className={headercss.subdiv}
+            style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              Composting Basics
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Compost Ingredient
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Composting Manures
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Vermicomposting
+            </Link>
+          </div>
+        </li>
+        <li className={headercss.liclass}>
+          <Link
+            to="er"
+            className={headercss.topmenu}
+            onMouseEnter={handleMouseEnter}
+            onMouseOut={handleMouseOut}
+          >
+            Gardening
+          </Link>
+          <div
+            className={headercss.subdiv}
+            style={hover ? { display: "none" } : { display: "block" }}
+          >
+            <Link to="hi" className={headercss.submenue}>
+              Our Blog
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Ask A Gardening Question
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              School & Community Garden
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              Find a Local Extention Office
+            </Link>
+            <Link to="hi" className={headercss.submenue}>
+              USDA Planting Zones
+            </Link>
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default function Header() {
+  return (
+    <header className={headercss.header}>
+      <div className="container">
+        <nav className="d-flex flex-column align-items-end">
+          <NavTop/>
+          <Navbottom/>
         </nav>
       </div>
     </header>
