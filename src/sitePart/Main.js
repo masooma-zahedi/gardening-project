@@ -37,7 +37,7 @@ const RightSec1 = () => {
 };
 // ********************* Section 1 *********************
 const Section1 = ()=>{
-    const LeftSec1 = () => {
+    const LeftSec1 = () => {;
       return (
         <div className="border border-success mx-2" style={{ maxWidth: "50%" }}>
           <div
@@ -46,7 +46,7 @@ const Section1 = ()=>{
             FEATURED ARTICLE
           </div>
           {MainSec.leftSec1.map((data) => {
-            // console.log(data.src);
+            // console.log(data.id);
             return (
               <div className={` ${MainCss.leftarticle} pb-2`} key={data.id}>
                 <Link
@@ -73,7 +73,6 @@ const Section1 = ()=>{
       return (
         <div className="border border-success mx-1" style={{ maxWidth: "50%" }}>
           {MainSec.midSect1.map((data) => {
-            // console.log(data.src);
             return (
               <div className={` ${MainCss.leftarticle} pb-2`} key={data.name}>
                 <Link
@@ -121,9 +120,9 @@ const Section2 =()=>{
         POPULAR ARTICLE
       </div>
       {/* 888888 */}
-      {MainSec.mainSec2.map((dataSec2,index)=>{
+      {MainSec.mainSec2.map((dataSec2)=>{
         return (
-          <div className="d-flex flex-row  mb-3" key={dataSec2.auther}>
+          <div className="d-flex flex-row  mb-3" key={dataSec2.id}>
             <div className="" style={{ width: 350}}>
               <img
                 src={dataSec2.src}
@@ -170,12 +169,150 @@ const Sections = () =>{
 }
 
 const Section3 = ()=>{
-  return(
+  return (
     <>
-      <h3>hi Section 3</h3>
+      <div className=" border-top border-bottom border-secondary p-2 fs-4 text-primary text-uppercase mb-2">
+        recent article
+      </div>
+      {/* map for recent */}
+      <div className="d-flex">
+        {MainSec.mainSec3.map((dataSec3) => {
+          return (
+            // <div className="d-flex flex-row flex-wrap w-25 border border-success">
+            <div key={dataSec3.id} className="m-2 w-25">
+              <Link to="" className="text-decoration-none text-success ">
+                <div className={` ${MainCss.hihi} position-relative`}>
+                  <img
+                    src={dataSec3.src}
+                    alt={dataSec3.title}
+                    className="w-100 h-100"
+                  />
+                  <div
+                    className="d-inline-block bg-warning position-absolute h6 text-black m-0 text-uppercase p-1"
+                    style={{ bottom: 10, left: 10 }}
+                    id="nini"
+                  >
+                    {dataSec3.title}
+                  </div>
+                  {/* {
+                    console.log(document.getElementById("nini").parentElement.nodeName)
+                  } */}
+                </div>
+                <p className="m-0 fs-5 lh-sm">{dataSec3.desc}</p>
+              </Link>
+            </div>
+            // </div>
+          );
+        })}
+      </div>
+      <Link to=""
+        className=" d-flex justify-content-end text-decoration-none text-success mb-3"
+        style={{ fontFamily: "'Seaweed Script',cursive" }}
+      >
+        <p className="m-0">
+          More Article &#9654;
+        </p>
+      </Link>
     </>
-  )
+  );
 }
+// ******************************* Section 4****************************
+const Section4=()=>{
+  return (
+    <>
+      <div className="mainSec4 border-top border-primary">
+        <h1>Hi Section 4</h1>
+        <div className="container border border-danger d-flex justify-content-between flex-wrap">
+          <div className="border border-success" style={{ width: "33%" }}>
+            <h4
+              className=" border-end-0 border-start-0 py-3 text-center"
+              style={{
+                border: "2px solid rgb(130 189 216)",
+                color: "rgb(130 189 216)",
+              }}
+            >
+              GETTING STARTED
+            </h4>
+            <ul className="list-group">
+              {MainSec.mainSec4.map((dataSec4) => {
+                return (
+                  <>
+                    <li className="list-group-item border-0 p-0">
+                      <Link to="" className="text-decoration-none d-flex ">
+                        <div
+                          className="border border-warning w-75 "
+                          style={{ maxWidth: "85px" }}
+                        >
+                          <img
+                            src={dataSec4.src}
+                            alt={dataSec4.title}
+                            className="w-100 "
+                          />
+                        </div>
+                        <p
+                          className="fs-5 px-4  text-justify"
+                          style={{ color: "rgb(58 109 37)" }}
+                        >
+                          {dataSec4.title}
+                        </p>
+                      </Link>
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="border border-success" style={{ width: "33%" }}>
+            <h4
+              className=" border-end-0 border-start-0 py-3 text-center"
+              style={{
+                border: "2px solid rgb(130 189 216)",
+                color: "rgb(130 189 216)",
+              }}
+            >
+              SEASONAL
+            </h4>
+            <ul className="list-group">
+              {MainSec.mainSec4.map((dataSec4) => {
+                return (
+                  <>
+                    <li className="list-group-item border-0 p-0">
+                      <Link to="" className="text-decoration-none d-flex ">
+                        <div
+                          className="border border-warning w-75 "
+                          style={{ maxWidth: "85px" }}
+                        >
+                          <img
+                            src={dataSec4.src}
+                            alt={dataSec4.title}
+                            className="w-100 "
+                          />
+                        </div>
+                        <p
+                          className="fs-5 px-4  text-justify"
+                          style={{ color: "rgb(58 109 37)" }}
+                        >
+                          {dataSec4.title}
+                        </p>
+                      </Link>
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="border border-success" style={{ width: "33%" }}>
+            ni
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+
+
+
 
 
 export default function Main() {
@@ -194,6 +331,7 @@ export default function Main() {
         <AdTop />
         <Section3/>
       </div>
+      <Section4/>
     </>
   );
 }

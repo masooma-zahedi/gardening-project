@@ -31,3 +31,9 @@
     text-align: left;
     border-bottom: #999;
 }
+/* **************** Section 3**************** */
+.hihi::after{
+    content: "";
+    display: table;
+    clear: both;
+}
