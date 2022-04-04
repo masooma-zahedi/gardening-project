@@ -37,3 +37,11 @@
     display: table;
     clear: both;
 }
+/* ***************** Section 4******************* */
+.mainSec4{
+    background: rgb(230 242 247);
+    border-top: 2px solid rgb(87 161 195);
+}
+.mainSec4 li {
+    background-color: inherit;
+}

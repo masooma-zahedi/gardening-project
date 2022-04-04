@@ -109,29 +109,77 @@ export const MainSec = {
         "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/how-to-make-soil-blocks.htm",
     },
   ],
-  mainSec4: [
+  mainSec4: {
+    leftSec4: [
       {
-      id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/06/gardening-picture-id534227013-150x150.jpg",
-      title:
-        "A Beginner’s Guide To Gardening: How To Get Started With Gardening",
-      linkTitle:
-        "https://www.gardeningknowhow.com/garden-how-to/info/beginners-guide-to-gardening.htm",
-    },
-    {
-      id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2014/05/Composting-3-400x300.jpg",
-      title: "The Ultimate Guide To Composting For Beginners",
-      linkTitle:
-        "https://www.gardeningknowhow.com/composting/basics/ultimate-beginners-guide-composting.htm",
-    },
-    {
-      id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/12/imgpsh_fullsize-12-400x251.jpg",
-      title:
-        "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
-      linkTitle:
-        "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
-    },
-  ],
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/06/gardening-picture-id534227013-150x150.jpg",
+        title:
+          "A Beginner’s Guide To Gardening: How To Get Started With Gardening",
+        linkTitle:
+          "https://www.gardeningknowhow.com/garden-how-to/info/beginners-guide-to-gardening.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2014/05/Composting-3-400x300.jpg",
+        title: "The Ultimate Guide To Composting For Beginners",
+        linkTitle:
+          "https://www.gardeningknowhow.com/composting/basics/ultimate-beginners-guide-composting.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/12/imgpsh_fullsize-12-400x251.jpg",
+        title:
+          "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
+        linkTitle:
+          "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
+      },
+    ],
+    midSect4: [
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2013/03/seedlings-400x300.jpg",
+        title: "Seed Starting Times: When To Start Seeds For Your Garden",
+        linkTitle:
+          "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/when-to-start-seeds.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/03/outdoor-houseplant-400x300.jpg",
+        title: "Acclimating Houseplants Outdoors",
+        linkTitle:
+          "https://www.gardeningknowhow.com/houseplants/hpgen/acclimating-houseplants-outdoors.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2007/03/flowers-1-400x300.jpg",
+        title: "How To Start Your Flower Garden",
+        linkTitle:
+          "https://www.gardeningknowhow.com/special/starting/how-to-start-your-flower-garden.htm",
+      },
+    ],
+    rightSec4: [
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2017/04/asparagus-winter-400x267.jpg",
+        title: "Asparagus Winter Care: Tips On Winterizing Asparagus Beds",
+        linkTitle:
+          "https://www.gardeningknowhow.com/edible/vegetables/asparagus/winterizing-asparagus-beds.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2015/12/kalanchoe-rebloom-400x281.jpg",
+        title: "Kalanchoe Flowering: How To Make A Kalanchoe Rebloom",
+        linkTitle:
+          "https://www.gardeningknowhow.com/houseplants/kalanchoe/make-a-kalanchoe-rebloom.htm",
+      },
+      {
+        id: nanoid(6),
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2018/06/mayhaw-prop-1-400x300.jpg",
+        title: "Mayhaw Propagation – Learn How To Propagate A Mayhaw Tree",
+        linkTitle:
+          "https://www.gardeningknowhow.com/ornamental/trees/hawthorn/how-to-propagate-a-mayhaw-tree.htm",
+      },
+    ],
+  },
 };
