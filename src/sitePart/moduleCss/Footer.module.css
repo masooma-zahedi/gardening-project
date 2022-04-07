@@ -1,0 +1,46 @@
+*{box-sizing: border-box !important;}
+.footerstyle{
+    background: rgb(121 166 66);
+    overflow: hidden;
+    color: rgb(255 255 255);
+    position: relative;
+}
+.logowater{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: url(https://www.gardeningknowhow.com/wp-content/themes/yourgardenx/imgs/homegraphics.png) -445px 0px no-repeat;
+    width: 557px;
+    height: 464px;
+    z-index: 0;
+    /* background: #000; */
+}
+.linkicon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(https://www.gardeningknowhow.com/wp-content/themes/yourgardenx/imgs/greysocials.png) -442px 0 no-repeat;
+    top: 5px;
+    right: 5px;
+}
+/* *************** Middle Side************** */
+.middleside li{
+    margin-bottom: 8px;
+}
+.middleside a {
+    text-decoration:none;
+    color:#fff;
+    border-bottom:1px solid #fff;
+    font-size:1.2rem;
+    font-family: 'Roboto Slab',"Times New Roman",Times,serif;
+}
+.middleside a:hover {
+    color:#ddd;
+}
+.footicon li{
+    color:rgb(85 104 10)
+}
+.rightFoot , .copyright{
+    font-family: 'Roboto Slab',"Times New Roman",Times,serif;
+
+}
