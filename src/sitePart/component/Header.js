@@ -1,9 +1,8 @@
 import React ,{useState}from "react";
 import {Link} from "react-router-dom";
-import headercss from "./moduleCss/Header.module.css";
+import headercss from "../moduleCss/Header.module.css";
 
 
-import './style.css'
 
 const NavTop = ()=>{
   return (

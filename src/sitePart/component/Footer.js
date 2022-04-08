@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import FooterCss from "./moduleCss/Footer.module.css"
+import FooterCss from "../moduleCss/Footer.module.css"
 
 export default function Footer() {
   const LeftSide=()=>{

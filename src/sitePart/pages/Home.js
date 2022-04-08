@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import ErrorBoundary from "./component/ErrorBoundary";
-import {MainSec} from "./Data/dataSec1";
-import MainCss from "./moduleCss/Main.module.css";
+import ErrorBoundary from "../component/ErrorBoundary";
+import {MainSec} from "../Data/dataSec1";
+import MainCss from "../moduleCss/Main.module.css";
 
 
 const AdTop = ()=>{
