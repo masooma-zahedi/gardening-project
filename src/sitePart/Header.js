@@ -80,40 +80,20 @@ const NavTop = ()=>{
 
 // 888888888888888888888888888888888888888888888888888888888888888888
 const Navbottom =()=>{
-  const [hover, setHover] = useState(true);
-  const handleMouseEnter = (e) =>{ 
-    // setHover(false)
-    const ele = e.target;
-    console.log(ele);
-    ele.nextSibling.style.display="block"
-  }
-  const handleMouseOut = (e) => {
-    // setHover(false)
-    const ele = e.target;
-    console.log(ele);
-    ele.nextSibling.style.display = "none";
-  };
   
   return (
     <div className={headercss.navb}>
       <ul className={headercss.navul}>
         <li className={headercss.liclass}>
-          <Link to="er" className={headercss.topmenu}>
+          <Link to="/" className={headercss.topmenu}>
             Home
           </Link>
         </li>
-        <li
-          className={headercss.liclass}
-          onMouseEnter={handleMouseEnter}
-          onMouseOut={handleMouseOut}
-        >
-          <Link to="er" className={headercss.topmenu}>
+        <li className={headercss.liclass}>
+          <Link to="/Garden" className={headercss.topmenu}>
             Gardens
           </Link>
-          <div
-            className={headercss.subdiv}
-            // style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Edible Gardens
             </Link>
@@ -128,18 +108,11 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        <li
-          className={headercss.liclass}
-          onMouseEnter={handleMouseEnter}
-          onMouseOut={handleMouseOut}
-        >
-          <Link to="er" className={headercss.topmenu}>
+        <li className={headercss.liclass}>
+          <Link to="/Houseplant" className={headercss.topmenu}>
             Houseplant
           </Link>
-          <div
-            className={headercss.subdiv}
-            style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Specific Houseplants
             </Link>
@@ -150,18 +123,10 @@ const Navbottom =()=>{
         </li>
 
         <li className={headercss.liclass}>
-          <Link
-            to="er"
-            className={headercss.topmenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseOut={handleMouseOut}
-          >
+          <Link to="/Problems" className={headercss.topmenu}>
             Problems
           </Link>
-          <div
-            className={headercss.subdiv}
-            style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Plant Diseases
             </Link>
@@ -177,18 +142,10 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link
-            to="er"
-            className={headercss.topmenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseOut={handleMouseOut}
-          >
+          <Link to="/Lawn Care" className={headercss.topmenu}>
             Lawn Care
           </Link>
-          <div
-            className={headercss.subdiv}
-            style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               General Lawn Care
             </Link>
@@ -201,18 +158,10 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link
-            to="er"
-            className={headercss.topmenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseOut={handleMouseOut}
-          >
+          <Link to="/Composting" className={headercss.topmenu}>
             Composting
           </Link>
-          <div
-            className={headercss.subdiv}
-            style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Composting Basics
             </Link>
@@ -228,18 +177,10 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link
-            to="er"
-            className={headercss.topmenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseOut={handleMouseOut}
-          >
+          <Link to="/Gardening" className={headercss.topmenu}>
             Gardening
           </Link>
-          <div
-            className={headercss.subdiv}
-            style={hover ? { display: "none" } : { display: "block" }}
-          >
+          <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Our Blog
             </Link>
@@ -261,6 +202,9 @@ const Navbottom =()=>{
     </div>
   );
 }
+
+
+
 
 export default function Header() {
   return (

@@ -18,12 +18,18 @@ Link{
 .liclass{
     float: left;
     border: 3px solid rgb(61, 74, 146);
+    z-index: 10;
     
 }
-.liclass::after{
-    content:"";
-    display: block;
-    clear: both;
+.topmenu{
+    color:#fff;
+}
+.topmenu:hover{
+    color:rgb(85 124 33)
+}
+
+.navul > li:first-child .topmenu{
+    color: rgb(252 175 27);
 }
 .topmenu{
     display: inline-block;
@@ -35,6 +41,7 @@ Link{
     border: 1px solid yellow;
     position: absolute;
     display: none;
+    z-index: 1;
 }
 .submenue{
     display:block;
@@ -42,4 +49,7 @@ Link{
     padding: 5px 14px;
     text-decoration: none;
     color: rgb(121 166 66);
+}
+.liclass:hover .subdiv {
+    display:block;
 }
