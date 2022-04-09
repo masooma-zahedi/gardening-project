@@ -7,11 +7,10 @@ import headercss from "../moduleCss/Header.module.css";
 const NavTop = ()=>{
   return (
     <div
-      className="d-flex justify-content-between align-self-stretch"
-      style={{ border: "1px solid blue" }}
+      className="d-flex justify-content-between align-self-stretch "
     >
       {/* for brand */}
-      <div style={{ border: "2px solid red" }}>
+      <div >
         <img
           // itemprop="logo"
           src="https://www.gardeningknowhow.com/wp-content/uploads/2018/03/minLogo.png"
@@ -21,7 +20,7 @@ const NavTop = ()=>{
         ></img>
       </div>
       {/* for top nav-right */}
-      <div className="border border-white d-flex align-items-center ">
+      <div className=" d-flex align-items-center ">
         <div className="d-flex ">
           <div className="d-flex justify-content-center ">
             <div className="d-flex  justify-content-center px-3">
@@ -40,19 +39,19 @@ const NavTop = ()=>{
             </div>
           </div>
           <div
-            className="border border-danger p-2 "
+            className=" p-2 "
             style={{ color: "yellow" }}
           >
-            <Link to="kj">
+            <Link to="kj" style={{color:"yellow"}}>
               <i
                 className="fa fa-envelope-open px-2 fa-lg"
                 style={{ color: "yellow" }}
               ></i>
-              <span>Sing Up</span>
+              <span>Sign Up</span>
             </Link>
           </div>
           {/* social Media Icons */}
-          <div className=" border border-warning d-flex align-items-center ">
+          <div className="  d-flex align-items-center ">
             <ul className=" m-0 p-0 ">
               <Link
                 to="https://www.facebook.com/gardeningknowhow"
@@ -89,7 +88,7 @@ const Navbottom =()=>{
           </Link>
         </li>
         <li className={headercss.liclass}>
-          <Link to="/Garden" className={headercss.topmenu}>
+          <Link to="gardens" className={headercss.topmenu}>
             Gardens
           </Link>
           <div className={headercss.subdiv}>
@@ -108,7 +107,7 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link to="/Houseplant" className={headercss.topmenu}>
+          <Link to="houseplant" className={headercss.topmenu}>
             Houseplant
           </Link>
           <div className={headercss.subdiv}>
@@ -208,7 +207,7 @@ const Navbottom =()=>{
 export default function Header() {
   return (
     <header className={headercss.header}>
-      <div className="container">
+      <div className="container py-4">
         <nav className="d-flex flex-column align-items-end">
           <NavTop/>
           <Navbottom/>

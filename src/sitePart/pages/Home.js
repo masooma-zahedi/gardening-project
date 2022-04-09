@@ -8,8 +8,8 @@ import MainCss from "../moduleCss/Main.module.css";
 const AdTop = ()=>{
   return(
     <div className="add d-flex justify-content-center align-items-center" style={{height:250}}> 
-      <div className="adinside bg-secondary p-4"   >
-        <h2 className="text-white">this is a ads</h2>
+      <div className="adinside bg-warning p-4"   >
+        <h2 className="text-white">this is a ads </h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius, dolor velit deleniti voluptas quibusdam vitae perspiciatis temporibus illum in.
       </div>
     </div>
@@ -19,7 +19,7 @@ const AdTop = ()=>{
 const RightSec1 = () => {
   return (
     <>
-      <div className="border border-success mx-2" style={{ width: "33%" }}>
+      <div className=" mx-2 px-5" style={{ width: "33%" }}>
         <div className=" d-flex justify-content-between  align-items-center ">
               <div className={`${MainCss.leftFlo}`}></div>
               <div className={`${MainCss.textMid}`}>Explore</div>
@@ -39,7 +39,7 @@ const RightSec1 = () => {
 const Section1 = ()=>{
     const LeftSec1 = () => {;
       return (
-        <div className="border border-success mx-2" style={{ maxWidth: "50%" }}>
+        <div className=" mx-2" style={{ maxWidth: "50%" }}>
           <div
             className={`title p-3 h5 border-secondary border-bottom border-top ${MainCss.textTitle} ${MainCss.bgLink}`}
           >
@@ -71,7 +71,7 @@ const Section1 = ()=>{
 
     const MidSec1= () => {
       return (
-        <div className="border border-success mx-1" style={{ maxWidth: "50%" }}>
+        <div className=" mx-1" style={{ maxWidth: "50%" }}>
           {MainSec.midSect1.map((data) => {
             return (
               <div className={` ${MainCss.leftarticle} pb-2`} key={data.name}>
@@ -344,12 +344,6 @@ const Section4=()=>{
     </>
   );
 }
-
-// ******************************** Footer*****************************
-
-
-
-
 
 
 
