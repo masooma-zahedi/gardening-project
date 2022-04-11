@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import {RightSidePart} from "../component/RightSidePart";
 
 function Gardens() {
   return (
     <>
       <div className="container">
-        <div className="row border border-danger">
-          <div className="col-9 border border-success">
+        <div className="row">
+          <div className="col-9">
             <h1 className="">Gardens</h1>
             <div>
               <img
@@ -43,7 +43,9 @@ function Gardens() {
               </li>
             </ul>
           </div>
-          <div className="col-3 border border-warning">by</div>
+          <div className="col-3">
+            <RightSidePart />
+          </div>
         </div>
       </div>
       <div className="search">search for more information</div>
