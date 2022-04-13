@@ -121,7 +121,7 @@ const Navbottom =()=>{
         </li>
 
         <li className={headercss.liclass}>
-          <Link to="/Problems" className={headercss.topmenu}>
+          <Link to="problems" className={headercss.topmenu}>
             Problems
           </Link>
           <div className={headercss.subdiv}>

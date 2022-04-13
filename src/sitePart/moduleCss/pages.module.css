@@ -1,0 +1,17 @@
+body{
+    font-family: 'Roboto Slab',"Times New Roman",Times,serif;
+    box-sizing: border-box;
+}
+/*CSS====>>  HousePlants.js */
+.bottomLink{
+    background: rgb(251 250 249);
+    color: rgb(87 161 195);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-left: 15px;
+    border-radius: 2px;
+}
+.bottomLink:hover{
+    color: white;
+    background-color: rgb(83, 116, 44);
+}
