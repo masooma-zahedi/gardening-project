@@ -7,6 +7,8 @@ import Gardens from "./sitePart/pages/Gardens";
 import HousePlant from "./sitePart/pages/HousePlant";
 import Problems from "./sitePart/pages/Problems";
 import "./App.css";
+import LawnCare from "./sitePart/pages/LawnCare";
+import Composting from "./sitePart/pages/Composting";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/gardens" element={<Gardens/>} />
           <Route path="/houseplant" element={<HousePlant/>} />
           <Route path="/problems" element={<Problems/>} />
+          <Route path="/lawnCare" element={<LawnCare/>} />
+          <Route path="/composting" element={<Composting/>} />
         </Routes>
         <Footer/>
       </div>

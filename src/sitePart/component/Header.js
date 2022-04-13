@@ -140,7 +140,7 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link to="/Lawn Care" className={headercss.topmenu}>
+          <Link to="lawnCare" className={headercss.topmenu}>
             Lawn Care
           </Link>
           <div className={headercss.subdiv}>
@@ -156,7 +156,7 @@ const Navbottom =()=>{
           </div>
         </li>
         <li className={headercss.liclass}>
-          <Link to="/Composting" className={headercss.topmenu}>
+          <Link to="composting" className={headercss.topmenu}>
             Composting
           </Link>
           <div className={headercss.subdiv}>
