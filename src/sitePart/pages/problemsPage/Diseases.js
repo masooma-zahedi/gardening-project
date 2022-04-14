@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {RightSidePart} from "../../component/RightSidePart";
+import BottomPartSubTab from '../../component/subTabMenu/BottomPartSubTab';
+import TopPartSubTab from '../../component/subTabMenu/TopPartSubTab';
 import pages from "../../moduleCss/pages.module.css";
 function Diseases() {
     const diseases = {
@@ -91,7 +93,7 @@ function Diseases() {
             deleniti voluptas quibusdam vitae perspiciatis temporibus illum in.
           </div>
         </div>
-        <div>
+        {/* <div>
           <Link
             to="/"
             style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
@@ -122,8 +124,11 @@ function Diseases() {
           <p className="col-9" style={{ fontSize: "1.2rem" }}>
             {diseases.topInfo[0].info}
           </p>
-        </div>
-        <div className="subinfo row">
+        </div> */}
+
+        <TopPartSubTab dataTop={diseases} />
+
+        {/* <div className="subinfo row">
           <div className="col-9">
             <div className={`${pages.getStart}`}>
               <div>
@@ -159,49 +164,41 @@ function Diseases() {
                 </div>
               </div>
             </div>
-            {
-                diseases.subInfo[0].afterStart.map((data,index)=>{
-                    return (
-                      <>
-                        <div className="row mt-4 ">
-                          <div className="col-3" style={{height:"188px"}}>
-                            <Link to="">
-                              <img
-                                src={diseases.subInfo[0].afterStart[index].src}
-                                alt={diseases.subInfo[0].afterStart[index].alt}
-                                className="w-100 h-100"
-                              />
-                            </Link>
-                          </div>
-                          <div className="col-9 pt-2">
-                            <Link
-                              to=""
-                              className="h5 text-decoration-none mb-1"
-                              style={{ color: "rgb(192 48 133)" }}
-                            >
-                              {diseases.subInfo[0].afterStart[index].title}
-                            </Link>
-                            <div
-                              className="mb-1 fs-5"
-                              style={{ color: "rgb(58 109 37)" }}
-                            >
-                              {diseases.subInfo[0].afterStart[index].author}
-                            </div>
-                            <p className="fs-5 m-0">
-                              {diseases.subInfo[0].afterStart[index].desc}
-                            </p>
-                          </div>
-                        </div>
-                      </>
-                    );
-                })
-            }
-
-
-            
-
-
-
+            {diseases.subInfo[0].afterStart.map((data, index) => {
+              return (
+                <>
+                  <div className="row mt-4 ">
+                    <div className="col-3" style={{ height: "188px" }}>
+                      <Link to="">
+                        <img
+                          src={diseases.subInfo[0].afterStart[index].src}
+                          alt={diseases.subInfo[0].afterStart[index].alt}
+                          className="w-100 h-100"
+                        />
+                      </Link>
+                    </div>
+                    <div className="col-9 pt-2">
+                      <Link
+                        to=""
+                        className="h5 text-decoration-none mb-1"
+                        style={{ color: "rgb(192 48 133)" }}
+                      >
+                        {diseases.subInfo[0].afterStart[index].title}
+                      </Link>
+                      <div
+                        className="mb-1 fs-5"
+                        style={{ color: "rgb(58 109 37)" }}
+                      >
+                        {diseases.subInfo[0].afterStart[index].author}
+                      </div>
+                      <p className="fs-5 m-0">
+                        {diseases.subInfo[0].afterStart[index].desc}
+                      </p>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
 
             <div>
               <div>
@@ -219,7 +216,8 @@ function Diseases() {
           <div className="col-3">
             <RightSidePart />
           </div>
-        </div>
+        </div> */}
+        <BottomPartSubTab dataBottom={diseases}/>
       </div>
     </>
   );
