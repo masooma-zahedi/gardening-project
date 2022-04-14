@@ -125,16 +125,16 @@ const Navbottom =()=>{
             Problems
           </Link>
           <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="problems/diseases" className={headercss.submenue}>
               Plant Diseases
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="problems/environmental" className={headercss.submenue}>
               Enviromental Problems
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="problems/pests" className={headercss.submenue}>
               Garden Pests
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="problems/weeds" className={headercss.submenue}>
               Weeds
             </Link>
           </div>

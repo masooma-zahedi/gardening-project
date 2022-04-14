@@ -38,4 +38,4 @@ function Composing() {
   );
 }
 
-export default Composing
+export default Composing;

@@ -14,19 +14,19 @@ function Problems() {
     Links: [
       {
         title: "Plant Diseases",
-        linkTo: "",
+        linkTo: "diseases",
       },
       {
         title: "Environmental Plants",
-        linkTo: "",
+        linkTo: "environmental",
       },
       {
         title: "Garden Pests",
-        linkTo: "",
+        linkTo: "pests",
       },
       {
         title: "Weeds",
-        linkTo: "",
+        linkTo: "weeds",
       },
     ],
   };

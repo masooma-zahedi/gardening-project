@@ -15,3 +15,23 @@ body{
     color: white;
     background-color: rgb(83, 116, 44);
 }
+
+/* CSS======>  problems==> disease */
+.getStart{
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 2px solid rgb(48 81 0);
+    border-bottom: 2px solid rgb(48 81 0);
+    background: rgb(254 223 164);
+    font-family: Oxygen,sans-serif,Arial,Helvetica;
+}
+.getStart > div > span{
+    background: rgb(252 175 27);
+    font-family: Oxygen,sans-serif,Arial,Helvetica;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 0px 0 20px 0;
+}

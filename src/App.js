@@ -9,6 +9,7 @@ import Problems from "./sitePart/pages/Problems";
 import "./App.css";
 import LawnCare from "./sitePart/pages/LawnCare";
 import Composting from "./sitePart/pages/Composting";
+import Diseases from "./sitePart/pages/problemsPage/Diseases";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           <Route exact path="/" element={<Home/>} />
           <Route path="/gardens" element={<Gardens/>} />
           <Route path="/houseplant" element={<HousePlant/>} />
-          <Route path="/problems" element={<Problems/>} />
+          <Route path="/problems" exact element={<Problems/>} />
+          <Route path="/problems/diseases" element={<Diseases/>} />
+
           <Route path="/lawnCare" element={<LawnCare/>} />
           <Route path="/composting" element={<Composting/>} />
         </Routes>

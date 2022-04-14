@@ -53,7 +53,7 @@ function TabMenu(props) {
                   <>
                     <div className="col-6 ">
                       <Link
-                        to=""
+                        to={props.data.Links[index].linkTo}
                         className={`p-2 ps-3 d-block mb-2 ${pages.bottomLink}`}
                         // style={{ backgroundColor: "rgb(251 250 249)" }}
                       >
