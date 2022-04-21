@@ -17,7 +17,6 @@ function TopPartSubTab(props) {
         <span style={{ color: "rgb(87 161 195)" }}>
           &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
         </span>
-        {console.log(props.dataTop)}
         <span className="" style={{ color: "rgb(51 51 51)" }}>
           ›
         </span>
@@ -25,20 +24,35 @@ function TopPartSubTab(props) {
           &nbsp;{props.dataTop.topInfo[0].title2}
         </span>
       </div>
-      <h1 className="">information about {props.dataTop.topInfo[0].title2} </h1>
+      <p
+        className="display-6"
+        style={{
+          color: "rgb(83, 116, 44)",
+          fontFamily: " Oxygen,sans-serif,Arial,Helvetica",
+        }}
+      >
+        information about {props.dataTop.topInfo[0].title2}{" "}
+      </p>
       <div className="row">
-        <div className="col-2">
+        <div className="col-2 pe-0">
           <img
+            className=""
+            style={{ width: "75%" }}
             src={props.dataTop.topInfo[0].src}
             alt={props.dataTop.topInfo[0].title2}
           />
         </div>
-        <p className="col-9" style={{ fontSize: "1.2rem" }}>
+        <p
+          className="col-9 px-0 position-relative"
+          style={{ fontSize: "1.2rem", left: "-40px" }}
+        >
           {props.dataTop.topInfo[0].info}
         </p>
       </div>
     </>
   );
 }
+
+
 
 export default TopPartSubTab;

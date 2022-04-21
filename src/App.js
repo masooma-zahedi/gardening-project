@@ -17,6 +17,8 @@ import Edible from "./sitePart/pages/gardenPage/Edible";
 import Howto from "./sitePart/pages/gardenPage/Howto";
 import Ornamental from "./sitePart/pages/gardenPage/Ornamental";
 import Special from "./sitePart/pages/gardenPage/Special";
+import SpecificHousep from "./sitePart/pages/houseplant/SpecificHousep";
+import GeneralHousep from "./sitePart/pages/houseplant/GeneralHousep";
 
 function App() {
   return (
@@ -25,13 +27,17 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          {/* Gardens Tab */}
           <Route path="/gardens" element={<Gardens />} />
           <Route path="/gardens/edible" element={<Edible />} />
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />
           <Route path="/gardens/special" element={<Special />} />
-
+          {/* Houseplant Tab */}
           <Route path="/houseplant" element={<HousePlant />} />
+          <Route path="/houseplant/specific" element={<SpecificHousep />} />
+          <Route path="/houseplant/general" element={<GeneralHousep />} />
+          {/* Problems Tab */}
           <Route path="/problems" exact element={<Problems />} />
           <Route path="/problems/diseases" element={<Diseases />} />
           <Route path="/problems/environmental" element={<Environmental />} />

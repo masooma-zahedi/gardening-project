@@ -111,10 +111,10 @@ const Navbottom =()=>{
             Houseplant
           </Link>
           <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="houseplant/specific" className={headercss.submenue}>
               Specific Houseplants
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="houseplant/general" className={headercss.submenue}>
               General Houseplants Care
             </Link>
           </div>

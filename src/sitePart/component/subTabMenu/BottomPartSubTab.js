@@ -45,7 +45,7 @@ function BottomPartSubTab(props) {
                     <>
                     {/* console.log(data.id); */}
                       <div
-                        className="row mt-4 "
+                        className="row mt-4 mb-4 "
                         // key={data.id}
                       >
                         {/* {console.log(data.id)} */}
@@ -58,7 +58,7 @@ function BottomPartSubTab(props) {
                             />
                           </Link>
                         </div>
-                        <div className="col-9 pt-2">
+                        <div className="col-9 pt-2  ">
                           <Link
                             to=""
                             className="h5 text-decoration-none mb-1"

@@ -21,7 +21,6 @@ function TabMenuLink(props) {
           <span style={{ color: "rgb(87 161 195)" }}>
             &nbsp;{props.data.topInfo[0].title1}&nbsp;
           </span>
-          {console.log(props.data)}
           <span className="" style={{ color: "rgb(51 51 51)" }}>
             ›
           </span>
@@ -39,6 +38,7 @@ function TabMenuLink(props) {
           <div className="col-2 pe-0">
             <img
             className=''
+            style={{width:"75%"}}
               src={props.data.topInfo[0].src}
               alt={props.data.topInfo[0].title2}
             />
