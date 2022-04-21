@@ -92,16 +92,16 @@ const Navbottom =()=>{
             Gardens
           </Link>
           <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="gardens/edible" className={headercss.submenue}>
               Edible Gardens
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="gardens/howto" className={headercss.submenue}>
               Gardening How To
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="gardens/ornamental" className={headercss.submenue}>
               Ornamental Gardens
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="gardens/special" className={headercss.submenue}>
               Special Gardens
             </Link>
           </div>
