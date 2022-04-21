@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import React from 'react';
 import { Link } from "react-router-dom";
 import {RightSidePart} from "../component/RightSidePart";
@@ -68,18 +69,22 @@ function Gardens() {
     // subinfo=====
     Links: [
       {
+        id: nanoid(6),
         title: "Edible Gardens",
         linkTo: "",
       },
       {
+        id: nanoid(6),
         title: "Gardening How To",
         linkTo: "",
       },
       {
+        id: nanoid(6),
         title: "Ornamental Gardens",
         linkTo: "",
       },
       {
+        id: nanoid(6),
         title: "Special Gardens",
         linkTo: "",
       },

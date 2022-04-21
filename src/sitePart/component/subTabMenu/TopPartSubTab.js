@@ -9,19 +9,20 @@ function TopPartSubTab(props) {
           to="/"
           style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
         >
-          Home
+          Home&nbsp;
         </Link>
         <span className="" style={{ color: "rgb(51 51 51)" }}>
           ›
         </span>
         <span style={{ color: "rgb(87 161 195)" }}>
-          {props.dataTop.topInfo[0].title1}
+          &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
         </span>
+        {console.log(props.dataTop)}
         <span className="" style={{ color: "rgb(51 51 51)" }}>
           ›
         </span>
         <span style={{ color: "rgb(87 161 195)" }}>
-          {props.dataTop.topInfo[0].title2}
+          &nbsp;{props.dataTop.topInfo[0].title2}
         </span>
       </div>
       <h1 className="">information about {props.dataTop.topInfo[0].title2} </h1>

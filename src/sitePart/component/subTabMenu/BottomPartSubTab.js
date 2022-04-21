@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {RightSidePart} from "../../component/RightSidePart";
-import pages from "../../moduleCss/pages.module.css"
+import pages from "../../moduleCss/pages.module.css";
 
 function BottomPartSubTab(props) {
   return (
@@ -40,53 +40,52 @@ function BottomPartSubTab(props) {
             </div>
           </div>
           {props.dataBottom.subInfo[0].afterStart.map((data, index) => {
+              const BoxInfo = (props)=>{
+                  return (
+                    <>
+                    {/* console.log(data.id); */}
+                      <div
+                        className="row mt-4 "
+                        // key={data.id}
+                      >
+                        {/* {console.log(data.id)} */}
+                        <div className="col-3" style={{ height: "188px" }}>
+                          <Link to="">
+                            <img
+                              src={data.src}
+                              alt={data.alt}
+                              className="w-100 h-100"
+                            />
+                          </Link>
+                        </div>
+                        <div className="col-9 pt-2">
+                          <Link
+                            to=""
+                            className="h5 text-decoration-none mb-1"
+                            style={{ color: "rgb(192 48 133)" }}
+                          >
+                            {data.title}
+                          </Link>
+                          <div
+                            className="mb-1 fs-5"
+                            style={{ color: "rgb(58 109 37)" }}
+                          >
+                            {data.author}
+                          </div>
+                          <p className="fs-5 m-0">
+                            {data.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </>
+                  );
+              }
             return (
               <>
-                <div className="row mt-4 ">
-                  <div className="col-3" style={{ height: "188px" }}>
-                    <Link to="">
-                      <img
-                        src={props.dataBottom.subInfo[0].afterStart[index].src}
-                        alt={props.dataBottom.subInfo[0].afterStart[index].alt}
-                        className="w-100 h-100"
-                      />
-                    </Link>
-                  </div>
-                  <div className="col-9 pt-2">
-                    <Link
-                      to=""
-                      className="h5 text-decoration-none mb-1"
-                      style={{ color: "rgb(192 48 133)" }}
-                    >
-                      {props.dataBottom.subInfo[0].afterStart[index].title}
-                    </Link>
-                    <div
-                      className="mb-1 fs-5"
-                      style={{ color: "rgb(58 109 37)" }}
-                    >
-                      {props.dataBottom.subInfo[0].afterStart[index].author}
-                    </div>
-                    <p className="fs-5 m-0">
-                      {props.dataBottom.subInfo[0].afterStart[index].desc}
-                    </p>
-                  </div>
-                </div>
+                <BoxInfo/>
               </>
             );
           })}
-
-          <div>
-            <div>
-              <Link to="">
-                <img src="" alt="" />
-              </Link>
-            </div>
-            <div>
-              <Link to=""></Link>
-              <div></div>
-              <p></p>
-            </div>
-          </div>
         </div>
         <div className="col-3">
           <RightSidePart />

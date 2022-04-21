@@ -1,4 +1,5 @@
 import React from "react";
+import { nanoid } from "nanoid";
 import { TabMenu } from "../component/TabMenu";
 
 function Problems() {
@@ -13,23 +14,28 @@ function Problems() {
     // subinfo=====
     Links: [
       {
+        id: nanoid(6),
         title: "Plant Diseases",
         linkTo: "diseases",
       },
       {
+        id: nanoid(6),
         title: "Environmental Plants",
         linkTo: "environmental",
       },
       {
+        id: nanoid(6),
         title: "Garden Pests",
         linkTo: "pests",
       },
       {
+        id: nanoid(6),
         title: "Weeds",
         linkTo: "weeds",
       },
     ],
   };
+  console.log(problems.Links[0].id);
   return (
     <>
       <TabMenu data={problems} />

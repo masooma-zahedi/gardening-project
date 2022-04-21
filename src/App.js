@@ -10,6 +10,9 @@ import "./App.css";
 import LawnCare from "./sitePart/pages/LawnCare";
 import Composting from "./sitePart/pages/Composting";
 import Diseases from "./sitePart/pages/problemsPage/Diseases";
+import Environmental from "./sitePart/pages/problemsPage/Environmental";
+import Pests from "./sitePart/pages/problemsPage/Pests";
+import Weeds from "./sitePart/pages/problemsPage/Weeds";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/houseplant" element={<HousePlant/>} />
           <Route path="/problems" exact element={<Problems/>} />
           <Route path="/problems/diseases" element={<Diseases/>} />
+          <Route path="/problems/environmental" element={<Environmental/>} />
+          <Route path="/problems/pests" element={<Pests/>} />
+          <Route path="/problems/weeds" element={<Weeds/>} />
 
           <Route path="/lawnCare" element={<LawnCare/>} />
           <Route path="/composting" element={<Composting/>} />

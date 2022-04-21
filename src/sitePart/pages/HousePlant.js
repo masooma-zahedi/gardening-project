@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import React from 'react';
 import {TabMenu} from "../component/TabMenu"
 
@@ -13,14 +14,15 @@ function HousePlant() {
     // subinfo=====
     Links: [
       {
+        id: nanoid(6),
         title: "Specific Houseplants",
         linkTo: "",
       },
       {
+        id: nanoid(6),
         title: "General Houseplant Care",
         linkTo: "",
       },
-
     ],
   };
   console.log(housePlant.topInfo[0].title);

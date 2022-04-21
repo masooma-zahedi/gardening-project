@@ -236,12 +236,12 @@ const Section4=()=>{
               {MainSec.mainSec4.leftSec4.map((dataLSec4) => {
                 return (
                   <>
-                    <li className="list-group-item border-0 p-0">
+                    <li
+                      className="list-group-item border-0 p-0"
+                      key={dataLSec4.id}
+                    >
                       <Link to="" className="text-decoration-none d-flex ">
-                        <div
-                          className="w-75 "
-                          style={{ maxWidth: "85px" }}
-                        >
+                        <div className="w-75 " style={{ maxWidth: "85px" }}>
                           <img
                             src={dataLSec4.src}
                             alt={dataLSec4.title}

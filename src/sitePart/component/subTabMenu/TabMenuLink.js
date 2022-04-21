@@ -1,26 +1,14 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import {RightSidePart} from "./RightSidePart";
-import pages from "../moduleCss/pages.module.css"
+import {Link} from "react-router-dom"
+import { RightSidePart } from '../RightSidePart';
+import pages from "../../moduleCss/pages.module.css";
 
-function TabMenu(props) {
+
+function TabMenuLink(props) {
   return (
     <>
-      <div
-        className="container"
-        style={{ fontFamily: "'Roboto Slab',Times New Roman,Times,serif" }}
-      >
-        <div
-          className="adsTop d-flex justify-content-center flex-column"
-          style={{ height: 250 }}
-        >
-          <div className="p-4 bg-warning">
-            <h2 className="text-white">this is a ads</h2> Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Quaerat eius, dolor velit
-            deleniti voluptas quibusdam vitae perspiciatis temporibus illum in.
-          </div>
-        </div>
-        <div>
+      <div className="" style={{fontFamily: "'Roboto Slab',Times New Roman,Times,serif"}}>
+        <div className="my-4">
           <Link
             to="/"
             style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
@@ -31,32 +19,35 @@ function TabMenu(props) {
             ›
           </span>
           <span style={{ color: "rgb(87 161 195)" }}>
-            &nbsp;{props.data.topInfo[0].title}
+            &nbsp;{props.data.topInfo[0].title1}&nbsp;
+          </span>
+          {console.log(props.data)}
+          <span className="" style={{ color: "rgb(51 51 51)" }}>
+            ›
+          </span>
+          <span style={{ color: "rgb(87 161 195)" }}>
+            &nbsp;{props.data.topInfo[0].title2}
           </span>
         </div>
         <p
           className="display-6"
-          style={{
-            color: "rgb(83, 116, 44)",
-            fontFamily: " Oxygen,sans-serif,Arial,Helvetica",
-          }}
+          style={{ color: "rgb(83, 116, 44)", fontFamily:" Oxygen,sans-serif,Arial,Helvetica"}}
         >
-          information about {props.data.topInfo[0].title}{" "}
+          information about {props.data.topInfo[0].title2}{" "}
         </p>
         <div className="row">
-          <div className="col-2">
+          <div className="col-2 pe-0">
             <img
+            className=''
               src={props.data.topInfo[0].src}
-              alt={props.data.topInfo[0].title}
+              alt={props.data.topInfo[0].title2}
             />
           </div>
-          <p
-            className="col-9 px-0 position-relative"
-            style={{ fontSize: "1.2rem", left: "-40px" }}
-          >
+          <p className="col-9 px-0 position-relative" style={{ fontSize: "1.2rem", left:"-40px" }}>
             {props.data.topInfo[0].info}
           </p>
         </div>
+        {/* ---- */}
         <div className="subinfo  row">
           <div className="col-9">
             <p style={{ fontSize: "1.2rem", marginTop: "15px" }}>
@@ -89,4 +80,4 @@ function TabMenu(props) {
   );
 }
 
-export { TabMenu };
+export default TabMenuLink;

@@ -20,7 +20,8 @@ import { rightSidePages } from "../Data/dataRightSidePages";
           <h4 className="text-primary border border-2 border-secondary border-left-0 border-end-0 border-start-0 my-3 py-3 mt-5 text-center">
             Newest Article
           </h4>
-          {rightSidePages.newestArticle.map((data) => {
+          {rightSidePages.newestArticle.map((data,index) => {
+                              
             return (
               <>
                 <div
@@ -28,6 +29,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                   key={data.id}
                   style={{ background: "rgb(251 250 249)" }}
                 >
+                  {/* {console.log(data.id)} */}
                   <Link
                     to={data.link}
                     className="d-flex flex-wrap text-decoration-none"
@@ -73,6 +75,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                 key={data.id}
                 style={{ background: "rgb(251 250 249)" }}
               >
+                {/* {console.log(data.id)} */}
                 <Link
                   to={data.link}
                   className="d-flex flex-wrap text-decoration-none"
@@ -115,6 +118,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                 key={data.id}
                 style={{ background: "rgb(251 250 249)" }}
               >
+                {/* {console.log(data.id)} */}
                 <Link
                   to={data.link}
                   className="d-flex flex-wrap text-decoration-none"
@@ -127,12 +131,6 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                     />
                   </div>
                   <div className="w-75 ps-2">
-                    {/* <p
-                            className="m-0"
-                            style={{ color: "rgb(252 175 27)" }}
-                          >
-                            {data.title}
-                          </p> */}
                     <p
                       onMouseEnter={hoverLink}
                       onMouseLeave={hoverOut}
