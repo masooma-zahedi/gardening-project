@@ -14,15 +14,15 @@ function LawnCare() {
     Links: [
       {
         title: "General Lawn Care",
-        linkTo: "",
+        linkTo: "generlLawn",
       },
       {
         title: "Lawn Substitutes",
-        linkTo: "",
+        linkTo: "substitute",
       },
       {
         title: "Specific Lawn Grasses",
-        linkTo: "",
+        linkTo: "grassesLawn",
       },
     ],
   };

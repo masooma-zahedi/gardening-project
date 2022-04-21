@@ -16,12 +16,12 @@ function HousePlant() {
       {
         id: nanoid(6),
         title: "Specific Houseplants",
-        linkTo: "",
+        linkTo: "specific",
       },
       {
         id: nanoid(6),
         title: "General Houseplant Care",
-        linkTo: "",
+        linkTo: "general",
       },
     ],
   };

@@ -144,13 +144,13 @@ const Navbottom =()=>{
             Lawn Care
           </Link>
           <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="lawnCare/generlLawn" className={headercss.submenue}>
               General Lawn Care
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="lawnCare/substitute" className={headercss.submenue}>
               Lawn Substitutes
             </Link>
-            <Link to="hi" className={headercss.submenue}>
+            <Link to="lawnCare/grassesLawn" className={headercss.submenue}>
               Specific Lawn Grasses
             </Link>
           </div>

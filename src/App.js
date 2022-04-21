@@ -17,8 +17,11 @@ import Edible from "./sitePart/pages/gardenPage/Edible";
 import Howto from "./sitePart/pages/gardenPage/Howto";
 import Ornamental from "./sitePart/pages/gardenPage/Ornamental";
 import Special from "./sitePart/pages/gardenPage/Special";
-import SpecificHousep from "./sitePart/pages/houseplant/SpecificHousep";
-import GeneralHousep from "./sitePart/pages/houseplant/GeneralHousep";
+import SpecificHousep from "./sitePart/pages/houseplantPage/SpecificHousep";
+import GeneralHousep from "./sitePart/pages/houseplantPage/GeneralHousep";
+import GeneralLawn from "./sitePart/pages/lawnCarePage/GeneralLawn";
+import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
+import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
 
 function App() {
   return (
@@ -43,8 +46,12 @@ function App() {
           <Route path="/problems/environmental" element={<Environmental />} />
           <Route path="/problems/pests" element={<Pests />} />
           <Route path="/problems/weeds" element={<Weeds />} />
-
+          {/* LawnCare Tab */}
           <Route path="/lawnCare" element={<LawnCare />} />
+          <Route path="/lawnCare/generlLawn" element={<GeneralLawn />} />
+          <Route path="/lawnCare/substitute" element={<SubstituteLawn />} />
+          <Route path="/lawnCare/grassesLawn" element={<GrassesLawn />} />
+
           <Route path="/composting" element={<Composting />} />
         </Routes>
         <Footer />
