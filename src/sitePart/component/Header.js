@@ -155,7 +155,7 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        <li className={headercss.liclass}>
+        {/* <li className={headercss.liclass}>
           <Link to="composting" className={headercss.topmenu}>
             Composting
           </Link>
@@ -173,7 +173,7 @@ const Navbottom =()=>{
               Vermicomposting
             </Link>
           </div>
-        </li>
+        </li> */}
         <li className={headercss.liclass}>
           <Link to="/Gardening" className={headercss.topmenu}>
             Gardening

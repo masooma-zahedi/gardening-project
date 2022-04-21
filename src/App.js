@@ -7,7 +7,7 @@ import HousePlant from "./sitePart/pages/HousePlant";
 import Problems from "./sitePart/pages/Problems";
 import "./App.css";
 import LawnCare from "./sitePart/pages/LawnCare";
-import Composting from "./sitePart/pages/Composting";
+// import Composting from "./sitePart/pages/Composting";
 import Diseases from "./sitePart/pages/problemsPage/Diseases";
 import Environmental from "./sitePart/pages/problemsPage/Environmental";
 import Pests from "./sitePart/pages/problemsPage/Pests";
@@ -52,7 +52,7 @@ function App() {
           <Route path="/lawnCare/substitute" element={<SubstituteLawn />} />
           <Route path="/lawnCare/grassesLawn" element={<GrassesLawn />} />
 
-          <Route path="/composting" element={<Composting />} />
+          {/* <Route path="/composting" element={<Composting />} /> */}
         </Routes>
         <Footer />
       </div>
