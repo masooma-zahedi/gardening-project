@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import BottomPartSubTab from '../../../../component/subTabMenu/BottomPartSubTab';
 import {TopTitle} from '../../../../component/subTabMenu/TopPartSubTab';
 function FruitsPage() {
-    const test = ()=>{
+    const addTitle = ()=>{
       return(
       <>
         <span className="" style={{ color: "rgb(51 51 51)" }}>
@@ -20,9 +20,6 @@ function FruitsPage() {
           {
             title1: "Gardens",
             title2: "Edible",
-            title3:"fruits",
-            class1:"addMore",
-            class2:"noNeedTop"
           },
         ],
         subInfo: [
@@ -89,7 +86,7 @@ function FruitsPage() {
               deleniti voluptas quibusdam vitae perspiciatis temporibus illum in.
             </div>
           </div>
-            <TopTitle dataTop={fruitsP} test={test()}/>
+            <TopTitle dataTop={fruitsP} addTitle={addTitle()}/>
           <BottomPartSubTab dataBottom={fruitsP}  />
         </div>
         </>

@@ -23,6 +23,7 @@ import GeneralLawn from "./sitePart/pages/lawnCarePage/GeneralLawn";
 import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
 import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
 import FruitsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Fruits";
+import GrainsP from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Grains";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route  path="/gardens/edible" element={<Edible />} />
           {/* ????????????????????? */}
           <Route path="/gardens/edible/fruits" element={<FruitsPage />} />
+          <Route path="/gardens/edible/grains" element={<GrainsP />} />
 
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />

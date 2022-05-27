@@ -22,7 +22,7 @@ function Edible() {
       {
         id: nanoid(6),
         title: "Grains",
-        linkTo: "",
+        linkTo: "grains",
       },
       {
         id: nanoid(6),

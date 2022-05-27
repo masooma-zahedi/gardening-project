@@ -77,7 +77,7 @@ function TopTitle(props){
         <span style={{ color: "rgb(87 161 195)" }}>
           &nbsp;{props.dataTop.topInfo[0].title2}
         </span>
-        {props.test}
+        {props.addTitle}
         
       </div>
     </>
