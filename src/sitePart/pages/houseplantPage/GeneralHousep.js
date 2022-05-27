@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import React from "react";
 import BottomPartSubTab from "../../component/subTabMenu/BottomPartSubTab";
-import TopPartSubTab from "../../component/subTabMenu/TopPartSubTab";
+import {TopPartSubTab} from "../../component/subTabMenu/TopPartSubTab";
 
 function GeneralHousep() {
   const generalHousep = {
@@ -18,7 +18,7 @@ function GeneralHousep() {
         getStarted: [
           {
             title:
-              "My Houseplant Stopped Growing – Help, My Indoor Plant Isn’t Growing Anymore",
+              "My Houseplant Stopped Growing – Help, My Indoor Plant Isn’t Growing Anymore ",
             linkTo: "",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/04/houseplant-400x300.jpg",
             alt: "Stopped Growing ",

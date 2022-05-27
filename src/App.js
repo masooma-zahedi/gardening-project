@@ -22,6 +22,7 @@ import GeneralHousep from "./sitePart/pages/houseplantPage/GeneralHousep";
 import GeneralLawn from "./sitePart/pages/lawnCarePage/GeneralLawn";
 import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
 import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
+import FruitsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Fruits";
 
 function App() {
   return (
@@ -31,8 +32,11 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           {/* Gardens Tab */}
-          <Route path="/gardens" element={<Gardens />} />
-          <Route path="/gardens/edible" element={<Edible />} />
+          <Route  path="/gardens" element={<Gardens />} />
+          <Route  path="/gardens/edible" element={<Edible />} />
+          {/* ????????????????????? */}
+          <Route path="/gardens/edible/fruits" element={<FruitsPage />} />
+
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />
           <Route path="/gardens/special" element={<Special />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 import BottomPartSubTab from '../../component/subTabMenu/BottomPartSubTab';
-import TopPartSubTab from '../../component/subTabMenu/TopPartSubTab';
+import {TopPartSubTab }from '../../component/subTabMenu/TopPartSubTab';
 
 
 function Diseases() {

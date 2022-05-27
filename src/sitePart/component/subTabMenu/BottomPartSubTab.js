@@ -18,7 +18,7 @@ function BottomPartSubTab(props) {
                   <img
                     src={props.dataBottom.subInfo[0].getStarted[0].src}
                     alt={props.dataBottom.subInfo[0].getStarted[0].alt}
-                    className="w-100"
+                    className="w-100" style={{maxHeight:200}}
                   />
                 </Link>
               </div>

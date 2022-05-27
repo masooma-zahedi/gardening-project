@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import React from "react";
 import TabMenuLink from "../../component/subTabMenu/TabMenuLink";
+import FruitsPage from "./subPageGarden/ediblePage/Fruits";
 
 function Edible() {
   const edible = {
@@ -16,7 +17,7 @@ function Edible() {
       {
         id: nanoid(6),
         title: "Fruits",
-        linkTo: "",
+        linkTo: "fruits",
       },
       {
         id: nanoid(6),
@@ -44,6 +45,9 @@ function Edible() {
     <>
       <div className="container">
         <TabMenuLink data={edible} />
+      </div>
+      <div>
+        <FruitsPage/>
       </div>
     </>
   );

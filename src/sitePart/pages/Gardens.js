@@ -71,22 +71,22 @@ function Gardens() {
       {
         id: nanoid(6),
         title: "Edible Gardens",
-        linkTo: "",
+        linkTo: "edible",
       },
       {
         id: nanoid(6),
         title: "Gardening How To",
-        linkTo: "",
+        linkTo: "howto",
       },
       {
         id: nanoid(6),
         title: "Ornamental Gardens",
-        linkTo: "",
+        linkTo: "ornamental",
       },
       {
         id: nanoid(6),
         title: "Special Gardens",
-        linkTo: "",
+        linkTo: "special",
       },
     ],
   };

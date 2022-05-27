@@ -18,20 +18,22 @@ function TopPartSubTab(props) {
           &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
         </span>
         <span className="" style={{ color: "rgb(51 51 51)" }}>
-          ›
+           ›
         </span>
         <span style={{ color: "rgb(87 161 195)" }}>
           &nbsp;{props.dataTop.topInfo[0].title2}
         </span>
+        
       </div>
+      {/* ??????????? */}
       <p
-        className="display-6"
+        className="display-6 "
         style={{
           color: "rgb(83, 116, 44)",
           fontFamily: " Oxygen,sans-serif,Arial,Helvetica",
         }}
       >
-        information about {props.dataTop.topInfo[0].title2}{" "}
+        information about {props.dataTop.topInfo[0].title2}
       </p>
       <div className="row">
         <div className="col-2 pe-0">
@@ -53,6 +55,38 @@ function TopPartSubTab(props) {
   );
 }
 
+function TopTitle(props){
+  return(
+    <>
+      <div>
+        <Link
+          to="/"
+          style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
+        >
+          Home&nbsp;
+        </Link>
+        <span className="" style={{ color: "rgb(51 51 51)" }}>
+          ›
+        </span>
+        <span style={{ color: "rgb(87 161 195)" }}>
+          &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
+        </span>
+        <span className="" style={{ color: "rgb(51 51 51)" }}>
+           ›
+        </span>
+        <span style={{ color: "rgb(87 161 195)" }}>
+          &nbsp;{props.dataTop.topInfo[0].title2}
+        </span>
+        {props.test}
+        
+      </div>
+    </>
+  )
+}
 
 
-export default TopPartSubTab;
+
+export {
+  TopPartSubTab,
+  TopTitle
+} 
