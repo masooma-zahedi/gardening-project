@@ -24,6 +24,8 @@ import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
 import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
 import FruitsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Fruits";
 import GrainsP from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Grains";
+import SubFruitspages from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/FruitsPage";
+import GrainsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/GrainsPage";
 
 function App() {
   return (
@@ -33,11 +35,18 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           {/* Gardens Tab */}
-          <Route  path="/gardens" element={<Gardens />} />
+          <Route exact  path="/gardens" element={<Gardens />} />
           <Route  path="/gardens/edible" element={<Edible />} />
           {/* ????????????????????? */}
           <Route path="/gardens/edible/fruits" element={<FruitsPage />} />
+          <Route path="/gardens/edible/fruits/subEdiblePage/fruitsPage/*" element={<SubFruitspages />} />
+
+
+
+          
+
           <Route path="/gardens/edible/grains" element={<GrainsP />} />
+          <Route path="/gardens/edible/grains/subEdiblePage/grainsPage/*" element={<GrainsPage />} />
 
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />

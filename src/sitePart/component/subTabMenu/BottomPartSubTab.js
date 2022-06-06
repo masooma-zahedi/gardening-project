@@ -14,7 +14,7 @@ function BottomPartSubTab(props) {
             </div>
             <div className="row">
               <div className="col-3">
-                <Link to="">
+                <Link to={props.dataBottom.subInfo[0].getStarted[0].linkTo}>
                   <img
                     src={props.dataBottom.subInfo[0].getStarted[0].src}
                     alt={props.dataBottom.subInfo[0].getStarted[0].alt}
@@ -24,9 +24,10 @@ function BottomPartSubTab(props) {
               </div>
               <div className="col-9">
                 <Link
-                  to=""
+                  to={props.dataBottom.subInfo[0].getStarted[0].linkTo}
+                  // //////////////???????/?????????????????
                   className="h5 text-decoration-none mb-1"
-                  style={{ color: "rgb(192 48 133)" }}
+                  // style={{ color: "rgb(192 48 133)" }}
                 >
                   {props.dataBottom.subInfo[0].getStarted[0].title}
                 </Link>
@@ -50,7 +51,10 @@ function BottomPartSubTab(props) {
                       >
                         {/* {console.log(data.id)} */}
                         <div className="col-3" style={{ height: "188px" }}>
-                          <Link to="">
+                          <Link 
+                            to={data.linkTo}
+                            // /////???????????????????????????????????????????????
+                            >
                             <img
                               src={data.src}
                               alt={data.alt}
@@ -60,7 +64,7 @@ function BottomPartSubTab(props) {
                         </div>
                         <div className="col-9 pt-2  ">
                           <Link
-                            to=""
+                            to={data.linkTo}
                             className="h5 text-decoration-none mb-1"
                             style={{ color: "rgb(192 48 133)" }}
                           >

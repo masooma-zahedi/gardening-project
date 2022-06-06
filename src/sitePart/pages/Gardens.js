@@ -2,6 +2,10 @@ import { nanoid } from 'nanoid';
 import React from 'react';
 import { Link } from "react-router-dom";
 import {RightSidePart} from "../component/RightSidePart";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Edible from "./gardenPage/Edible";
+
+
 import {TabMenu} from "../component/TabMenu"
 
 // function Gardens() {
@@ -93,6 +97,10 @@ function Gardens() {
   return (
     <>
       <TabMenu data={gardens} />
+      {/* <Routes>
+        <Route path="/edible" element={<Edible/>}/>
+      </Routes> */}
+
     </>
   );
 }

@@ -2,7 +2,17 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import BottomPartSubTab from '../../../../component/subTabMenu/BottomPartSubTab';
 import {TopTitle} from '../../../../component/subTabMenu/TopPartSubTab';
+// import SubFruitspages from './subEdiblePage/FruitsPage';
 function FruitsPage() {
+  const clickMe =(e)=>{
+    e.preventDefault();
+    alert("hi masooma you are good developre")
+  }
+  const clickMe1 =(e)=>{
+    e.preventDefault();
+    alert("hi masooma i am click me1 11111")
+  }
+
     const addTitle = ()=>{
       return(
       <>
@@ -28,7 +38,7 @@ function FruitsPage() {
               {
                 title:
                   "What Is A Columnar Apple Tree – Columnar Apple Tree Varieties ",
-                linkTo: "",
+                linkTo: "subEdiblePage/fruitsPage/appleTree",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/09/Columnar-Apple-400x533.jpg",
                 alt: "Apple Tree ",
                 author: " Teo Spengler",
@@ -40,7 +50,8 @@ function FruitsPage() {
                 id: nanoid(6),
                 title:
                   "Gala Apple Tree Care – How To Grow A Gala Apple Fruit Tree",
-                linkTo: "",
+                  // //////?????????
+                linkTo: "subEdiblePage/fruitsPage/apple",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/07/gala-apple-400x300.jpg",
                 alt: "Gala Apple",
                 author:
@@ -51,7 +62,9 @@ function FruitsPage() {
                 id: nanoid(6),
                 title:
                   "Banana Tree Problems: What Causes Bananas With Cracked Skin",
-                linkTo: "",
+                linkTo: "subEdiblePage/fruitsPage/banana",
+                // ////??????????????????
+                funMe:"",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2017/02/cracked-banana-fruit-400x267.jpg",
                 alt: "Bananas With Cracked Skin",
                 author: "Mary H. Dyer, Credentialed Garden Writer",
@@ -61,7 +74,7 @@ function FruitsPage() {
                 id: nanoid(6),
                 title:
                   "The Right Time To Pick A Cantaloupe – How And When To Pick Cantaloupe",
-                linkTo: "",
+                linkTo: "subEdiblePage/fruitsPage/cantaloupe",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2011/03/cantaloupe-400x267.jpg",
                 alt: "",
                 author:
@@ -89,6 +102,10 @@ function FruitsPage() {
             <TopTitle dataTop={fruitsP} addTitle={addTitle()}/>
           <BottomPartSubTab dataBottom={fruitsP}  />
         </div>
+
+        {/* <div>
+          <SubFruitspages dataFruit={fruitsP}/>
+        </div> */}
         </>
       );
 }

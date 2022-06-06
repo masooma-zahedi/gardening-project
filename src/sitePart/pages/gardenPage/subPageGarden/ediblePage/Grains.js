@@ -28,7 +28,7 @@ function GrainsP() {
               {
                 title:
                   "Rice Leaf Smut Info – How To Treat Leaf Smut Of Rice Crops",
-                linkTo: "",
+                linkTo: "subEdiblePage/grainsPage/riceLeaf",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2019/07/rice-smut-400x263.jpg",
                 alt: " Leaf Smut Of Rice",
                 author: "  Mary Ellen Ellis",
@@ -40,7 +40,7 @@ function GrainsP() {
                 id: nanoid(6),
                 title:
                   "Gala Apple Tree Care – How To Grow A Gala Apple Fruit Tree",
-                linkTo: "",
+                linkTo: "subEdiblePage/grainsPage/galaApple",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2019/07/sheath-rot-387x600.jpg",
                 alt: "Rice Sheath Rot",
                 author:

@@ -5,7 +5,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
 
  export function RightSidePart() {
     const hoverLink = (e)=>{
-        console.log(e.target);
+        // console.log(e.target);
         e.target.style.textDecoration = "underline";
     }
     const hoverOut =(e)=>{
