@@ -68,15 +68,25 @@ function TopTitle(props){
         <span className="" style={{ color: "rgb(51 51 51)" }}>
           ›
         </span>
-        <span style={{ color: "rgb(87 161 195)" }}>
-          &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
-        </span>
+        <Link
+          to={props.dataTop.topInfo[0].linkTo1}
+          style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
+        >
+          <span style={{ color: "rgb(87 161 195)" }}>
+            &nbsp;{props.dataTop.topInfo[0].title1}&nbsp;
+          </span>
+        </Link>
         <span className="" style={{ color: "rgb(51 51 51)" }}>
            ›
         </span>
+        <Link
+          to={props.dataTop.topInfo[0].linkTo2}
+          style={{ color: "rgb(87 161 195)", textDecoration: "none" }}
+        >
         <span style={{ color: "rgb(87 161 195)" }}>
           &nbsp;{props.dataTop.topInfo[0].title2}
         </span>
+        </Link>
         {props.addTitle}
         
       </div>

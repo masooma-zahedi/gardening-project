@@ -8,6 +8,7 @@ function Edible() {
     topInfo: [
       {
         title1: "Gardens",
+        linkTo1:"/gardens",
         title2: "Edible Gardens",
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/edible-garden-150x150.jpg",
         info: "There is nothing better than growing edible gardens and enjoying the “fruits” of our labor. Here you will find a range of growing tips for edible plants, everything from classic herbs to your favorite fruits and vegetables. Whether you are just starting out or an experienced gardener, you are certain to find just what you’re looking for when it comes to edible gardening. Discover how to grow edible plants from beginning to end with gardening information that covers it all including design, preparation, planting, care, harvest and more.",

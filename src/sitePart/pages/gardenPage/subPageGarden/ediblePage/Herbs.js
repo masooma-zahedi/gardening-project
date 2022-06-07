@@ -22,7 +22,9 @@ function MainHerbs() {
         topInfo: [
           {
             title1: "Gardens",
+            linkTo1:"/gardens",
             title2: "Edible",
+            linkTo2:"/gardens/edible"
           },
         ],
         subInfo: [
