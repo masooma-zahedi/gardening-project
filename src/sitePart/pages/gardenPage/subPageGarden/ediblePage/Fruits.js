@@ -2,16 +2,8 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import BottomPartSubTab from '../../../../component/subTabMenu/BottomPartSubTab';
 import {TopTitle} from '../../../../component/subTabMenu/TopPartSubTab';
-// import SubFruitspages from './subEdiblePage/FruitsPage';
+
 function FruitsPage() {
-  const clickMe =(e)=>{
-    e.preventDefault();
-    alert("hi masooma you are good developre")
-  }
-  const clickMe1 =(e)=>{
-    e.preventDefault();
-    alert("hi masooma i am click me1 11111")
-  }
 
     const addTitle = ()=>{
       return(
@@ -25,6 +17,8 @@ function FruitsPage() {
     </>
     )
     }
+
+    // ******************************** Data********************
     const fruitsP = {
         topInfo: [
           {
@@ -63,8 +57,6 @@ function FruitsPage() {
                 title:
                   "Banana Tree Problems: What Causes Bananas With Cracked Skin",
                 linkTo: "subEdiblePage/fruitsPage/banana",
-                // ////??????????????????
-                funMe:"",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2017/02/cracked-banana-fruit-400x267.jpg",
                 alt: "Bananas With Cracked Skin",
                 author: "Mary H. Dyer, Credentialed Garden Writer",
@@ -103,9 +95,6 @@ function FruitsPage() {
           <BottomPartSubTab dataBottom={fruitsP}  />
         </div>
 
-        {/* <div>
-          <SubFruitspages dataFruit={fruitsP}/>
-        </div> */}
         </>
       );
 }

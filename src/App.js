@@ -23,9 +23,15 @@ import GeneralLawn from "./sitePart/pages/lawnCarePage/GeneralLawn";
 import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
 import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
 import FruitsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Fruits";
-import GrainsP from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Grains";
 import SubFruitspages from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/FruitsPage";
+import GrainsP from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Grains";
 import GrainsPage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/GrainsPage";
+import MainHerbs from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Herbs";
+import SubHerbspages from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/HerbsPage";
+import NutTreePage from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/NutTree";
+import SubNutspages from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/NutTreePage";
+import VegetableP from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/Vegetables";
+import SubVagetablePages from "./sitePart/pages/gardenPage/subPageGarden/ediblePage/subEdiblePage/VegetablesPage";
 
 function App() {
   return (
@@ -37,16 +43,35 @@ function App() {
           {/* Gardens Tab */}
           <Route exact  path="/gardens" element={<Gardens />} />
           <Route  path="/gardens/edible" element={<Edible />} />
+
+
+
+
           {/* ????????????????????? */}
           <Route path="/gardens/edible/fruits" element={<FruitsPage />} />
           <Route path="/gardens/edible/fruits/subEdiblePage/fruitsPage/*" element={<SubFruitspages />} />
 
-
-
-          
-
           <Route path="/gardens/edible/grains" element={<GrainsP />} />
           <Route path="/gardens/edible/grains/subEdiblePage/grainsPage/*" element={<GrainsPage />} />
+
+          <Route path="/gardens/edible/herbs" element={<MainHerbs />} />
+          <Route path="/gardens/edible/herbs/subEdiblePage/herbsPage/*" element={<SubHerbspages />} />
+
+          <Route path="/gardens/edible/nutTree" element={<NutTreePage />} />
+          <Route path="/gardens/edible/nutTree/subEdiblePage/nutTreePage/*" element={<SubNutspages />} />
+
+          <Route path="/gardens/edible/vegetables" element={<VegetableP />} />
+          <Route path="/gardens/edible/vegetables/subEdiblePage/vagetablesPage/*" element={<SubVagetablePages />} />
+
+
+
+
+
+
+          {/* ??????????????????????????????????????????? */}
+
+
+
 
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />

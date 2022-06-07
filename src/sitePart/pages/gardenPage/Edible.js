@@ -27,17 +27,17 @@ function Edible() {
       {
         id: nanoid(6),
         title: "Herbs",
-        linkTo: "",
+        linkTo: "herbs",
       },
       {
         id: nanoid(6),
         title: "Nut Trees",
-        linkTo: "",
+        linkTo: "nutTree",
       },
       {
         id: nanoid(6),
         title: "Vegetables",
-        linkTo: "",
+        linkTo: "vegetables",
       },
     ],
   };
@@ -45,9 +45,6 @@ function Edible() {
     <>
       <div className="container">
         <TabMenuLink data={edible} />
-      </div>
-      <div>
-        <FruitsPage/>
       </div>
     </>
   );

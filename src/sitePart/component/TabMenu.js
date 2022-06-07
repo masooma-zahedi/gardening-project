@@ -30,10 +30,10 @@ function TabMenu(props) {
           <span className="" style={{ color: "rgb(51 51 51)" }}>
             ›
           </span>
-          <span style={{ color: "rgb(87 161 195)" }}>
-            &nbsp;{props.data.topInfo[0].title}
-          </span>
-        </div>
+            <span style={{ color: "rgb(87 161 195)" }}>
+              &nbsp;{props.data.topInfo[0].title}
+            </span>
+        </div> 
         <p
           className="display-6"
           style={{
