@@ -7,6 +7,7 @@ function Ornamental() {
     topInfo: [
       {
         title1: "Gardens",
+        linkTo1:"/gardens",
         title2: "Ornamental",
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/04/spring-flowering-trees-150x150.jpg",
         info: "Ornamental gardens use plants that are designed more for their aesthetic pleasure and appearance than for the production of crops or cooking. An ornamental garden design includes flowering plants and bulbs in addition to foliage plants, ornamental grasses, shrubs and trees. Growing ornamental plants in the landscape is easy. Here you will find everything you need to know about growing ornamental gardens, including various types of ornamental plantings, design elements, growing needs, basic care, pruning and more.",

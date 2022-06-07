@@ -8,6 +8,7 @@ function Environmental() {
           topInfo: [
             {
               title1: "Problems",
+              linkTo1:"/problems",
               title2: "Environmental Problems",
               src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/environmental-150x150.jpg",
               info: "Cultural plant problems and various types of environmental issues are inevitable, regardless of how well you care for your garden. So what is a gardener to do? The first step to solving gardening issues caused by environmental problems in gardens is to do your research. The pages that follow will help with that. With information for dealing with types of environmental issues like contaminated soil, floods, heat waves or cold spells, you’re sure to find something that relates to the particular needs of your garden. So keep reading to learn more.",

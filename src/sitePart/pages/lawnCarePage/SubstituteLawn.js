@@ -7,6 +7,7 @@ function Pests() {
     topInfo: [
       {
         title1: "lawn Care",
+        linkTo1:"/lawnCare",
         title2: "Lawn Substitutes",
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/white-clover-150x150.jpg",
         info: "Got too much lawn to contend with? Maybe you’re just wanting something different. Alternatives to grass may be just what you’re looking for. There are many alternatives to a grass lawn. Some of these grass lawn alternatives include the use of attractive ground covers like white clover or even monkey grass. Other lawn substitutes may include hardscape elements like gravel mulch. Whichever alternatives to grass appeal to you, we can help. Keep reading to find exactly what you are looking for in the pages that follow.",

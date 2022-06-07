@@ -7,6 +7,7 @@ function SpecificHousep() {
     topInfo: [
       {
         title1: "Houseplants",
+        linkTo1:"/houseplant",
         title2: "Specific houseplants ",
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/07/houseplants-for-interior-400x300.jpg",
         info: "eceive one as a gift. Whatever the case may be, you need to know how to care for houseplants in order to grow them successfully. That’s where we come in. This section contains growing information and general care tips for the houseplant enthusiast, including pruning needs and winter requirements. In addition, there is an ever-growing collection of individual houseplants covering all these basics and more.",

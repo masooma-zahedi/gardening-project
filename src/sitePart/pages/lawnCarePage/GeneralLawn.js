@@ -9,6 +9,7 @@ function GeneralLawn() {
       topInfo: [
         {
           title1: "Lawn Care",
+          linkTo1:"/lawnCare",
           title2: "General lawn Care ",
           src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/general-lawn-care-150x150.jpg",
           info: "We all dream of having the perfect lawn. While a “perfect” lawn may be less than ideal, as there will always be something to deal with (like weeds or disease), you can still have a healthy lawn using the following lawn care tips. With topics ranging from lawn diseases to planting and care of lawns, learning how to take care of your lawn can be a simple task. By using the proper lawn care products and practicing good lawn maintenance, you’ll be well on your way to having the yard you’ve always wanted.",

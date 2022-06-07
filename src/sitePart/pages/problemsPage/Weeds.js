@@ -8,6 +8,7 @@ function Weeds() {
           topInfo: [
             {
               title1: "Problems",
+              linkTo1:"/problems",
               title2: "Weeds",
               src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/weeds-150x150.jpg",
               info: "There are many types of garden weeds, making it difficult to know how to kill weeds, as not all methods work the same for all weed types. For this reason, we have attempted to make the task of weed control in lawns and gardens easier by providing tips on how to identify garden weeds. Once you know more about the common garden weeds found in the landscape, you’ll have a better idea on how to kill weeds that become bothersome. Whether it comes down to taking an organic approach or using a chemical method, our tips will alleviate future problems.",

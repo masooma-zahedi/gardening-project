@@ -9,6 +9,7 @@ function Diseases() {
       topInfo: [
         {
           title1: "Problems",
+          linkTo1:"/problems",
           title2: "Plant Diseases",
           src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/plant-diseases-150x150.jpg",
           info: "Identifying plant diseases is the first step in treating the problem. There are many types of diseases that affect garden plants, leaving many gardeners scratching their heads. By using the following information, you can learn how to go about identifying plant diseases for effective disease control. Many garden disease problems can be alleviated simply by practicing good growing conditions. Yet, even in the best of circumstances, garden diseases happen. But with a little know how, you stand a better chance of treating these garden disease problems early on.",

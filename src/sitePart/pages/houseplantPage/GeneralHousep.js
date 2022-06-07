@@ -8,6 +8,7 @@ function GeneralHousep() {
     topInfo: [
       {
         title1: "Houseplant",
+        linkTo1:"/houseplant",
         title2: "General Houseplant Care ",
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/12/houseplant-care-150x150.jpg",
         info: "Growing houseplants successfully means providing the best possible care. That’s where we come in. The following information provides tips on the basic care of houseplants as well as suggestions for dealing with houseplant pests and disease that affect houseplants. Armed with the right knowledge, you’ll be able to provide suitable growing conditions and be better equipped to handle any houseplant problems that do arise. Continue reading to learn more about how to grow houseplants and keep them healthy and happy.",
@@ -73,7 +74,6 @@ function GeneralHousep() {
       },
     ],
   };
-  // console.log(environmental.subInfo[0].afterStart[1].id);
   return (
     <>
       <div className="container">

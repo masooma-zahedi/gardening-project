@@ -76,13 +76,18 @@ function App() {
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/ornamental" element={<Ornamental />} />
           <Route path="/gardens/special" element={<Special />} />
+
+
           {/* Houseplant Tab */}
           <Route path="/houseplant" element={<HousePlant />} />
           <Route path="/houseplant/specific" element={<SpecificHousep />} />
           <Route path="/houseplant/general" element={<GeneralHousep />} />
+ 
           {/* Problems Tab */}
+          {/* ///////////////////////////// I am working/////////////////////////// */}
           <Route path="/problems" exact element={<Problems />} />
           <Route path="/problems/diseases" element={<Diseases />} />
+
           <Route path="/problems/environmental" element={<Environmental />} />
           <Route path="/problems/pests" element={<Pests />} />
           <Route path="/problems/weeds" element={<Weeds />} />
