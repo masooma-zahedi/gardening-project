@@ -3,6 +3,8 @@ import React from "react";
 import TabMenuLink from "../../component/subTabMenu/TabMenuLink";
 
 function Howto() {
+
+
   const howto = {
     topInfo: [
       {
@@ -17,48 +19,49 @@ function Howto() {
       {
         id: nanoid(6),
         title: "Beneficial Garden Friends",
-        linkTo: "",
+        linkTo: "subHowToPage/gardenFriends",
       },
       {
         id: nanoid(6),
         title: "Gardening By Region",
-        linkTo: "",
+        linkTo: "subHowToPage/regionGardening",
       },
+      // /////////////////////////////////////////////////////////////
       {
         id: nanoid(6),
         title: "Gardening By Zone",
-        linkTo: "",
+        linkTo: "subHowToPage/zoneGardening",
       },
       {
         id: nanoid(6),
         title: "Gardening Lifestyle",
-        linkTo: "",
+        linkTo: "subHowToPage/lifestyleGardening",
       },
       {
         id: nanoid(6),
-        title: "Gardening Lifestyle",
-        linkTo: "",
+        title: "Gardening Projects",
+        linkTo: "subHowToPage/projectsGardening",
       },
-      {
-        id: nanoid(6),
-        title: "Gardening Tips & Information",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Gardening Tools",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Landscape Design",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Mulch",
-        linkTo: "",
-      },
+      // {
+      //   id: nanoid(6),
+      //   title: "Gardening Tips & Information",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Gardening Tools",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Landscape Design",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Mulch",
+      //   linkTo: "",
+      // },
     ],
   };
   return (
