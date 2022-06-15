@@ -17,53 +17,48 @@ function Ornamental() {
       {
         id: nanoid(6),
         title: "Bulbs",
-        linkTo: "",
+        linkTo: "subOrnamentalPage/bulbs",
       },
       {
         id: nanoid(6),
         title: "Cacti & Succulents",
-        linkTo: "",
+        linkTo: "subOrnamentalPage/cacti",
       },
       {
         id: nanoid(6),
         title: "Flowers",
-        linkTo: "",
+        linkTo: "subOrnamentalPage/flowers",
       },
       {
         id: nanoid(6),
         title: "Foliage",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Gardening Lifestyle",
-        linkTo: "",
+        linkTo: "subOrnamentalPage/foliage",
       },
       {
         id: nanoid(6),
         title: "Fungus & Lichen",
-        linkTo: "",
+        linkTo: "subOrnamentalPage/fungus",
       },
-      {
-        id: nanoid(6),
-        title: "Ground Cover",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Shrubs",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Trees",
-        linkTo: "",
-      },
-      {
-        id: nanoid(6),
-        title: "Vines",
-        linkTo: "",
-      },
+      // {
+      //   id: nanoid(6),
+      //   title: "Ground Cover",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Shrubs",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Trees",
+      //   linkTo: "",
+      // },
+      // {
+      //   id: nanoid(6),
+      //   title: "Vines",
+      //   linkTo: "",
+      // },
     ],
   };
   return (
