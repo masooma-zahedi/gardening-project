@@ -92,10 +92,13 @@ function FruitsPage() {
               amet consectetur adipisicing elit. Quaerat eius, dolor velit
               deleniti voluptas quibusdam vitae perspiciatis temporibus illum in.
             </div>
+
+
+            
           </div>
             <TopTitle dataTop={fruitsP} addTitle={addTitle()}/>
           <BottomPartSubTab dataBottom={fruitsP}  />
-        </div>
+        </div> 
 
         </>
       );

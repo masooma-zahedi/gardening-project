@@ -70,7 +70,7 @@ function TabMenuLink(props) {
                         to={dataLink.linkTo}
                         className={`p-2 ps-3 d-block mb-2 ${pages.bottomLink}`}
                       >
-                        {dataLink.title}
+                        {dataLink.title} 
                       </Link>
                     </div>
                   </>
