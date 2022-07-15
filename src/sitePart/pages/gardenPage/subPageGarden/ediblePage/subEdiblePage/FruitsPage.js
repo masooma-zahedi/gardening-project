@@ -1,5 +1,4 @@
-import React, {useRef} from 'react';
-import { useReactToPrint } from 'react-to-print';
+import React from 'react';
 import { Link, Route, Routes} from "react-router-dom";
 import { RightSidePart } from '../../../../../component/RightSidePart';
 import { TopTitle } from '../../../../../component/subTabMenu/TopPartSubTab';
@@ -55,6 +54,22 @@ const infoItems = {
             infoTitle1:"Once you’ve got Gala apple tree climate figured out, you are ready to plant. Either fall or spring works well for this tree but avoid very cold or very hot periods. The amount of garden space you’ll need for the tree depends on which version you pick. The standard Gala grows to 25 feet (8.5 m.) tall with a similar spread, the semi-dwarf is about half that tall, while a dwarf stays about 10 feet (3 m.) tall and wide.  Gala apple fruit trees need ample water for the first year. Irrigate deeply at planting time, then twice weekly for a few months while the tree is establishing. One deep watering weekly during the growing season works well the first year, with one monthly in winter. After establishment, water only during dry spells. Mulching helps keep the soil moist.  What about fertilizer? Apply it when planting a Gala apple tree, and again each spring. Prune the tree in late winter to take out dead, diseased, or crowded branches.",
             
         }
+    ],
+    bananasTree:[
+        {
+            mainTitle:"Bananas",
+            topTitle:"Banana Tree Problems: What Causes Bananas With Cracked Skin",
+            auther:"By: Amy Grant",
+            describe:"Banana trees are often used in landscapes due to their large, attractive foliage but more often, they are cultivated for their delicious fruit. If you have bananas in your garden, you’re likely growing them for both their ornamental and edible purposes. It takes some work to grow bananas and, even so, they are susceptible to their share of diseases and other banana tree problems. One such issue is bananas with cracked skin. Why do bananas split on the bunch? Read on to find out about banana fruit cracking.",
+            srcImg:"https://www.gardeningknowhow.com/wp-content/uploads/2017/02/cracked-banana-fruit-400x267.jpg",
+            questoin:"Help, My Bananas are Cracking Open!",
+            answerQ:"No need to panic about banana fruit cracking. Among all the possible banana tree problems, this one is minimal. Why do bananas split on the bunch? The reason the fruit is cracking is likely due to high relative humidity of over 90% combined with temperatures over 70 F. (21 C.). This is especially true if bananas are left on the plant until ripe.<p>Bananas need to be cut off the plant when still green to promote ripening. If they are left on the plant, you’ll end up with bananas with cracked skin. Not only that, but the fruit changes consistency, dries and becomes cottony. Harvest bananas when they are very firm and very dark green.</p>",
+            iframe:<iframe width="560" height="315" src="https://www.youtube.com/embed/a6DKcf3pdAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+            descIframe:"As the bananas ripen, the skin becomes a lighter green to yellow. During this time, the starch in the fruit is converted to sugar. They are ready to eat when they are partially green, although most people wait until they are yellow or even mottled with brown spots. Actually, bananas that are quite brown on the outside are at the peak of sweetness, but most people either toss them or use them to cook with at this point. So if your bananas are on the tree and cracking open, they have likely been left on too long and are overripe. If you have gotten your bananas at the supermarket, the reason for splitting is probably due to how they were processed as they were being held and ripened. Bananas are usually kept at about 68 F. (20 C.) when ripening, but if they were exposed to higher temperatures, the fruit would ripen faster, weakening the skin and causing splitting of the peel.",
+            title1:"Thai Banana Care",
+            infoTitle1:"Bananas are heavy feeders and should be fed a high nitrogen organic fertilizer. Fertilize sparingly at least 6 inches away (15 cm.) from the base of the plant, three times per year with a slow release 15-5-10 fertilizer. Don’t over water a banana plant. Root rot from cold, wet soil will easily kill off your plant. Once the plant has fruited, cut the parent plant off at or near ground level. Once it has produced, it will no longer flower or fruit and the psuedostem will rot into the soil or can be removed, cut up and added to the compost pile.",
+
+        }
     ]
 }
 // ========>> for Apple Tree <<=====================================
@@ -103,6 +118,7 @@ const innerImgIframePrint = () =>{
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
+// ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
     return(
         <>
             <div className="container" >
@@ -125,25 +141,7 @@ const innerImgIframePrint = () =>{
     )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ******************************************* Gala Apple Tree ******************
 // ******************************************* Gala Apple Tree ******************
 
 function Apple (){
@@ -225,15 +223,84 @@ function Apple (){
 
 
 
-
+// ******************************************** Banana Page ********************
+// ******************************************** Banana Page ********************
 
 function Banana (){
+    const addTitle = ()=>{
+        return(
+        <>
+          <span className="" style={{ color: "rgb(51 51 51)" }}>
+          &nbsp;›
+        </span>
+        <Link to="/gardens/edible/fruits" style={{textDecoration:"none"}}>
+            <span style={{ color: "rgb(87 161 195)" }}>
+            &nbsp;Fruits
+            </span>
+        </Link>
+        {/* //// */}
+        <span className="" style={{ color: "rgb(51 51 51)" }}>
+          &nbsp;›
+        </span>
+        <span style={{ color: "rgb(87 161 195)" }}>
+          &nbsp;{infoItems.bananasTree[0].mainTitle}
+        </span>
+      </>
+      )
+      }
+
+    //  +++++++++++++++++++++++++++ information => top Title ++++++++++++++++++++++++++++
+    const appleTree = {
+        topInfo:[
+            {
+                title1: "Gardens",
+                linkTo1:"/gardens",
+                title2: "Edible",
+                linkTo2:"/gardens/edible"
+            },
+        ]
+    }
+// +++++++++++++++++++++++++++++++++++++ Print Page ++++++++++++++++++++++++++++====
+ 
+const innerImgIframePrint = () =>{
+    return (
+        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2017/02/cracked-banana-fruit-400x267.jpg"  alt="" />',
+        document.getElementById("remove3").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/a6DKcf3pdAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        )
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
+// ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
     return(
         <>
-            <h1>Hi masooma you can do it surly Banana</h1>        
+            <div className="container" >
+                <div className="mt-5">
+                <TopTitle dataTop={appleTree} addTitle={addTitle()}/>
+
+                </div>
+                <div className="subinfo mb-5 row">
+                    {/* start main for apple tree */}
+                    <MainContent infoItems={infoItems.bananasTree[0]} innerImgIframePrint={innerImgIframePrint} />
+                    {/* end of main for apple tree */}
+                    <div className="col-3 border"><RightSidePart /></div>
+                </div>
+                <div className='pt-5'>
+                    <Section3 />
+                </div>
+            </div>
+            <Section4/>
         </>
     )
 }
+
+
+
+
+
+
+
+// **************************************** Cantaloupe **********************
+// **************************************** Cantaloupe **********************
 function Cantaloupe (){
     return(
         <>
