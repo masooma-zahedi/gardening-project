@@ -1,23 +1,3 @@
-// import React, {useState} from 'react';
-// import { Route, Routes} from "react-router-dom";
-
-
-// function RiceLeaf (){
-//     return(
-//         <>
-//             <h1>Hi masooma RiceLeaf(get started)</h1>        
-//         </>
-//     )
-// }
-// function GalaApple (){
-//     return(
-//         <>
-//             <h1>Hi masooma GalaApple jjjjj</h1>        
-//         </>
-//     )
-// }
-
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 import React from 'react';
 import { Link, Route, Routes} from "react-router-dom";
 import { RightSidePart } from '../../../../../component/RightSidePart';
@@ -126,7 +106,6 @@ const innerImgIframePrint = () =>{
     return(
         <>
             <div className="container" >
-                <h1>hihiihihihihihihihihihihihihih</h1>
                 <div className="mt-5">
                 <TopTitle dataTop={riceLeaf} addTitle={addTitle()}/>
 
@@ -197,7 +176,6 @@ const innerImgIframePrint = () =>{
     return(
         <>
             <div className="container" >
-                <h1>hihiihihihihihihihihihihihihih</h1>
                 <div className="mt-5">
                 <TopTitle dataTop={khorasanWheat} addTitle={addTitle()}/>
 
