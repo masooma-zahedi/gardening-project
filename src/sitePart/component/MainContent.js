@@ -37,7 +37,7 @@ const MainContent = ({infoItems, innerImgIframePrint})=>{
                         </div>
                         <h2 >What is {infoItems.questoin} </h2>
                         <p > {infoItems.answerQ} </p>
-                        <div className=' border noPrint' id="remove3" >
+                        <div className='d-flex justify-content-center p-4 ' id="remove3" >
                             {infoItems.iframe}
                         </div>
                         <p>{infoItems.descIframe}</p>

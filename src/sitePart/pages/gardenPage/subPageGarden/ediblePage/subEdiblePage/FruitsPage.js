@@ -70,6 +70,21 @@ const infoItems = {
             infoTitle1:"Bananas are heavy feeders and should be fed a high nitrogen organic fertilizer. Fertilize sparingly at least 6 inches away (15 cm.) from the base of the plant, three times per year with a slow release 15-5-10 fertilizer. Don’t over water a banana plant. Root rot from cold, wet soil will easily kill off your plant. Once the plant has fruited, cut the parent plant off at or near ground level. Once it has produced, it will no longer flower or fruit and the psuedostem will rot into the soil or can be removed, cut up and added to the compost pile.",
 
         }
+    ],
+    Cantaloupe:[
+        {
+            mainTitle:"Cantaloupe",
+            topTitle:"The Right Time To Pick A Cantaloupe – How And When To Pick Cantaloupe",
+            auther:"By: Nikki Tilley",
+            describe:"Knowing the right time to pick a cantaloupe can mean the difference between a good crop and a bad one. So you want to pick some cantaloupe but you’re not quite sure how or when to go about it. If you harvest too soon, you’ll be left with a hard, tasteless, or bitter melon, as the sugars haven’t had sufficient time to develop and fully sweeten. And once they’re picked, they won’t continue to ripen. However, if you harvest your cantaloupe too late, you’ll be stuck with fruit that is soft, watery, and mushy.", 
+            srcImg:"https://www.gardeningknowhow.com/wp-content/uploads/2011/03/cantaloupe-400x267.jpg",
+            questoin:"When Can I Harvest Cantaloupe?",
+            answerQ:"Knowing when to pick cantaloupe is not as difficult as one might think. In fact, most cantaloupes are ready to be picked once they’re fully ripened, changing from green to a tan or yellowish-gray color between the netting. A ripe melon will also exhibit a sweet and pleasant aroma.One way to tell if a melon is overripe is by looking at the rind, which will appear quite yellow and soft. So then, “When can I harvest cantaloupe?” you ask. Typically, cantaloupes should be ready for harvesting anywhere from 70-100 days after planting. In addition, a ripe cantaloupe will not require tugging or pulling in order to harvest it from the vine. Instead, it will easily slip from the vine with little help. There may also be a crack near the point of attachment and the stem will become brown.",
+            iframe:<iframe width="560" height="315" src="https://www.youtube.com/embed/uVO1l-3E2g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+            descIframe:"Anyone growing cucurbits (squash, cucumber, pumpkin, etc.) can grow cantaloupes. When planting cantaloupe, wait until the threat of frost has passed and the soil has warmed in spring. You can either sow seeds directly in the garden or in flats inside (do this well before their initial planting outdoors), or you can use transplants purchased from reputable nurseries or garden centers.",
+            title1:"How to Pick Cantaloupe",
+            infoTitle1:"Once your cantaloupe is ready to be harvested from the vine, it helps to know how to pick it. If it’s ripe enough, the melon should separate easily from the vine with a light touch. However, on occasion, you may come across one that is stubborn. In this case, the melon should not be pulled but carefully cut from the vine. Pulling may result in damage to the melon, which can lead to disease and poor quality fruit. Harvesting your cantaloupes is a rather easy task once you know when and how to do it correctly.",            
+        }
     ]
 }
 // ========>> for Apple Tree <<=====================================
@@ -211,18 +226,6 @@ function Apple (){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // ******************************************** Banana Page ********************
 // ******************************************** Banana Page ********************
 
@@ -302,9 +305,68 @@ const innerImgIframePrint = () =>{
 // **************************************** Cantaloupe **********************
 // **************************************** Cantaloupe **********************
 function Cantaloupe (){
+    const addTitle = ()=>{
+        return(
+        <>
+          <span className="" style={{ color: "rgb(51 51 51)" }}>
+          &nbsp;›
+        </span>
+        <Link to="/gardens/edible/fruits" style={{textDecoration:"none"}}>
+            <span style={{ color: "rgb(87 161 195)" }}>
+            &nbsp;Fruits
+            </span>
+        </Link>
+        {/* //// */}
+        <span className="" style={{ color: "rgb(51 51 51)" }}>
+          &nbsp;›
+        </span>
+        <span style={{ color: "rgb(87 161 195)" }}>
+          &nbsp;{infoItems.Cantaloupe[0].mainTitle}
+        </span>
+      </>
+      )
+      }
+
+    //  +++++++++++++++++++++++++++ information => top Title ++++++++++++++++++++++++++++
+    const appleTree = {
+        topInfo:[
+            {
+                title1: "Gardens",
+                linkTo1:"/gardens",
+                title2: "Edible",
+                linkTo2:"/gardens/edible"
+            },
+        ]
+    }
+// +++++++++++++++++++++++++++++++++++++ Print Page ++++++++++++++++++++++++++++====
+ 
+const innerImgIframePrint = () =>{
+    return (
+        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2011/03/cantaloupe-400x267.jpg"  alt="cantaloupe" />',
+        document.getElementById("remove3").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVO1l-3E2g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        )
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
+// ++++++++++++++++++++++++++++++++++++++++++++  Apple Tree  +++++++++++++++++++++++++++++=
     return(
         <>
-            <h1>Hi masooma you can do it surly Cantaloupe</h1>        
+            <div className="container" >
+                <div className="mt-5">
+                <TopTitle dataTop={appleTree} addTitle={addTitle()}/>
+
+                </div>
+                <div className="subinfo mb-5 row">
+                    {/* start main for apple tree */}
+                    <MainContent infoItems={infoItems.Cantaloupe[0]} innerImgIframePrint={innerImgIframePrint} />
+                    {/* end of main for apple tree */}
+                    <div className="col-3 border"><RightSidePart /></div>
+                </div>
+                <div className='pt-5'>
+                    <Section3 />
+                </div>
+            </div>
+            <Section4/>
         </>
     )
 }

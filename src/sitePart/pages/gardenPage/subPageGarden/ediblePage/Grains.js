@@ -41,13 +41,13 @@ function GrainsP() {
               {
                 id: nanoid(6),
                 title:
-                  "Gala Apple Tree Care – How To Grow A Gala Apple Fruit Tree",
-                linkTo: "subEdiblePage/grainsPage/galaApple",
-                src: "https://www.gardeningknowhow.com/wp-content/uploads/2019/07/sheath-rot-387x600.jpg",
-                alt: "Rice Sheath Rot",
+                  "What Is Khorasan Wheat: Where Does Khorasan Wheat Grow",
+                linkTo: "subEdiblePage/grainsPage/KhorasanWheat",
+                src: "https://www.gardeningknowhow.com/wp-content/uploads/2017/04/Khorasan-wheat-400x274.jpg",
+                alt: "wheat grow",
                 author:
-                  " Bonnie L. Grant, Certified Urban Agriculturist",
-                desc:"Rice is one of the most important crops in the world. So when rice has a disease, it is serious business. Such is the problem with sheath rot of rice. What is rice sheath rot? Click here for diagnostic information and advice on treating rice sheath rot in the garden."
+                  "  Amy Grant",
+                desc:"Ancient grains have become a modern trend and with good reason. These unprocessed whole grains have a slew of healthful benefits. One such grain is called khorasan wheat. What is khorasan wheat and where does khorasan wheat grow? Learn more here."
               },
             ],
           },
