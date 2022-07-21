@@ -278,51 +278,7 @@ const innerImgIframePrint = () =>{
     )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ============================================================================================
-
-// function blackWalnut (){
-//     return(
-//         <>
-//             <h1>Hi masooma pineNut (get started)</h1>        
-//         </>
-//     )
-// }
-// function BlackWalnut (){
-//     return(
-//         <>
-//             <h1>Hi masooma BlackWalnut</h1>        
-//         </>
-//     )
-// }
-// function PineNut (){
-//     return(
-//         <>
-//             <h1>Hi masooma you can do it surly PineNut</h1>        
-//         </>
-//     )
-// }
-
-
-
-
-
-
-
-
-
+// =============================================================================================
 
 function SubNutspages(props) {
     

@@ -18,7 +18,6 @@ import MainContent from '../../../../../component/MainContent';
         //     descIframe:"",
         //     title1:"",
         //     infoTitle1:"",
-
         // }
 // *************************************************************************
 
