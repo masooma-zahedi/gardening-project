@@ -97,8 +97,8 @@ function RiceLeaf (props){
  
 const innerImgIframePrint = () =>{
     return (
-        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2021/09/Columnar-Apple-400x533.jpg" alt="" />',
-        document.getElementById("remove3").innerHTML = '<iframe className="d-block bg-warning mx-auto " width="760" height="415" src="https://www.youtube.com/embed/g3hTu-iqYuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2019/07/rice-smut-400x263.jpg" alt="RiseLeaf" />',
+        document.getElementById("remove3").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/EJKvOw5mrTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         )
 }
 
@@ -167,8 +167,8 @@ function KhorasanWheat (props){
  
 const innerImgIframePrint = () =>{
     return (
-        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2021/09/Columnar-Apple-400x533.jpg" alt="" />',
-        document.getElementById("remove3").innerHTML = '<iframe className="d-block bg-warning mx-auto " width="760" height="415" src="https://www.youtube.com/embed/g3hTu-iqYuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        document.getElementById("remove2").innerHTML = '<img  src="https://www.gardeningknowhow.com/wp-content/uploads/2017/04/Khorasan-wheat-400x274.jpg" alt="" />',
+        document.getElementById("remove3").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/fkO3EhG7v3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         )
 }
 
