@@ -72,7 +72,7 @@ function Shrubs  (props){
             {
                 title1: "Gardens",
                 linkTo1:"/gardens",
-                title2: "Edible",
+                title2: "How To",
                 linkTo2:"/gardens/howTo"
             },
         ]

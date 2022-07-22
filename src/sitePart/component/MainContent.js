@@ -32,8 +32,8 @@ const MainContent = ({infoItems, innerImgIframePrint})=>{
                         <div className="col-7 px-4" >
                             {infoItems.describe}
                         </div>
-                        <div className="col-5 noPrint" id="remove2" >
-                            <img  src={infoItems.srcImg} alt="" />
+                        <div className="col-5 noPrint " id="remove2" >
+                            <img  src={infoItems.srcImg} width="100%" alt={infoItems.mainTitle} />
                         </div>
                         <h2 >What is {infoItems.questoin} </h2>
                         <p > {infoItems.answerQ} </p>
@@ -42,7 +42,7 @@ const MainContent = ({infoItems, innerImgIframePrint})=>{
                         </div>
                         <p>{infoItems.descIframe}</p>
                         <h2>{infoItems.title1} </h2>
-                        <p>{infoItems.infoTitle1} </p>
+                        <div>{infoItems.infoTitle1} </div>
                     </div>
                 </div>                
         </>
