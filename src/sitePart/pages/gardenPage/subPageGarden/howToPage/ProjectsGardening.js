@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, Route, Routes} from "react-router-dom";
 import { RightSidePart } from '../../../../component/RightSidePart';
 import { TopTitle } from '../../../../component/subTabMenu/TopPartSubTab';
 import {Section3, Section4} from '../../../../component/SectionsBottomPage';
@@ -47,15 +46,6 @@ function ProjectG  (props){
     const addTitle = ()=>{
         return(
         <>
-          {/* <span className="" style={{ color: "rgb(51 51 51)" }}>
-          &nbsp;›
-        </span>
-        <Link to="/gardens/edible/grains" style={{textDecoration:"none"}}>
-            <span style={{ color: "rgb(87 161 195)" }}>
-            &nbsp;Pollinator
-            </span>
-        </Link> */}
-        {/* //// */}
         <span className="" style={{ color: "rgb(51 51 51)" }}>
           &nbsp;›
         </span>
