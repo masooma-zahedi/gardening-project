@@ -15,7 +15,7 @@ function SubHowToPage(params) {
             <Route path="gardenFriends" element={<GardenFriends/>} />
             <Route path="regionGardening" element={<RegionGardening/>} />
             <Route path="zoneGardening" element={<ZoneGardening/>} />
-            <Route path="lifestyleGardening" element={<LifestyleGardening/>} />
+            <Route path="mainLifeStyle/*" element={<LifestyleGardening/>} />
             <Route path="projectsGardening" element={<ProjectsGardening/>} />
         </Routes>
         </>

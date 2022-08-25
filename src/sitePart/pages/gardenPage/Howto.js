@@ -35,7 +35,7 @@ function Howto() {
       {
         id: nanoid(6),
         title: "Gardening Lifestyle",
-        linkTo: "subHowToPage/lifestyleGardening",
+        linkTo: "subHowToPage/mainLifeStyle",
       },
       {
         id: nanoid(6),

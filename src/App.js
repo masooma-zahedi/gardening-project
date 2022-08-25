@@ -64,9 +64,28 @@ function App() {
           <Route path="/gardens/edible/vegetables" element={<VegetableP />} />
           <Route path="/gardens/edible/vegetables/subEdiblePage/vagetablesPage/*" element={<SubVagetablePages />} />
 
+
+
+
+
+
           {/* //////////////////////////////////////////////////////////////// */}
+          {/* ++++++++++++++++++++++++++++ I am working on it  +++++++++++++++++++++++++++++++++++++++= */}
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/howto/subHowToPage/*" element={<SubHowToPage />} />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           {/* /////////////////////////////////////////////////////////////////////////// */}
           <Route path="/gardens/ornamental" element={<Ornamental />} />
