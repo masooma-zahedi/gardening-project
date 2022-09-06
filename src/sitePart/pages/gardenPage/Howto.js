@@ -42,26 +42,6 @@ function Howto() {
         title: "Gardening Projects",
         linkTo: "subHowToPage/projectsGardening",
       },
-      // {
-      //   id: nanoid(6),
-      //   title: "Gardening Tips & Information",
-      //   linkTo: "",
-      // },
-      // {
-      //   id: nanoid(6),
-      //   title: "Gardening Tools",
-      //   linkTo: "",
-      // },
-      // {
-      //   id: nanoid(6),
-      //   title: "Landscape Design",
-      //   linkTo: "",
-      // },
-      // {
-      //   id: nanoid(6),
-      //   title: "Mulch",
-      //   linkTo: "",
-      // },
     ],
   };
   return (
