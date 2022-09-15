@@ -23,7 +23,7 @@ import MainContent from '../../../../component/MainContent';
 const infoItems = {
     caladium :[
         {
-            mainTitle:"Caladium ",
+            mainTitle:"bulbs-Caladium ",
             topTitle:"Caladium Plant Problems – Caladium Plant Pests And Disease",
             auther:"By: Teo Spengler",
             describe:"Caladiums are foliage plants, grown for their showy leaves. The leaves have incredible color combinations including white, green pink and red. They are shaped like arrowheads and can get up to 18 inches long. Caladium plants are native to Central and South America. They are very popular houseplants but they are not without their share of caladium plant problems. Read on to learn about caladium plant pests and other problems with caladium.",
