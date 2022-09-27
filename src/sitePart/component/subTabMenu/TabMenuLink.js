@@ -77,6 +77,7 @@ function TabMenuLink(props) {
                 );
               })}
             </div>
+            <div>{props.subdescribePage}</div>
           </div>
           <div className="col-3">
             <RightSidePart />

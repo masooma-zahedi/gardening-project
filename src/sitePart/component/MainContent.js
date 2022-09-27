@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import { useReactToPrint } from 'react-to-print';
 
 
-const MainContent = ({infoItems, innerImgIframePrint})=>{
+const MainContent = ({infoItems, innerImgIframePrint, className})=>{
 
     const componentRef = useRef();
     const handlePrint2 = useReactToPrint({
@@ -20,7 +20,7 @@ const MainContent = ({infoItems, innerImgIframePrint})=>{
 
     return(
         <>
-                <div className="col-9 px-4" ref= {componentRef}>
+                <div className="col-9 px-4 "  ref= {componentRef}>
                     <h1 style={{color:"#c03085"}}>{infoItems.topTitle} </h1>
                     <p>{infoItems.auther}</p>
                     <div  id="remove1">

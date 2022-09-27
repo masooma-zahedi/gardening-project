@@ -35,7 +35,8 @@ import SubVagetablePages from "./sitePart/pages/gardenPage/subPageGarden/edibleP
 import GardenFriends from "./sitePart/pages/gardenPage/subPageGarden/howToPage/GardenFriends";
 import SubHowToPage from "./sitePart/pages/gardenPage/subPageGarden/howToPage/SubHowToPage";
 import SubOrnamentalPage from "./sitePart/pages/gardenPage/subPageGarden/OrnamentalPage/SubOrnamentalPage";
-import SubSpecialPage from "./sitePart/pages/gardenPage/subPageGarden/specialGardenPage/SubSpecialPage";
+// import SubSpecialPage from "./sitePart/pages/gardenPage/subPageGarden/specialGardenPage/SubSpecialPage";
+import SubSpecialPage from "./sitePart/pages/gardenPage/Special";
 
 function App() {
   return (
@@ -47,7 +48,6 @@ function App() {
           {/* Gardens Tab */}
           <Route exact  path="/gardens" element={<Gardens />} />
           <Route  path="/gardens/edible" element={<Edible />} />
-
           {/* /////////////////////////////////////////////////////////// */}
           <Route path="/gardens/edible/fruits" element={<FruitsPage />} />
           <Route path="/gardens/edible/fruits/subEdiblePage/fruitsPage/*" element={<SubFruitspages />} />
@@ -63,37 +63,17 @@ function App() {
 
           <Route path="/gardens/edible/vegetables" element={<VegetableP />} />
           <Route path="/gardens/edible/vegetables/subEdiblePage/vagetablesPage/*" element={<SubVagetablePages />} />
-
-
-
-
-
-
           {/* //////////////////////////////////////////////////////////////// */}
-          {/* ++++++++++++++++++++++++++++ I am working on it  +++++++++++++++++++++++++++++++++++++++= */}
           <Route path="/gardens/howto" element={<Howto />} />
           <Route path="/gardens/howto/subHowToPage/*" element={<SubHowToPage />} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           {/* /////////////////////////////////////////////////////////////////////////// */}
           <Route path="/gardens/ornamental" element={<Ornamental />} />
           <Route path="/gardens/ornamental/subOrnamentalPage/*" element={<SubOrnamentalPage />} />
 
           {/* /////////////////////////////////////////////////////////////////////////// */}
           <Route path="/gardens/special" element={<Special />} />
-          <Route path="/gardens/special/subSpecialPage/*" element={<SubSpecialPage  />} />
+          {/* <Route path="/gardens/special/subSpecialPage/*" element={<SubSpecialPage  />} /> */}
+          <Route path="/gardens/special/*" element={<SubSpecialPage  />} />
 
           {/* /////////////////////////////////////////////////////////////////////////// */}
 
