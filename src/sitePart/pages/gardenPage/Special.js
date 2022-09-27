@@ -240,9 +240,82 @@ function  Special() {
       }
     
       const Container = () => {
+        const container = [
+          
+            {
+              h3:"Don't Skimp on Drainage",
+              srcImg:"https://www.thespruce.com/thmb/bKSswjFrmvBjDx3weF-lAfrhE-0=/434x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ten-container-garden-tips-for-beginners-84785410-ac11e0349bb847f58e92eab7a1af7870.JPG",
+              altImg:"pots",
+              p1:"While this may sound like an odd first tip, it can be a matter of life and death for your plants. When there isn't a big enough hole or holes for water to get out of your pot, your soil becomes too wet and the roots of your plants can rot which causes the plant to die.",
+              p2:"The bad news is that many garden pots that are sold simply don't have enough drainage. You can often increase drainage, by drilling, punching or carving bigger holes. However, sometimes it's just easier to buy a pot that does have enough drainage. The minimum size for a drainage hole is 1/2 inch in diameter for small or ​medium-sized pots. For larger sized containers, look for at least an inch in diameter.",
+              p3:"It is a total myth that by adding gravel, pot shards, or stones to the bottom of your container garden, you will increase drainage. Some people even say you don't need drainage holes if you put these things in the bottom of your pots. Unless you are a really attentive container gardener, who can water perfectly, or you have a plant that likes wet soil (and there are some that do), you need holes in your pots -- preferably lots of them.",
+            },
+            {
+              h3:"Evaluate Your Light",
+              srcImg:"https://www.thespruce.com/thmb/4jF_6pk1Mb63BjkST9tBr8ozUDM=/434x0/filters:no_upscale():max_bytes(150000):strip_icc()/ten-container-garden-tips-for-beginner-84785401-b4922cd7717c4d459f84f21486de4e4c.jpg",
+              p1:"People often wildly overestimate how much sun their containers get. While you can find a great plant for almost any amount of light, you have to know how much light your container will get before you choose your plants.",
+              p2:"To figure out how much direct light your container will get, place it where you want it and then time how long the sun hits it. You can also use a sun calculator to determine your sunlight. ",
+              p3:"",
+            },
+            {
+              h3:"Feed Your Plants",
+              srcImg:"https://www.thespruce.com/thmb/rcKwsCM1WTJ9Ei4VtG-RCyRd6zM=/434x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-does-npk-mean-for-a-fertilizer-2131094-hero-02-01091c30834842b39714adf6dab45941.jpg",
+              p1:"Most potting soil has no accessible nutrients for your plants, you need to add those. The vast majority of plants will need fertilizer added to your soil, in order to thrive. You can mix in a slow release fertilizer into a potting mix. To do this, either mix up a big batch of potting soil mixed with fertilizer in a bucket or fill your pot with potting soil and then mix in the fertilizer. ",
+              p2:"Then fertilize every week or two with a liquid fertilizer, usually a fish emulsion, seaweed blend. It smells awful but really helps to give plants the nutrition they need. ",
+              p3:"Many people use a commercial fertilizer, and while it will feed your plants and help them to grow if you start using it, you will have to continue because this type of synthetic fertilizer will kill the beneficial organisms that exist in the soil. Organic gardening depends on these organisms so once you've used a synthetic fertilizer, you will have to stick to it. ",
+            },
+            {
+              h3:"Make a List Before You Go to Buy Plants",
+              srcImg:"https://www.thespruce.com/thmb/SUguObrl2z3WGAA5R6lyer6AaCU=/434x0/filters:no_upscale():max_bytes(150000):strip_icc()/ten-container-garden-tips-for-beginners-84785406-61e018771cf8483d811eda3071450525.JPG",
+              p1:"One of the best ways to avoid plant panic, or at least minimize it, is to decide what you want before you go to the nursery and make a list. This list doesn't even have to have the exact plants, though if you are ambitious, you can go online or look through plant catalogs and decide exactly what you want. Try to create a list at least with the number of pots, the sizes, and where they are going - so you can get plants that fit the pots and know if you need plants for sun or shade or anything in between. ",
+              p2:"If possible, it is a great idea to bring either your pot or a picture of your pot with you. Smartphones are great for this. Most nurseries will have someone there who can help you out with your choices. Also, in most nurseries, the plants are organized and labeled for how much sun they require. ",
+              p3:"",
+            },
+            {
+              h3:"Plant Good Neighbors",
+              srcImg:"https://www.thespruce.com/thmb/cbEoOWdsFmlRhmldKd_G7fuOKZM=/434x0/filters:no_upscale():max_bytes(150000):strip_icc()/ten-container-garden-tips-for-beginner-84785403-424c1857507e4514bbd2a6bba17a5f88.JPG",
+              p1:"When you are choosing plants for your container make sure that they will play well together. This means that all the plants in one pot should all require the same amount of light and moisture. If you combine plants with different needs, some of them will not thrive. So, for example, if you have a plant that requires full sun, you want all the plants you choose for that pot to also require full sun. If you have a plant that likes to dry out between waterings, you don't want to put it in a pot with plants that like it wet. ",
+              p2:"To find out what a plant requires, either check the plant tag or if there isn't one, ask a salesperson. If all else fails, try to look it up on the internet. ",
+              p3:"",
+            }
+
+        ]
+        
           return(
               <>
-                  <h1>Container Page </h1>
+                  <h1>5 Container Garden Tips for Beginners</h1>
+                  <div ><img src="https://www.thespruce.com/thmb/8bkrcDtL-nU9Ysk6wI7dWhj0oaQ=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ten-container-garden-tips-for-beginners-84785408-5f37a7f9535344d894f6991416e14d68.JPG" alt="container flower" /></div>
+                  <div className="h5 m-5" >
+                    <p className="inline-block">Even if you don't have a yard available to you, it's still possible to enjoy container gardening. Once you get the hang of container gardening you might find yourself growing more and more pots each year. But keeping plants in containers alive and thriving doesn't require the same care processes as raising plants that are growing in the ground. Here are some of our best tips for successful container gardens.</p>
+                    <ol>
+                        {container.map((item,index)=>{
+                          return(
+                            <>
+                      <li key={index}>
+                              <h3 style={{color:"#882378"}} >
+                          {item.h3}
+                        </h3>
+                        <div className="clearfix py-4" >
+                          <div className="px-4" style={{float:"left"}} >
+                            <img src={item.srcImg} alt={item.altImg} />
+                          </div>
+                          <p >
+                            {item.p1}
+                          </p>
+                        </div>
+                        <p>
+                          {item.p2}
+                        </p>
+                        <p>
+                          {item.p3}
+                        </p>
+                      </li>
+                            </>
+                          )
+                        })}
+
+                    </ol>
+                  </div>
               </>
           )
       }
@@ -256,7 +329,7 @@ function  Special() {
       }
       return ( 
         <>
-            <h1>SubSpecialPage page gff</h1>
+            <h1></h1>
             <Routes>
                 <Route path="subSpecialPage/accessible" element={<Accessible/>} />
                 <Route path="subSpecialPage/childrenG" element={<Children/>} />
