@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import React from "react";
 import TabMenuLink from "../../component/subTabMenu/TabMenuLink";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes,Link} from "react-router-dom";
 import { RightSidePart } from '../../component/RightSidePart';
 // import { TopTitle } from '../../component/subTabMenu/TopPartSubTab';
 // import {Section3, Section4} from '../../component/SectionsBottomPage';
@@ -164,21 +164,6 @@ function  Special() {
                     </div> ,
       }
     ],
-    // container:[
-    //   {
-    //     mainTitle:"",
-    //     topTitle:"",
-    //     auther:"",
-    //     describe:"",
-    //     srcImg:"",
-    //     questoin:"",
-    //     answerQ:"",
-    //     iframe:"",
-    //     descIframe:"",
-    //     title1:"",
-    //     infoTitle1:"",
-    //   }
-    // ],
     // spaces:[
     //   {
     //     mainTitle:"",
@@ -198,7 +183,7 @@ function  Special() {
 
     const SubSpecialPage = () => {
 
-      function Accessible (props){
+      const Accessible = (props)=>{
 
       // +++++++++++++++++++++++++++++++++++++ Print Page ++++++++++++++++++++++++++++====
       
@@ -241,7 +226,6 @@ function  Special() {
     
       const Container = () => {
         const container = [
-          
             {
               h3:"Don't Skimp on Drainage",
               srcImg:"https://www.thespruce.com/thmb/bKSswjFrmvBjDx3weF-lAfrhE-0=/434x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ten-container-garden-tips-for-beginners-84785410-ac11e0349bb847f58e92eab7a1af7870.JPG",
@@ -321,9 +305,127 @@ function  Special() {
       }
     
       const Spaces = () => {
+        const mainStyle={
+          topTitle:[
+            {
+              padding:"15px",
+              textAlign:"center"
+            },
+            {
+              textAlign:"center"
+            }
+          ],
+          mainBox:{
+            border:"1px solid #eee",
+            borderRadius:"25px",
+            boxShadow:"5px 5px 8px #ddd",
+            // padding:"15px",
+            overflow:"hidden",
+            margin:"20px"
+          },
+          autherImg:{
+            width:"50px",
+            height:"50px",
+          },
+          moreInfo:{
+            hover:":hover{color:'red'}'"
+          },
+        }
+        const infoBox=[
+          {
+            srcLeftImg:"https://www.almanac.com/sites/default/files/styles/max_325x325/public/image_nodes/jardin-fleuriste-et-potager.jpg?itok=Nah47yM8",
+            altLeftImg:"kitchenGarden",
+            savedFromHref:"https://www.homesandgardens.com/",
+            saveFrom:"homesandgardens.com",
+            title:"How to Plan a Kitchen Garden (Potager)",
+            describe:"See how to layout a vegetable, herb, and fruit garden—either a traditional row garden or a casual potager garden that intermixes vegetables, fruits, flowers, and herbs. ",
+            infoMoreHref:"https://www.homesandgardens.com/advice/planning-a-kitchen-garden",
+            srcPersonImg:"https://i.pinimg.com/75x75_RS/71/74/18/7174181320c414eca1bddc8e5916f123.jpg",
+            altPerson:"ty",
+            nameperson:"Ty"
+          },
+          {
+            srcLeftImg:"https://cdn.vox-cdn.com/thumbor/yosc8xy6D_CbTwQpHs5z5sXsYQE=/0x0:3600x2400/920x613/filters:focal(1512x912:2088x1488):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71034184/natural_backyard_pond_iStock_1335093002.0.jpg",
+            altLeftImg:"backyard pond",
+            savedFromHref:"https://www.thisoldhouse.com/",
+            saveFrom:"thisoldhouse.com",
+            title:" Build the Perfect Backyard Pond",
+            describe:"Want to introduce an attractive new dimension to your landscape? Just add water. The experts at This Old House explain what it takes to create a handsome, thriving aquatic centerpiece for your backyard.",
+            infoMoreHref:"https://www.thisoldhouse.com/yards/21017991/everything-you-need-to-know-to-build-the-perfect-backyard-pond",
+            srcPersonImg:"https://cdn.vox-cdn.com/thumbor/p0LjJWCbpJILCNG4kQmDHF2Iajo=/0x0:2400x2400/250x188/filters:focal(888x475:1272x859):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71368637/Norm_2400px.0.png",
+            nameperson:"luli"
+          },
+          {
+            srcLeftImg:"https://joegardener.com/wp-content/uploads/2018/03/Featured-Image.jpg",
+            altLeftImg:"inspiring vegtable",
+            savedFromHref:"https://www.familyfoodgarden.com/inspiring-vegetable-garden-bed-designs-plans/?cuid=1941abafe1f5a6ff715f559c6020b404",
+            saveFrom:"familyfoodgarden.com",
+            title:"Inspiring Vegetable Garden Bed Designs & Plans | Family Food",
+            describe:"Vegetable Garden Bed Designs for your gardening inspiration! There are some great ways to grow food, check out these Vegetable Garden Bed Designs",
+            infoMoreHref:"https://joegardener.com/podcast/raised-bed-gardening-pt-1/",
+            srcPersonImg:"https://joegardener.com/wp-content/uploads/2018/03/Joe-on-Bed-708x466.jpg",
+            nameperson:"Joe Lamp"
+          },
+          {
+            srcLeftImg:"https://www.southernliving.com/thmb/E0WUCpwil5yByrQ5jvrJT76N7KY=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ga_d7a9dabaaf36a7c7_spcms_0-1-ae070f919ee64949a6b86dd5c769b135.jpg",
+            altLeftImg:"landscape idea",
+            savedFromHref:"https://www.southernliving.com/garden/10-best-yard-landscaping-ideas",
+            saveFrom:"southernliving.com",
+            title:"Creative Landscape Ideas with Big Impact",
+            describe:"Create a beautiful yard with these creative landscape ideas with big impact.",
+            infoMoreHref:"Create a beautiful yard with these creative landscape ideas with big impact.",
+            srcPersonImg:"https://www.southernliving.com/thmb/oJ_p3cUkKQMcyPrHwoolhrEf7b4=/2250x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ga_68d31b45d10dc419_spcms_0-1-821e09146d18424181c52625d43c7487.jpg",
+            nameperson:"Van Chaplin"
+          },
+          {
+            srcLeftImg:"https://www.gardeners.com/globalassets/articles/gardening/hero_thumbnail/8565-raised-garden-beds.jpg?$staticlink$",
+            altLeftImg:"raising vagetable bed",
+            savedFromHref:"https://www.gardeners.com/how-to/raised-bed-basics/8565.html",
+            saveFrom:"gardeners.com",
+            title:"Raised Vegetable Garden Ideas | Family Food Garden",
+            describe:"Beautiful vegetable garden ideas so you can create a stunning backyard. Productive vegetable garden beds and landscape garden ideas",
+            infoMoreHref:"https://www.gardeners.com/how-to/raised-bed-basics/8565.html",
+            srcPersonImg:"https://www.epicgardening.com/wp-content/uploads/2017/08/Countertop-Raised-Beds.jpg",
+            nameperson:"Kris May"
+          },
+        ]
+        
           return(
               <>
-                  <h1>Spaces page</h1>
+                  {/* <h1>Spaces page</h1> */}
+                  <h1 style={mainStyle.topTitle[0]} >Garden Design</h1>
+                  <p style={mainStyle.topTitle[1]}>Discover Pinterest’s 5 best ideas and inspiration for Garden Design. Get inspired and try out new things.</p>
+
+                  {infoBox.map((item,inbox)=>{
+                    return(
+                      <>
+                        <div className="">
+                          <div style={mainStyle.mainBox} className="row">
+                            <div className=" p-0 col-4">
+                              <img className="w-100 h-100" src={item.srcLeftImg} alt={item.altLeftImg} />
+                            </div>
+                            <div className="col-8 p-4 h5 mb-4">
+                              <p className="mt-5 ">Saved from <a className="text-decoration-none h6" href={item.savedFromHref} target="_blank" >{item.saveFrom}</a> </p>
+                              <h2>{item.title}</h2>
+                              <p>{item.describe}</p>
+                              <p>
+                                <a className="text-decoration-none h6" href={item.infoMoreHref} target="_blank">More information...</a>
+                              </p>
+                              <div className="d-flex ">
+                                <div className="rounded-circle" style={mainStyle.autherImg} >
+                                  <img className="w-100 h-100 rounded-circle" src={item.srcPersonImg} alt={item.altPerson} />
+                                </div>
+                                <div className="align-self-center px-2">{item.nameperson} saved to GARDEN</div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    )
+                  })}
+
+
               </>
           )
       }
