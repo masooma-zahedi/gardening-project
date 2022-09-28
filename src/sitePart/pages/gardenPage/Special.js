@@ -164,21 +164,6 @@ function  Special() {
                     </div> ,
       }
     ],
-    // spaces:[
-    //   {
-    //     mainTitle:"",
-    //     topTitle:"",
-    //     auther:"",
-    //     describe:"",
-    //     srcImg:"",
-    //     questoin:"",
-    //     answerQ:"",
-    //     iframe:"",
-    //     descIframe:"",
-    //     title1:"",
-    //     infoTitle1:"",
-    //   }
-    // ]
   }
 
     const SubSpecialPage = () => {
@@ -268,7 +253,7 @@ function  Special() {
           return(
               <>
                   <h1>5 Container Garden Tips for Beginners</h1>
-                  <div ><img src="https://www.thespruce.com/thmb/8bkrcDtL-nU9Ysk6wI7dWhj0oaQ=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ten-container-garden-tips-for-beginners-84785408-5f37a7f9535344d894f6991416e14d68.JPG" alt="container flower" /></div>
+                  <div className="container" ><img className="w-100" src="https://www.thespruce.com/thmb/8bkrcDtL-nU9Ysk6wI7dWhj0oaQ=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ten-container-garden-tips-for-beginners-84785408-5f37a7f9535344d894f6991416e14d68.JPG" alt="container flower" /></div>
                   <div className="h5 m-5" >
                     <p className="inline-block">Even if you don't have a yard available to you, it's still possible to enjoy container gardening. Once you get the hang of container gardening you might find yourself growing more and more pots each year. But keeping plants in containers alive and thriving doesn't require the same care processes as raising plants that are growing in the ground. Here are some of our best tips for successful container gardens.</p>
                     <ol>
