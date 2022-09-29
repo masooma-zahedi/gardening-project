@@ -20,7 +20,7 @@ function GeneralHousep() {
           {
             title:
               "My Houseplant Stopped Growing – Help, My Indoor Plant Isn’t Growing Anymore ",
-            linkTo: "",
+            linkTo: "subPageHousePlant/generalPageHouse/stopGrowing",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/04/houseplant-400x300.jpg",
             alt: "Stopped Growing ",
             author: "Mary H. Dyer, Credentialed Garden Writer",
@@ -32,7 +32,7 @@ function GeneralHousep() {
             id: nanoid(6),
             title:
               "Patches Of Brown Leaves On Trees – Fall Color, Cicada Damage Or Something Else?",
-            linkTo: "",
+            linkTo: "subPageHousePlant/generalPageHouse/patchesOfBrown",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/12/calla-lily-indoors-400x533.jpg",
             alt: "Indoor Calla Lilies",
             author:
@@ -43,7 +43,7 @@ function GeneralHousep() {
             id: nanoid(6),
             title:
               "Different Dieffenbachia Varieties – Different Types Of Dieffenbachia",
-            linkTo: "",
+            linkTo: "subPageHousePlant/generalPageHouse/dieffenbachia",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/dieffenbachia-400x533.jpg",
             alt: "Dieffenbachia Varieties",
             author: "Mary H. Dyer, Credentialed Garden Writer",
@@ -53,7 +53,7 @@ function GeneralHousep() {
             id: nanoid(6),
             title:
               "Citronella As A Houseplant – Can You Keep Mosquito Plant Citronella Indoors",
-            linkTo: "",
+            linkTo: "subPageHousePlant/generalPageHouse/citronella",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/12/citronellageranium-400x533.jpg",
             alt: "Citronella",
             author:
@@ -64,7 +64,7 @@ function GeneralHousep() {
           {
             id: nanoid(6),
             title: "Houseplant Placement – Houseplants And Where To Put Them",
-            linkTo: "",
+            linkTo: "subPageHousePlant/generalPageHouse/placement",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/potted-plant-placement-400x515.jpg",
             alt: "Flowers Toxic To Bees",
             author: "Mary H. Dyer, Credentialed Garden Writer",

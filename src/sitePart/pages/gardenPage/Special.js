@@ -3,8 +3,6 @@ import React from "react";
 import TabMenuLink from "../../component/subTabMenu/TabMenuLink";
 import { Route, Routes,Link} from "react-router-dom";
 import { RightSidePart } from '../../component/RightSidePart';
-// import { TopTitle } from '../../component/subTabMenu/TopPartSubTab';
-// import {Section3, Section4} from '../../component/SectionsBottomPage';
 import MainContent from '../../component/MainContent';
 import Carousel from 'react-bootstrap/Carousel';
 

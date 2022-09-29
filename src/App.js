@@ -17,8 +17,12 @@ import Edible from "./sitePart/pages/gardenPage/Edible";
 import Howto from "./sitePart/pages/gardenPage/Howto";
 import Ornamental from "./sitePart/pages/gardenPage/Ornamental";
 import Special from "./sitePart/pages/gardenPage/Special";
-import SpecificHousep from "./sitePart/pages/houseplantPage/SpecificHousep";
-import GeneralHousep from "./sitePart/pages/houseplantPage/GeneralHousep";
+import SpecificHousep from "./sitePart/pages/housePlantPage/SpecificHousep";
+import GeneralHousep from "./sitePart/pages/housePlantPage/GeneralHousep";
+// working on it
+import GeneralPageHouse from "./sitePart/pages/housePlantPage/subPageHousePlant/GeneralPageHouse"
+import SpecificPageHouse from "./sitePart/pages/housePlantPage/subPageHousePlant/SpecificPageHouse"
+// ///////////
 import GeneralLawn from "./sitePart/pages/lawnCarePage/GeneralLawn";
 import GrassesLawn from "./sitePart/pages/lawnCarePage/GrassesLawn";
 import SubstituteLawn from "./sitePart/pages/lawnCarePage/SubstituteLawn";
@@ -79,11 +83,25 @@ function App() {
 
 
 
+
+
+
+
           {/* Houseplant Tab */}
-          <Route path="/houseplant" element={<HousePlant />} />
-          <Route path="/houseplant/specific" element={<SpecificHousep />} />
-          <Route path="/houseplant/general" element={<GeneralHousep />} />
+          <Route path="/housePlant" element={<HousePlant />} />
+          <Route path="/housePlant/specific" element={<SpecificHousep />} />
+          <Route path="/housePlant/specific/subPageHousePlant/specificPageHouse/*" element={<SpecificPageHouse />} />
+
+          <Route path="/housePlant/general" element={<GeneralHousep />} />
+          <Route path="/housePlant/general/subPageHousePlant/generalPageHouse/*" element={<GeneralPageHouse />} />
  
+
+
+
+
+
+
+
           {/* Problems Tab */}
           {/* ///////////////////////////// I am working/////////////////////////// */}
           <Route path="/problems" exact element={<Problems />} />
