@@ -353,8 +353,7 @@ const innerImgIframePrint = () =>{
         <>
             <div className="container" >
                 <div className="mt-5">
-                <TopTitle dataTop={appleTree} addTitle={addTitle()}/>
-
+                    <TopTitle dataTop={appleTree} addTitle={addTitle()}/>
                 </div>
                 <div className="subinfo mb-5 row">
                     {/* start main for apple tree */}
