@@ -4,7 +4,7 @@ import { RightSidePart } from "../../../component/RightSidePart";
 import { TopTitle } from "../../../component/subTabMenu/TopPartSubTab";
 
 const GeneralPageHouse = ()=>{
-    const StopGrowing = ()=>{
+    const MyTitleTop=({newTitle})=>{
         const stopGrowing = {
             topInfo:[
                 {
@@ -15,7 +15,6 @@ const GeneralPageHouse = ()=>{
                 },
             ]
         }
-
         const addTitle = ()=>{
             return(
             <>
@@ -23,17 +22,28 @@ const GeneralPageHouse = ()=>{
               &nbsp;›
             </span>
             <span style={{ color: "rgb(87 161 195)" }}>
-                &nbsp;Stop Growing
+                &nbsp;{newTitle}
             </span>
           </>
           )
-          }
+        }
+        return(
+            <>
+                <div className="mt-5">
+                    <TopTitle dataTop={stopGrowing} addTitle={addTitle()}/>
+                </div>
+            </>
+        )
+
     
+}
+
+    const StopGrowing = ()=>{
         return(
             <>
                 <div className="container ">
                     <div className="mt-5">
-                        <TopTitle dataTop={stopGrowing} addTitle={addTitle()}/>
+                        <MyTitleTop newTitle={"Stop Growing"} />
                     </div>
                     <div className="row  ">
                         <div className="col-9">
@@ -127,6 +137,9 @@ const GeneralPageHouse = ()=>{
         return(
             <>
                 <div className="container border border-success">
+                    <div className="mt-5">
+                        <MyTitleTop newTitle={"PatchesOfBrown"} />
+                    </div>
                     <div className="row  border border-danger">
                         <div className="col-9">dged</div>
                         <div className="col-3">
@@ -139,10 +152,14 @@ const GeneralPageHouse = ()=>{
         )
     }
 
+// /////////////////////////
     const Dieffenbachia = ()=>{
         return(
             <>
                 <div className="container border border-success">
+                    <div className="mt-5">
+                        <MyTitleTop newTitle={"Different Dieffenbachia"} />
+                    </div>
                     <div className="row  border border-danger">
                         <div className="col-9">dged</div>
                         <div className="col-3">
@@ -154,10 +171,14 @@ const GeneralPageHouse = ()=>{
             </>
         )
     }
+    // //////////////////////////////////
     const Citronella  = ()=>{
         return(
             <>
                 <div className="container border border-success">
+                    <div className="mt-5">
+                        <MyTitleTop newTitle={"Citronella"} />
+                    </div>
                     <div className="row  border border-danger">
                         <div className="col-9">dged</div>
                         <div className="col-3">
@@ -173,6 +194,9 @@ const GeneralPageHouse = ()=>{
         return(
             <>
                 <div className="container border border-success">
+                    <div className="mt-5">
+                        <MyTitleTop newTitle={"placement"} />
+                    </div>
                     <div className="row  border border-danger">
                         <div className="col-9">dged</div>
                         <div className="col-3">
