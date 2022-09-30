@@ -37,7 +37,7 @@ const GeneralPageHouse = ()=>{
 
     
 }
-
+// /////////////////////////////////////////
     const StopGrowing = ()=>{
         return(
             <>
@@ -132,13 +132,13 @@ const GeneralPageHouse = ()=>{
             </>
         )
     }
-
+// ///////////////////////////////////////////
     const PatchesOfBrown = ()=>{
         return(
             <>
                 <div className="container border border-success">
                     <div className="mt-5">
-                        <MyTitleTop newTitle={"PatchesOfBrown"} />
+                        <MyTitleTop newTitle={"Patches Of Brown"} />
                     </div>
                     <div className="row  border border-danger">
                         <div className="col-9">dged</div>
@@ -152,8 +152,20 @@ const GeneralPageHouse = ()=>{
         )
     }
 
-// /////////////////////////
+////////////////////////////////////////////////////////
     const Dieffenbachia = ()=>{
+        const typeDieffen=[
+            {
+                nameDieffen:" Dieffenbachia Honeydew",
+            },
+            {
+                nameDieffen:"Dieffenbachia Maculata ‘Tropical Tiki’",
+            },
+            {
+                nameDieffen:"Dieffenbachia Seguin",
+            },
+
+        ]
         return(
             <>
                 <div className="container border border-success">
@@ -161,7 +173,55 @@ const GeneralPageHouse = ()=>{
                         <MyTitleTop newTitle={"Different Dieffenbachia"} />
                     </div>
                     <div className="row  border border-danger">
-                        <div className="col-9">dged</div>
+
+                        <div className="col-9">
+                            <h1>15 Types of Dieffenbachia You will Love to Grow</h1>
+                            <div>
+                                <span>by Salman Khan Gurung</span>
+                                <span>August 5, 2022</span>
+                                <span>10 minute read</span>
+                            </div>
+                            <div><img src="https://plantscraze.com/wp-content/uploads/2022/08/Dieffenbachia-800x500.webp" alt="dieffenbachia" /></div>
+                            <p>Growing beautiful-looking Dieffenbachia plants may be a great idea because these low-maintenance plants will thrive in almost any condition.Moreover, their large, colorful leaves will effectively cleanse indoor air of toxins, improve air quality, and add to the decor.</p>
+                            <p><b>In general, Dieffenbachia plants display over 50 species boasting shades of cream, yellow, green, and white, with varying sizes (3 to 6 feet) and unique-looking spadix flowers under ideal conditions</b></p>
+                            <p> Dieffenbachia is said to ward off evil spirits and improve your health in Brazilian folklore. However, they will falter when incorrectly watered or lose color without proper lighting.</p>
+
+                            <div>
+                                <h3>15 Types of Dieffenbachia with Pictures and Names</h3>
+                                <ol>
+                                    {typeDieffen.map((item,index)=>{
+                                        return(
+                                            <>
+                                                <li >
+                                                    <a href="">
+                                                        {item.nameDieffen}
+                                                    </a>
+                                                </li>
+                                            </>
+                                        )
+                                    })}
+                                </ol>
+                            </div>
+                            {/* work and design this part */}
+                            <div>
+                                <ol>
+                                    <li>
+                                        <h3>Diffenbachia Honeydew</h3>
+                                        <p>Dieffenbachia Honeydew is a unique and colorful species hailing from Mexico and is known to be hardy and drought tolerant.</p>
+                                        <p><b>It boasts broad leaves that display lines of different hues of green and white and is easily recognizable for its golden-yellow leaves with a green border.</b></p>
+                                        <p>A mature plant will reach over 3 feet tall and boast leaves measuring around 12  to 16 inches in length and 2 to 3 inches wide.</p>
+                                        <div><img src="https://plantscraze.com/wp-content/uploads/2022/08/Dieffenbachia-honeydew-640x853.jpg" alt="Honeydew" /></div>
+                                        <p>The thick leaves easily prevent transpiration, making them perfect houseplants for warmer regions such as USDA 10 or above.It also makes one of the most commonly grown Dieffenbachia plants, as you can find them at reasonable prices in the nearby nurseries.</p>
+                                        <p>Consider this Dieffenbachia variety to decorate your living room or office if you fancy a table plant. It does well with moderate watering and a few hours of lighting.</p>
+                                        <div className="bg-secondary">
+                                            <h4>Note: Dieffenbachia Honeydew is not known to produce blossoms.</h4>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>        
+
+                        </div>
+
                         <div className="col-3">
                             <RightSidePart />
                         </div>
@@ -203,7 +263,6 @@ const GeneralPageHouse = ()=>{
                             <RightSidePart />
                         </div>
                     </div>
-
                 </div>
             </>
         )
@@ -211,7 +270,6 @@ const GeneralPageHouse = ()=>{
 
     return(
         <>
-            {/* <h1>this is General page</h1> */}
             <Routes>
                 <Route path="stopGrowing" element={<StopGrowing/>} />
                 <Route path="patchesOfBrown" element={<PatchesOfBrown/>} />
