@@ -8,17 +8,18 @@ Link{
 /* nav bottom */
 .navb{
     /* border: 2px solid red; */
+
 }
 .navul{
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; 
 }
 .liclass{
     float: left;
-    /* border: 3px solid rgb(61, 74, 146); */
-    z-index: 10;
+    /* z-index: 10; */
+    /* position: relative; */
     
 }
 .topmenu{
@@ -55,4 +56,15 @@ Link{
 }
 .liclass:hover .subdiv {
     display:block;
+}
+@media (max-width: 767.98px) {
+    .liclass{
+        position: relative;
+    }
+    .liclass:hover .subdiv {
+        position: absolute;
+        left: 22%;
+        top: 10px; 
+        z-index: 5;
+        }
 }

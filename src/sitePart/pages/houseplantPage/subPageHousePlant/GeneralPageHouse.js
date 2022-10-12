@@ -278,7 +278,7 @@ const GeneralPageHouse = ()=>{
                     </div>
                     <div className="row ">
 
-                        <div className="col-9" style={{fontSize:"24px"}}>
+                        <div className="col-12 col-md-9" style={{fontSize:"24px"}}>
                             <div className="py-4 px-3">
                                 <h1 className="pt-4">10 Types of Dieffenbachia You will Love to Grow</h1>
                                 <div style={{fontSize:"15px"}}>
@@ -286,7 +286,7 @@ const GeneralPageHouse = ()=>{
                                     <span className="text-secondary" > August 5, 2022 / </span>
                                     <span className="text-secondary " >10 minute read</span>
                                 </div>
-                                <div className="text-center py-4"><img className="w-100" src="https://plantscraze.com/wp-content/uploads/2022/08/Dieffenbachia-800x500.webp" alt="dieffenbachia" /></div>
+                                <div className="text-center py-4"><img className="img-fluid" src="https://plantscraze.com/wp-content/uploads/2022/08/Dieffenbachia-800x500.webp" alt="dieffenbachia" /></div>
                                 <p>Growing beautiful-looking Dieffenbachia plants may be a great idea because these low-maintenance plants will thrive in almost any condition.Moreover, their large, colorful leaves will effectively cleanse indoor air of toxins, improve air quality, and add to the decor.</p>
                                 <p><b>In general, Dieffenbachia plants display over 50 species boasting shades of cream, yellow, green, and white, with varying sizes (3 to 6 feet) and unique-looking spadix flowers under ideal conditions</b></p>
                                 <p> Dieffenbachia is said to ward off evil spirits and improve your health in Brazilian folklore. However, they will falter when incorrectly watered or lose color without proper lighting.</p>
@@ -321,7 +321,7 @@ const GeneralPageHouse = ()=>{
                                                         <p>{item.p1} </p>
                                                         <p><b>{item.p2}</b></p>
                                                         <p>{item.p3}</p>
-                                                        <div className="text-center py-4" style={{height:"600px"}} ><img className="h-100" src={item.srcDieffen} alt={item.altImg} /></div>
+                                                        <div className="text-center py-4" style={{height:"600px"}} ><img className="h-100 img-fluid" src={item.srcDieffen} alt={item.altImg} /></div>
                                                         <p>{item.p4}</p>
                                                         <p>{item.p5}</p>
                                                         <div className="bg-light p-5 ">
@@ -339,7 +339,7 @@ const GeneralPageHouse = ()=>{
                             <BackToTopButton/>
                         </div>
 
-                        <div className="col-3">
+                        <div className="col-12 col-md-3">
                             <RightSidePart />
                         </div>
                     </div>

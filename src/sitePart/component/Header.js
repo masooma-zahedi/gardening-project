@@ -1,4 +1,5 @@
 import React ,{useState}from "react";
+import { Row } from "react-bootstrap";
 import {Link} from "react-router-dom";
 import headercss from "../moduleCss/Header.module.css";
 
@@ -7,10 +8,13 @@ import headercss from "../moduleCss/Header.module.css";
 const NavTop = ()=>{
   return (
     <div
-      className="d-flex justify-content-between align-self-stretch "
+      className=" row justify-content-between align-self-stretch"
     >
+    {/* <div
+      className="d-flex justify-content-between align-self-stretch row"
+    > */}
       {/* for brand */}
-      <div >
+      <div className="col-12 col-sm-4">
         <img
           // itemprop="logo"
           src="https://www.gardeningknowhow.com/wp-content/uploads/2018/03/minLogo.png"
@@ -20,7 +24,8 @@ const NavTop = ()=>{
         ></img>
       </div>
       {/* for top nav-right */}
-      <div className=" d-flex align-items-center ">
+      {/* <div className=" d-flex align-items-center"> */}
+      <div className="col-12 col-sm-8 pt-4 pl-sm-5 pt-sm-1">
         <div className="d-flex ">
           <div className="d-flex justify-content-center ">
             <div className="d-flex  justify-content-center px-3">
@@ -81,13 +86,13 @@ const Navbottom =()=>{
   
   return (
     <div className={headercss.navb}>
-      <ul className={headercss.navul}>
-        <li className={headercss.liclass}>
+      <ul className={`${headercss.navul }  row`}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`} >
           <Link to="/" className={headercss.topmenu}>
             Home
           </Link>
         </li>
-        <li className={headercss.liclass}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="gardens" className={headercss.topmenu}>
             Gardens
           </Link>
@@ -106,7 +111,7 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        <li className={headercss.liclass}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="houseplant" className={headercss.topmenu}>
             Houseplant
           </Link>
@@ -120,7 +125,7 @@ const Navbottom =()=>{
           </div>
         </li>
 
-        <li className={headercss.liclass}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="problems" className={headercss.topmenu}>
             Problems
           </Link>
@@ -139,9 +144,9 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        <li className={headercss.liclass}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="lawnCare" className={headercss.topmenu}>
-            Lawn Care
+            LawnCare
           </Link>
           <div className={headercss.subdiv}>
             <Link to="lawnCare/generlLawn" className={headercss.submenue}>
@@ -155,7 +160,7 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        {/* <li className={headercss.liclass}>
+        {/* <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="composting" className={headercss.topmenu}>
             Composting
           </Link>
@@ -174,7 +179,7 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li> */}
-        <li className={headercss.liclass}>
+        <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="/Gardening" className={headercss.topmenu}>
             Gardening
           </Link>
@@ -209,8 +214,10 @@ export default function Header() {
     <header className={headercss.header}>
       <div className="container py-4">
         <nav className="d-flex flex-column align-items-end">
-          <NavTop/>
-          <Navbottom/>
+            <NavTop/>
+          <div className="">
+            <Navbottom/>
+          </div>
         </nav>
       </div>
     </header>
