@@ -67,7 +67,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
         <h4 className="text-primary border border-2 border-secondary border-left-0 border-end-0 border-start-0 my-3 py-3 mt-5 text-center">
           You might also like
         </h4>
-        {rightSidePages.youMightAlsoLike.map((data) => {
+        {rightSidePages.youMightAlsoLike.map((data,index) => {
           return (
             <>
               <div
@@ -110,7 +110,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
         <h4 className="text-primary border border-2 border-secondary border-left-0 border-end-0 border-start-0 my-3 py-3 mt-5 text-center">
           On The Blog
         </h4>
-        {rightSidePages.OnTheBlog.map((data) => {
+        {rightSidePages.OnTheBlog.map((data,index) => {
           return (
             <>
               <div
