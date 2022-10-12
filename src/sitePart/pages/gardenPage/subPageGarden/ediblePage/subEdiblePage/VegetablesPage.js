@@ -113,7 +113,7 @@ function Carrots (props){
                     {/* start main for apple tree */}
                     <MainContent infoItems={infoItems.carrots[0]} innerImgIframePrint={innerImgIframePrint} />
                     {/* end of main for apple tree */}
-                    <div className="col-3 border"><RightSidePart /></div>
+                    <div className="col-12 col-md-3"><RightSidePart /></div>
                 </div>
                 <div className='pt-5'>
                     <Section3 />

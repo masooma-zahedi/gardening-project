@@ -7,7 +7,7 @@ function BottomPartSubTab(props) {
   return (
     <>
       <div className="subinfo row">
-        <div className="col-9">
+        <div className="col-12 col-md-9">
           <div className={`${pages.getStart}`}>
             <div>
               <span>GET STARTED</span>
@@ -91,7 +91,7 @@ function BottomPartSubTab(props) {
             );
           })}
         </div>
-        <div className="col-3">
+        <div className="col-12 col-md-3">
           <RightSidePart />
         </div>
       </div>

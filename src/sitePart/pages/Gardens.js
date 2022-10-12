@@ -43,9 +43,6 @@ function Gardens() {
   return (
     <>
       <TabMenu data={gardens} />
-      {/* <Routes>
-        <Route path="/edible" element={<Edible/>}/>
-      </Routes> */}
 
     </>
   );
