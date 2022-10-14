@@ -44,15 +44,15 @@ function TabMenu(props) {
           information about {props.data.topInfo[0].title}{" "}
         </p>
         <div className="row">
-          <div className="col-2">
-            <img
+          <div className="col-12 col-sm-2">
+            <img className='w-sm-100 '
               src={props.data.topInfo[0].src}
               alt={props.data.topInfo[0].title}
             />
           </div>
           <p
-            className="col-9 px-0 position-relative"
-            style={{ fontSize: "1.2rem", left: "-40px" }}
+            className="col-9 px-sm-5 "
+            style={{ fontSize: "1.2rem" }}
           >
             {props.data.topInfo[0].info}
           </p>

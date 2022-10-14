@@ -56,7 +56,7 @@ function TabMenuLink(props) {
         </div>
         {/* ---- */}
         <div className="subinfo  row">
-          <div className="col-9">
+          <div className="col-12 col-md-9">
             <p style={{ fontSize: "1.2rem", marginTop: "15px" }}>
               Select a category
             </p>
@@ -79,7 +79,7 @@ function TabMenuLink(props) {
             </div>
             <div>{props.subdescribePage}</div>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-md-3">
             <RightSidePart />
           </div>
         </div>
