@@ -31,9 +31,10 @@ const NavTop = ()=>{
             <div className="d-flex  justify-content-center px-3">
               <div className="input-group input-group-lg h-25">
                 <input
+                  style={{fontSize:"15px"}}
                   type="text"
-                  className="form-control form-control-lg rounded h-25"
-                  placeholder="ENHANNCED BY Google"
+                  className="form-control form-control-lg rounded h-25 text-center"
+                  placeholder="Search By Google"
                   aria-label="Type Keywords"
                   aria-describedby="basic-addon2"
                 />
