@@ -11,16 +11,16 @@ export default function Footer() {
           className="row no-gutters mx-3"
           style={{ borderTop: "2px solid rgb(85 124 33)" }}
         >
-          <div className="col-12 w-100 p-5 my-2 border border-white border-2">
+          <div className="col-12 w-100 p-5 my-2 border border-white border-2"  >
             <img
               src="https://www.gardeningknowhow.com/wp-content/uploads/2018/03/minLogo.png"
               alt=""
-              className="w-100"
+              className="w-100 "
             />
           </div>
           <Link
             to="https://blog.gardeningknowhow.com/"
-            className="col-6 p-0 text-center  text-decoration-none text-white"
+            className="col-6 p-0 text-center d-none d-lg-block  text-decoration-none text-white"
           >
             <div
               className="border border-2 border-white p-4 me-1 h5 position-relative"
@@ -32,7 +32,7 @@ export default function Footer() {
           </Link>
           <Link
             to="https://questions.gardeningknowhow.com/"
-            className="col-6 p-0 text-center text-decoration-none text-white"
+            className="col-6 p-0 text-center text-decoration-none text-white d-none d-lg-block"
           >
             <div
               className="p-4 ms-1 h5 border border-2 border-white position-relative"
@@ -177,14 +177,14 @@ export default function Footer() {
 
   return (
     <footer className={`${FooterCss.footerstyle}`}>
-      <div className="container d-flex flex-wrap pt-5">
-        <div className="" style={{ width: "33%" }}>
+      <div className="container row pt-5">
+        <div className="col-12  col-lg-4" >
           <LeftSide />
         </div>
-        <div className="" style={{ width: "33%" }}>
+        <div className="col-12 col-sm-6 col-lg-4" >
           <MiddleSide />
         </div>
-        <div className="" style={{ width: "33%" }}>
+        <div className="col-12 col-sm-6 col-lg-4" >
           <RightSide/>
         </div>
         <p className={`ps-3 mt-4 ${FooterCss.copyright}`}> &copy; 2022 Gardening Know How</p>

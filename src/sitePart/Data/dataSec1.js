@@ -12,7 +12,7 @@ export const MainSec = {
     },
     {
       id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/06/sunflower-and-bee-400x300.jpg",
+      src: "https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Magazines/pollen-bumble-bee-Darlyne-Murawski-570x375.ashx",
       name: "sunFlower",
       to: "https://www.gardeningknowhow.com/featuring/pollinators-in-your-garden",
       desc: "Pollinators in Your Garden",

@@ -42,15 +42,15 @@ function TabMenuLink(props) {
           information about {props.data.topInfo[0].title2}{" "}
         </p>
         <div className="row">
-          <div className="col-2 pe-0">
+          <div className="col-12 col-sm-2 pe-0 ">
             <img
-            className=''
+            className='w-100'
             style={{width:"75%"}}
               src={props.data.topInfo[0].src}
               alt={props.data.topInfo[0].title2}
             />
           </div>
-          <p className="col-9 px-0 position-relative" style={{ fontSize: "1.2rem", left:"-40px" }}>
+          <p className="col-12 col-sm-9 ps-3 " style={{ fontSize: "1.2rem", left:"-40px" }}>
             {props.data.topInfo[0].info}
           </p>
         </div>
