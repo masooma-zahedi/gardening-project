@@ -53,7 +53,7 @@ const Section1 = ()=>{
                   to={data.to}
                   className={`text-decoration-none ${MainCss.desLeft}  h6`}
                 >
-                  <div style={{ height: 100 }} className="">
+                  <div style={{ height: 150 }} className="">
                     <img
                       src={data.src}
                       alt={data.name}
@@ -125,29 +125,28 @@ const Section2 =()=>{
       {/* 888888 */}
       {MainSec.mainSec2.map((dataSec2)=>{
         return (
-          <div className="d-flex flex-row  mb-3" key={dataSec2.id}>
-            <div className="" style={{ width: 350}}>
+          <div className="row mb-3" key={dataSec2.id}>
+            <div className="col-3" style={{maxHeight:"200px"}} >
               <img
                 src={dataSec2.src}
                 alt={dataSec2.title}
                 className="w-100 h-100 ms-2"
               />
             </div>
-            <div
-              className=" ms-4 p-2 "
+            <div className="col-9 "
               style={{ backgroundColor: "rgb(251 250 249)" }}
             >
               {/* there is something wwrong in "to= " */}
-              <Link to="" className="text-decoration-none   ">
+              <Link to={dataSec2.linkTitle} className="text-decoration-none   ">
                 <span className="text-danger bg-warning p-1 lh-base h6 text-uppercase">
                   {dataSec2.title}
                 </span>
-                <p className="fs-4" style={{ color: "rgb(58 109 37)" }}>
+                <p className=" fs-4" style={{ color: "rgb(58 109 37)" }}>
                   {dataSec2.article}
                 </p>
               </Link>
               <p className="text-danger">{dataSec2.auther}</p>
-              <p>{dataSec2.desc}</p>
+              <p className="d-none d-lg-block">{dataSec2.desc}</p>
             </div>
           </div>
         );
