@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom"
 import { RightSidePart } from '../RightSidePart';
 import pages from "../../moduleCss/pages.module.css";
+import {Section3} from '../../component/SectionsBottomPage'
 
 
 function TabMenuLink(props) {
@@ -83,6 +84,9 @@ function TabMenuLink(props) {
             <RightSidePart />
           </div>
         </div>
+        <div className='pt-5'>
+                    <Section3  />
+                </div>
       </div>
     </>
   );

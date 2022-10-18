@@ -8,7 +8,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 
-
 function  Special() {
 
   const Specialdata = {
@@ -420,7 +419,6 @@ function  Special() {
                 <Route path="subSpecialPage/childrenG" element={<Children/>} />
                 <Route path="subSpecialPage/container" element={<Container/>} />
                 <Route path="subSpecialPage/spaces" element={<Spaces/>} />
-                
             </Routes>
             
         </>

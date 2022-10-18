@@ -57,27 +57,24 @@ export default function Footer() {
           <div className={`col-6 ${FooterCss.middleside}`}>
             <ul className="list-unstyled">
               <li>
-                <Link to="" className="">
+                <Link to="/" className="">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="">Gardens</Link>
+                <Link to="/gardens">Gardens</Link>
               </li>
               <li>
-                <Link to="">HousePlants</Link>
+                <Link to="/houseplant">HousePlants</Link>
               </li>
               <li>
-                <Link to="">Problems</Link>
+                <Link to="/problems">Problems</Link>
               </li>
               <li>
-                <Link to="">Lawn Care</Link>
+                <Link to="/lawnCare">Lawn Care</Link>
               </li>
               <li>
-                <Link to="">Composing</Link>
-              </li>
-              <li>
-                <Link to="">Gardening Help</Link>
+                <Link to="/Gardening">Gardening Help</Link>
               </li>
             </ul>
           </div>
@@ -177,17 +174,19 @@ export default function Footer() {
 
   return (
     <footer className={`${FooterCss.footerstyle}`}>
-      <div className="container row pt-5">
-        <div className="col-12  col-lg-4" >
-          <LeftSide />
+      <div className="container pt-5">
+        <div className="row">
+          <div className="col-12  col-lg-4" >
+            <LeftSide />
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4" >
+            <MiddleSide />
+          </div>
+          <div className="col-12 col-sm-6 col-lg-4" >
+            <RightSide/>
+          </div>
+          <p className={`ps-3 mt-4 ${FooterCss.copyright}`}> &copy; 2022 Gardening Know How</p>
         </div>
-        <div className="col-12 col-sm-6 col-lg-4" >
-          <MiddleSide />
-        </div>
-        <div className="col-12 col-sm-6 col-lg-4" >
-          <RightSide/>
-        </div>
-        <p className={`ps-3 mt-4 ${FooterCss.copyright}`}> &copy; 2022 Gardening Know How</p>
       </div>
     </footer>
   );

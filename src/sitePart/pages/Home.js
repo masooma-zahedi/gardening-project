@@ -169,7 +169,7 @@ const Sections = () =>{
     </>
   );
 }
-
+// 88888888888888888888888888888888888888888888 working on it888888888888888888888
 const Section3 = ()=>{
   return (
     <>
@@ -181,7 +181,7 @@ const Section3 = ()=>{
         {MainSec.mainSec3.map((dataSec3) => {
           return (
             <div key={dataSec3.id} className="col-12 col-sm-6 col-md-3 ">
-              <Link to="" className="text-decoration-none text-success ">
+              <Link to={dataSec3.linkDesc} className="text-decoration-none text-success ">
                 <div className={` ${MainCss.hihi} position-relative`}>
                   <img
                     src={dataSec3.src}

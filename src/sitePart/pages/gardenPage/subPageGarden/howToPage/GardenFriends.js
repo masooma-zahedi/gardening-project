@@ -37,6 +37,16 @@ const infoItems = {
             infoTitle1:"Annual and late season coreopsis are yet another wildflower which has proven to be among many growers’ favorite fall blooming pollinator plants. Each fall, bright yellow daisy-like flowers open atop wiry stems. Varieties of coreopsis, such as ‘Autumn Blush,’ continue to bloom from mid-summer until the first frost. Coreopsis is an excellent choice for flower beds with less than ideal growing conditions, such as poor soil fertility.Many pollinator garden ideas also include the planting of cut flowers. Available to gardeners in a wide selection of colors and flower forms, dahlias are quite attractive to bees. Though the plants begin blooming in the summer, flower production often reaches its peak as the temperatures begin to cool. These pollinator attracting plants are certain to offer growers an intense burst of color until the first frost.",
         }
     ],
+    // mainSec3:[
+    //     {
+    //         id: nanoid(6),
+    //         src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/09/se-shrubs-400x300.jpg",
+    //         title: "Shrubs",
+    //         desc: "Southeastern U.S. Shrubs – Choosing Shrubs For Southern Gardens",
+    //         // linkDesc:"/gardens/howto/subHowToPage/mainLifeStyle",
+    //         },
+    // ]
+    
 
 }
 
@@ -101,7 +111,7 @@ const innerImgIframePrint = () =>{
                     <div className="col-12 col-md-3"><RightSidePart /></div>
                 </div>
                 <div className='pt-5'>
-                    <Section3 />
+                    <Section3  />
                 </div>
             </div>
             <Section4/>

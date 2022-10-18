@@ -74,38 +74,36 @@ export const MainSec = {
       desc: "Even if you don't have a yard available to you, it's still possible to enjoy container gardening. Once you get the hang of container gardening you might find yourself growing more and more pots each year."
     },
   ],
+  // 888888888888888888888888888 working on it8888888888888
   mainSec3: [
     {
       id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/03/flower-seedlings-400x300.jpg",
-      title: "seeds",
-      desc: "How To Start Flower Seeds Indoors – Easy Flower Seeds To Grow Indoors",
-      linkDesc:
-        "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/start-flower-seeds-indoors.htm",
+      src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/10/Fall-pollinator-plants-400x300.jpg",
+      title: "Pollinators",
+      desc: "Fall Pollinator Garden: Help Pollinators With Late-Blooming Pollinator Plants",
+      linkDesc:"/gardens/howto/subHowToPage/gardenFriends",
     },
     {
       id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/03/pelleted-seeds-400x300.jpg",
-      title: "seeds",
-      desc: "Pelleted Seeds: What Are Pelleted Seeds And How To Use Them",
-      linkDesc:
-        "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/pelleted-seeds.htm",
+      src: "https://www.gardeningknowhow.com/wp-content/uploads/2011/03/cantaloupe-400x267.jpg",
+      title: "Cantaloupe",
+      desc: "The Right Time To Pick A Cantaloupe – How And When To Pick Cantaloupe",
+      linkDesc:"/gardens/edible/fruits/subEdiblePage/fruitsPage/cantaloupe",
     },
     {
       id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/02/direct-sowing-400x300.jpg",
-      title: "seeds",
-      desc: "Benefits Of Direct Seeding: Why And When You Should Direct Sow Seeds",
-      linkDesc:
-        "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/benefits-of-direct-sowing.htm",
+      src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/10/winter-crafts-400x300.jpg",
+      title: "Winter Crafts",
+      desc: "Kid’s Winter Crafts: Staying Busy With Winter Garden Crafts",
+      linkDesc:"/gardens/special/subSpecialPage/childrenG",
     },
+    // ////////////////////
     {
       id: nanoid(6),
-      src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/03/soil-blocks-400x300.jpg",
-      title: "seeds",
-      desc: "DIY Soil Blocker: How To Make Soil Blocks For Seed Starting",
-      linkDesc:
-        "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/how-to-make-soil-blocks.htm",
+      src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/03/root-beer-400x300.jpg",
+      title: "Root Beer",
+      desc: "Grow Your Own Homemade Root Beer",
+      linkDesc:"/gardens/howto/subHowToPage/projectsGardening",
     },
   ],
   mainSec4: {
