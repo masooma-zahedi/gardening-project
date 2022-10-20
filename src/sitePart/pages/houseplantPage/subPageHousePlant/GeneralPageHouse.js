@@ -3,7 +3,7 @@ import { Link, Route, Routes} from "react-router-dom";
 import { RightSidePart } from "../../../component/RightSidePart";
 import { TopTitle } from "../../../component/subTabMenu/TopPartSubTab";
 import { nanoid } from "nanoid";
-import BackToTopButton from "../../../component/BackToTopButton";
+import {BackToTopButton} from "../../../component/BackToTopButton";
 
 const GeneralPageHouse = ()=>{
     const MyTitleTop=({newTitle})=>{

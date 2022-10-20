@@ -8,7 +8,6 @@ const BackToTopButton = ()=>{
         window.addEventListener("scroll",()=>{
             if(window.scrollY > 100){
                 setBackToTopButton(true)
-                console.log(backToTopButton);
             } else{
                 setBackToTopButton(false)
             }
@@ -45,4 +44,11 @@ const BackToTopButton = ()=>{
     )
 }
 
-export default BackToTopButton;
+const ScrollUp = ()=>{
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+  }
+
+export {BackToTopButton, ScrollUp};

@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import { MainSec } from "../Data/dataSec1";
-import MainCss from '../moduleCss/Main.module.css'
+import MainCss from '../moduleCss/Main.module.css';
+import { ScrollUp } from "./BackToTopButton";
+
+// const scrollUp = ()=>{
+//   window.scrollTo({
+//       top:0,
+//       behavior:"smooth"
+//   })
+// }
 function Section3 (){
     return (
       <>
@@ -12,7 +20,7 @@ function Section3 (){
           {MainSec.mainSec3.map((dataSec3) => {
             return (
               <div key={dataSec3.id} className="col-12 col-sm-6 col-md-3">
-                <Link to={dataSec3.linkDesc} className="text-decoration-none text-success "  >
+                <Link to={dataSec3.linkDesc} onClick={ScrollUp} className="text-decoration-none text-success "  >
                   <div className={` ${MainCss.hihi} position-relative`} style={{cursor:"pointer"}}>
                     <img
                       src={dataSec3.src}
@@ -26,14 +34,10 @@ function Section3 (){
                     >
                       {dataSec3.title}
                     </div>
-                    {/* {
-                      console.log(document.getElementById("nini").parentElement.nodeName)
-                    } */}
                   </div>
                   <p className="m-0 fs-5 lh-sm">{dataSec3.desc}</p>
                 </Link>
               </div>
-              // </div>
             );
           })}
         </div>
@@ -74,7 +78,7 @@ function Section3 (){
                           className="list-group-item border-0 p-0"
                           key={dataLSec4.id}
                         >
-                          <Link to="" className="text-decoration-none d-flex ">
+                          <Link to="" onClick={ScrollUp} className="text-decoration-none d-flex ">
                             <div className="w-75 " style={{ maxWidth: "85px", cursor:"pointer" }}>
                               <img
                                 src={dataLSec4.src}
