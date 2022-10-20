@@ -39,7 +39,7 @@ const GeneralPageHouse = ()=>{
 
     
 }
-// /////////////////////////////////////////
+// //////////////////////////////// Stop Growing Page////////////////////////
     const StopGrowing = ()=>{
         return(
             <>
@@ -134,7 +134,14 @@ const GeneralPageHouse = ()=>{
             </>
         )
     }
-// ///////////////////////////////////////////
+// //////////////////////////////// Patches of Brown (calla lilies)//////////
+
+
+
+
+
+
+
     const PatchesOfBrown = ()=>{
         return(
             <>
@@ -143,8 +150,11 @@ const GeneralPageHouse = ()=>{
                         <MyTitleTop newTitle={"Patches Of Brown"} />
                     </div>
                     <div className="row  border border-danger">
-                        <div className="col-9">dged</div>
-                        <div className="col-3">
+                        {/* /////////////  working on it ////////////*/}
+                        <div className="col-12 col-md-9">
+                            <h1>I am going start this part</h1>
+                        </div>
+                        <div className="col-12 col-md-3">
                             <RightSidePart />
                         </div>
                     </div>
@@ -154,7 +164,14 @@ const GeneralPageHouse = ()=>{
         )
     }
 
-////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+/////////////////////////////////// Dieffenbachia Page /////////////////////////
     const Dieffenbachia = ()=>{
         const typeDieffen=[
             {

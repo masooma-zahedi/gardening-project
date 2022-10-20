@@ -81,7 +81,6 @@ import MainContent from '../../../../component/MainContent';
                     </div>
                     <TopTitle dataTop={lifestyle} addTitle={addTitle()}/>
                     <BottomPartSubTab dataBottom={lifestyle}  />
-                    <h1 id='benefitPlant'>hi benefit page</h1>
                 </div> 
             </>
         )

@@ -2,10 +2,7 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import BottomPartSubTab from '../../../../component/subTabMenu/BottomPartSubTab';
 import {TopTitle} from '../../../../component/subTabMenu/TopPartSubTab';
-// import SubFruitspages from './subEdiblePage/FruitsPage';
 function MainHerbs() {
-  
-
     const addTitle = ()=>{
       return(
       <>
@@ -31,8 +28,7 @@ function MainHerbs() {
           {
             getStarted: [
               {
-                title:
-                  "Arnica Plant Care: Learn How To Grow Arnica Herbs ",
+                title:"Arnica Plant Care: Learn How To Grow Arnica Herbs ",
                 linkTo: "subEdiblePage/herbsPage/arnica",
                 src: "https://www.gardeningknowhow.com/wp-content/uploads/2015/10/arnica-400x266.jpg",
                 alt: "Arnica Plant ",

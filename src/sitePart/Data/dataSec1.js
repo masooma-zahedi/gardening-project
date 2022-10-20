@@ -1,4 +1,6 @@
 import { nanoid } from "nanoid";
+import MainHerbs from "../pages/gardenPage/subPageGarden/ediblePage/Herbs";
+
 
 export const MainSec = {
   // section 1
@@ -74,7 +76,6 @@ export const MainSec = {
       desc: "Even if you don't have a yard available to you, it's still possible to enjoy container gardening. Once you get the hang of container gardening you might find yourself growing more and more pots each year."
     },
   ],
-  // 888888888888888888888888888 working on it8888888888888
   mainSec3: [
     {
       id: nanoid(6),
@@ -106,30 +107,29 @@ export const MainSec = {
       linkDesc:"/gardens/howto/subHowToPage/projectsGardening",
     },
   ],
+  // ////////////////////////////// working on it 
   mainSec4: {
     leftSec4: [
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/06/gardening-picture-id534227013-150x150.jpg",
-        title:
-          "A Beginner’s Guide To Gardening: How To Get Started With Gardening",
-        linkTitle:
-          "https://www.gardeningknowhow.com/garden-how-to/info/beginners-guide-to-gardening.htm",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2015/10/arnica-400x266.jpg",
+        title:"Arnica Plant Care: Learn How To Grow Arnica Herbs ",
+        linkTitle:"/gardens/edible/herbs",
       },
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2014/05/Composting-3-400x300.jpg",
-        title: "The Ultimate Guide To Composting For Beginners",
-        linkTitle:
-          "https://www.gardeningknowhow.com/composting/basics/ultimate-beginners-guide-composting.htm",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2022/04/Psychological-benefits-400x300.jpg",
+        title: "10 Psychological Benefits Of Plants And Gardening",
+        linkTitle:"/gardens/howTo/subHowToPage/mainLifeStyle",
       },
+      // ///////////
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/12/imgpsh_fullsize-12-400x251.jpg",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2019/07/rice-smut-400x263.jpg",
         title:
-          "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
+          "Rice Leaf Smut Info – How To Treat Leaf Smut Of Rice Crops",
         linkTitle:
-          "Apartment Gardening Guide – Information On Apartment Gardening For Beginners",
+          "/gardens/edible/grains",
       },
     ],
     midSect4: [

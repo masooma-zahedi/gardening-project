@@ -78,7 +78,7 @@ function Section3 (){
                           className="list-group-item border-0 p-0"
                           key={dataLSec4.id}
                         >
-                          <Link to="" onClick={ScrollUp} className="text-decoration-none d-flex ">
+                          <Link to={dataLSec4.linkTitle} onClick={ScrollUp} className="text-decoration-none d-flex ">
                             <div className="w-75 " style={{ maxWidth: "85px", cursor:"pointer" }}>
                               <img
                                 src={dataLSec4.src}

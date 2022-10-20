@@ -5,6 +5,7 @@ import {MainSec} from "../Data/dataSec1";
 import MainCss from "../moduleCss/Main.module.css";
 import { Section3, Section4 } from "../component/SectionsBottomPage";
 import { ScrollUp } from "../component/BackToTopButton";
+import MainHerbs from "./gardenPage/subPageGarden/ediblePage/Herbs";
 
 const AdTop = ()=>{
   return(
@@ -366,7 +367,7 @@ export default function Main() {
         <AdTop />
         <Section3/>
       </div>
-      <Section4/>
+      <Section4 src=""/>
     </>
   );
 }
