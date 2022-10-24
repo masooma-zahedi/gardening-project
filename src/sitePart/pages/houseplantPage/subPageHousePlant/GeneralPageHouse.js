@@ -416,14 +416,8 @@ const GeneralPageHouse = ()=>{
         )
     }
 
-
-
-
-
-
-
-    // //////////////////////////////// Working on it ////////////////////
     // //////////////////////////// Citronella Page ///////////////////////////////
+
     const Citronella  = ()=>{
         const infoItems = {
             caladium :[
@@ -515,7 +509,7 @@ const GeneralPageHouse = ()=>{
                     </div>
                     <div className="row ">
                         <div className="col-9 " style={{overflow:"hidden"}}>
-                        <iframe className="" style={{position:"relative",left:"-80px", top:"-230px"}} src="https://www.gardeningknowhow.com/houseplants/hpgen/houseplant-placement.htm" height="2800" width="900px" title="Iframe Example" scrolling="no" ></iframe>
+                            <iframe className="" style={{position:"relative",left:"-80px", top:"-230px"}} src="https://www.gardeningknowhow.com/houseplants/hpgen/houseplant-placement.htm" height="2800" width="900px" title="Iframe Example" scrolling="no" ></iframe>
                         </div>
                         <div className="col-3">
                             <RightSidePart />
