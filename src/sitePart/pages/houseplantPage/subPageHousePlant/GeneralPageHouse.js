@@ -4,6 +4,8 @@ import { RightSidePart } from "../../../component/RightSidePart";
 import { TopTitle } from "../../../component/subTabMenu/TopPartSubTab";
 import { nanoid } from "nanoid";
 import {BackToTopButton} from "../../../component/BackToTopButton";
+import MainContent from "../../../component/MainContent";
+import { Section3, Section4 } from "../../../component/SectionsBottomPage";
 
 const GeneralPageHouse = ()=>{
     const MyTitleTop=({newTitle})=>{
@@ -220,13 +222,6 @@ const GeneralPageHouse = ()=>{
         )
     }
 
-
-
-
-
-
-
-
 /////////////////////////////////// Dieffenbachia Page /////////////////////////
     const Dieffenbachia = ()=>{
         const typeDieffen=[
@@ -420,34 +415,108 @@ const GeneralPageHouse = ()=>{
             </>
         )
     }
-    // //////////////////////////////////
+
+
+
+
+
+
+
+    // //////////////////////////////// Working on it ////////////////////
+    // //////////////////////////// Citronella Page ///////////////////////////////
     const Citronella  = ()=>{
+        const infoItems = {
+            caladium :[
+                {
+                    mainTitle:"Citronella ",
+                    topTitle:"Citronella As A Houseplant – Can You Keep Mosquito Plant Citronella Indoors",
+                    auther:"By: Raffaele Di Lallo",
+                    describe: "Have you enjoyed your citronella plant outdoors and wondered if you can have citronella as a houseplant? The good news is that you certainly can grow this plant indoors. This plant is actually a type of geranium (Pelargonium genus) and is not frost hardy. It is considered an evergreen perennial in zones 9 through 11.  If you live in a colder region, you can bring your plant indoors and continue to grow it there. Although these plants bloom, they are grown for their citrusy scent that is thought to repel mosquitos.",
+                    srcImg:"https://www.gardeningknowhow.com/wp-content/uploads/2020/12/citronellageranium-400x533.jpg",
+                    questoin:"Mosquito Plant Citronella Indoors ? ",
+                    answerQ:"One of the most important parts of growing citronella plants inside is to give these plants as much direct sun as possible. If you can give citronella plants six or more hours of direct sunlight every day, it will keep the plant bushier and more sturdy.f your houseplant citronella is not getting enough light, the stems will stretch out, weaken, and tend to fall over. If you see this occurring, prune the weakened stems back and place the plant in an area with more direct sun.   Allow the top inch or so of your indoor citronella geranium’s soil to dry out before watering it again. You’ll want to keep the potting mix relatively moist and take care not to allow the soil to dry out completely. Be sure to use a good well-draining potting mix and fertilize regularly for best results.   If you have grown your plant outdoors and you don’t want to take in a large plant, you can easily propagate cuttings at the end of the summer and pot them up for indoor use. To accomplish this, you can use the layering technique. Simply bend one of the plant stems over, taking care not to snap it, and simply bury the stem into another pot of soil that you’ve placed right next to the mother plant. You’ll want to bury part of the stem where there is an actual leaf attached. The roots will grow from this location, called the node. Leave the growing tip of that stem exposed though.  ",
+                    iframe:<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqoWHVV9J42nBxDGw8uxUkVIKLfZTefwBOw&usqp=CAU" alt="citronella" />,
+                    descIframe:"Growing citronella plants indoors is the best way to enjoy them year-round and keep them as part of your collection for years to come. Citronella plants are not frost hardy, so in most zones where they are kept outdoors, they are grown as an annual. (Citronella plants can only be kept outdoors year-round in specific zones 9 through 11.) That means most gardeners will need to either raise their citronella plants indoors or bring them inside in the winter months if they want to enjoy their citronella plants on a long-term basis.",
+                    title1:"HOW TO PLANT CITRONELLA PLANTS INDOORS",
+                    infoTitle1:"It’s important that your citronella plants are provided with soil that drains well. For best results, the containers you grow your citronella plants in must have drainage holes in the bottom. MacGyver solutions like broken pottery or rocks in the bottom of the container are not an effective way of helping with drainage, so the holes are important. Use a loose, rich soil or potting mix.If you’re planting citronella outdoors but you know your citronella plants are destined to move indoors at some point, you may wish to consider planting your citronella plants in containers. That way, once it’s time to move them indoors, you simply pick up the pot and move it to its new location. You won’t need to fuss with digging up plants or finding containers to move them into. ",
+                 }
+            ],
+        
+        }
+
+        const caladium = {
+            topInfo:[
+                {
+                    title1: "Houseplant",
+                    linkTo1:"/houseplant",
+                    title2: "General Houseplant Care",
+                    linkTo2:"/houseplant/general"
+                },
+            ]
+        }
+        
+        const addTitle = ()=>{
+            return(
+            <>
+            <span className="" style={{ color: "rgb(51 51 51)" }}>
+              &nbsp;›
+            </span>
+            <span style={{ color: "rgb(87 161 195)" }}>
+              &nbsp;{infoItems.caladium [0].mainTitle}
+            </span>
+          </>
+          )
+          }
+    
+
+        const innerImgIframePrint = () =>{
+            return (
+                document.getElementById("remove2").innerHTML = '<img src="https://www.gardeningknowhow.com/wp-content/uploads/2020/12/citronellageranium-400x533.jpg"/>',
+                document.getElementById("remove3").innerHTML = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqoWHVV9J42nBxDGw8uxUkVIKLfZTefwBOw&usqp=CAU" alt="citronella" />'
+                )
+        }
+    
+        
         return(
             <>
-                <div className="container border border-success">
-                    <div className="mt-5">
-                        <MyTitleTop newTitle={"Citronella"} />
-                    </div>
-                    <div className="row  border border-danger">
-                        <div className="col-9">dged</div>
-                        <div className="col-3">
-                            <RightSidePart />
-                        </div>
-                    </div>
-
+            <div className="container" >
+                <div className="mt-5">
+                    <TopTitle dataTop={caladium} addTitle={addTitle()}/>
                 </div>
+                <div className="subinfo mb-5 row" >
+                    {/* start main for apple tree */}
+                    <MainContent infoItems={infoItems.caladium[0]} innerImgIframePrint={innerImgIframePrint} />
+                    {/* end of main for apple tree */}
+                    <div className="col-12 col-md-3"><RightSidePart /></div>
+                </div>
+                <div className='pt-5'>
+                    <Section3 />
+                </div>
+            </div>
+            <Section4/>
+
             </>
         )
     }
+
+
+
+
+
+
+
+// /////////////////////////////////// Placement Page////////////////////////
     const Placement = ()=>{
         return(
             <>
-                <div className="container border border-success">
+                <div className="container ">
                     <div className="mt-5">
                         <MyTitleTop newTitle={"placement"} />
                     </div>
-                    <div className="row  border border-danger">
-                        <div className="col-9">dged</div>
+                    <div className="row ">
+                        <div className="col-9 " style={{overflow:"hidden"}}>
+                        <iframe className="" style={{position:"relative",left:"-80px", top:"-230px"}} src="https://www.gardeningknowhow.com/houseplants/hpgen/houseplant-placement.htm" height="2800" width="900px" title="Iframe Example" scrolling="no" ></iframe>
+                        </div>
                         <div className="col-3">
                             <RightSidePart />
                         </div>

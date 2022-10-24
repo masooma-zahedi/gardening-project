@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import {RightSidePart} from "../../component/RightSidePart";
 import pages from "../../moduleCss/pages.module.css";
+import { ScrollUp } from '../BackToTopButton';
 
 function BottomPartSubTab(props) {
   return (
@@ -14,7 +15,7 @@ function BottomPartSubTab(props) {
             </div>
             <div className="row">
               <div className="col-3">
-                <Link to={props.dataBottom.subInfo[0].getStarted[0].linkTo}>
+                <Link to={props.dataBottom.subInfo[0].getStarted[0].linkTo} >
                   <img
                     src={props.dataBottom.subInfo[0].getStarted[0].src}
                     alt={props.dataBottom.subInfo[0].getStarted[0].alt}
@@ -25,9 +26,7 @@ function BottomPartSubTab(props) {
               <div className="col-9">
                 <Link
                   to={props.dataBottom.subInfo[0].getStarted[0].linkTo}
-                  // //////////////???????/?????????????????
                   className="h5 text-decoration-none mb-1"
-                  // style={{ color: "rgb(192 48 133)" }}
                 >
                   {props.dataBottom.subInfo[0].getStarted[0].title}
                 </Link>
@@ -53,6 +52,7 @@ function BottomPartSubTab(props) {
                         <div className="col-3" style={{ height: "188px" }}>
                           <Link 
                             to={data.linkTo}
+                            onClick={ScrollUp}
                             // /////???????????????????????????????????????????????
                             >
                             <img
@@ -65,6 +65,7 @@ function BottomPartSubTab(props) {
                         <div className="col-9 pt-2  ">
                           <Link
                             to={data.linkTo}
+                            onClick={ScrollUp}
                             className="h5 text-decoration-none mb-1"
                             style={{ color: "rgb(192 48 133)" }}
                           >

@@ -367,7 +367,7 @@ export default function Main() {
         <AdTop />
         <Section3/>
       </div>
-      <Section4 src=""/>
+      <Section4 />
     </>
   );
 }

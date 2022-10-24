@@ -20,7 +20,7 @@ const MainContent = ({infoItems, innerImgIframePrint, className})=>{
 
     return(
         <>
-                <div className="col-12 col-md-9 px-4 "  ref= {componentRef}>
+                <div className="col-12 col-md-9 px-4 " style={{fontSize:"20px", fontWeight:"400"}}  ref= {componentRef}>
                     <h1 style={{color:"#c03085"}}>{infoItems.topTitle} </h1>
                     <p>{infoItems.auther}</p>
                     <div  id="remove1">
