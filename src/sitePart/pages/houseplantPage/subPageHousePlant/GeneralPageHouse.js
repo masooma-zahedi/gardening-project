@@ -134,31 +134,87 @@ const GeneralPageHouse = ()=>{
             </>
         )
     }
-// //////////////////////////////// Patches of Brown (calla lilies)//////////
 
+    // ////////////////////////////////  (calla lilies)///////////////
 
-
-
-
-
-
-    const PatchesOfBrown = ()=>{
+    const CallaLilies = ()=>{
         return(
             <>
-                <div className="container border border-success">
+                <div className="container">
                     <div className="mt-5">
-                        <MyTitleTop newTitle={"Patches Of Brown"} />
+                        <MyTitleTop newTitle={"Calla Lilies"} />
                     </div>
-                    <div className="row  border border-danger">
-                        {/* /////////////  working on it ////////////*/}
+                    <div className="row ">
                         <div className="col-12 col-md-9">
-                            <h1>I am going start this part</h1>
+                            <h1 className="text-center my-5 bg-light">All About Calla Lilies</h1>
+                            <section style={{fontSize:"18px",fontWeight:500,marginBottom:"40px"}} >
+                                <h2>Your Guide to Planning, Planting, and Growing Calla Lilies</h2>
+                                <p>Calla lilies are easy to grow and add a classy look to perennial gardens, cutting gardens and container plantings. The distinctive flowers come in many beautiful colors, including classic white (a favorite for weddings), yellow, orange, pink, rose, lavender and dark maroon.</p>
+                                <p>The plants have smooth, sword-like foliage that's often decorated with white freckles. Calla lily foliage looks neat and attractive all season long, both before and after the flowers bloom. Whether in the garden or in a vase, fresh calla lilies are always impressive.</p>
+                                <h3>Start with a Better Plant</h3>
+                                <p>It’s easy to see differences in quality when you compare two calla lily rhizomes side by side. Newly harvested rhizomes are graded by circumference. A large, 14/16 cm rhizome (shown at far left) will grow into a bigger plant with a more impressive display of flowers.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto" style={{maxWidth:"500px",maxHeight:"625px"}}><img className="w-100 h-100" src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies1.jpg" alt="callaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>Plan for Success </h3>
+                                <p>Calla lilies are easy to grow. Here’s how to get them off to a great start.</p>
+                                <p><span className="h5">Shade and Sun: </span>In warm climates, calla lilies grow well in full sun or partial shade. In cooler areas they grow best in full sun.</p>
+                                <p><span className="h5">Zone: </span>Calla lilies are winter hardy in zones 8-10. In colder areas they can either be grown as annuals or can be dug up in the fall and stored indoors for replanting the next spring. Reference the USDA Hardiness zone map here.</p>
+                                <p><span className="h5">When to Plant: </span>Calla lilies should be planted in the spring after all danger of frost has passed. In cold climates it's best to wait until the soil has warmed to at least 65°F. For a head start, you can plant the rhizomes in pots indoors about a month before planting them into the garden.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto" style={{maxWidth:"500px",maxHeight:"625px"}}><img className="w-100 h-100" src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies2.jpg" alt="callaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>Where to Plant Calla Lilies </h3>
+                                <p><span className="h5">Flowerbeds and Borders: </span>Depending on the cultivar, calla lilies grow between 1 and 2 feet tall. This makes them a great choice for the front or middle of a flowerbed. The speckled foliage looks attractive all season long.</p>
+                                <p><span className="h5">Cutting Gardens: </span> Calla lilies are terrific cut flowers. They are easy to arrange and can last for up to two weeks in a vase. Planting callas in a cutting garden allows you to grow a wide range of different colors and have plenty of flowers for bouquets.</p>
+                                <p><span className="h5">Containers: </span>Calla lilies grow well in pots and planters. They can be mixed with other annuals, but usually perform better in a pot on their own. The flowers last for weeks.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto " style={{maxWidth:"500px", maxHeight:"625px"}}><img className="w-100 h-100 " style={{maxHeight:"625px"}}  src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies3.jpg" alt="CallaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>How to Plant Calla Lilies</h3>
+                                <p>Dig a hole 3” to 4" deep.</p>
+                                <p>Set the calla lily into the hole with the “eyes” (growing tips) facing up.</p>
+                                <p>In the garden, you can space the rhizomes about 6” apart on center. In containers they look best planted more closely (4" on center).</p>
+                                <p>Cover with soil and water lightly.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto" style={{maxWidth:"500px",maxHeight:"625px"}}><img className="w-100 h-100" src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies4.jpg" alt="callaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>Planting Tips for Calla Lilies</h3>
+                                <p>Like most plants, calla lilies should be grown in well-drained soil. If you are growing them in containers, use a quality growing mix rather than garden soil.</p>
+                                <p>When the rhizomes are first planted, it’s important to water sparingly. Once the plants have a few leaves, you can begin watering more generously.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto" style={{maxWidth:"500px",maxHeight:"625px"}}><img className="w-100 h-100" src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies5.jpg" alt="callaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>What to Expect</h3>
+                                <p>After planting, it may take 2 weeks or more for the first calla shoots to appear. Once that happens, the plants grow quickly.</p>
+                                <p>In warm climates, where calla lilies are perennial, the plants typically flower in early summer. When calla lilies are planted in the spring, flowering is usually delayed until late summer.</p>
+                                <p>During the growing season, calla lilies appreciate a monthly dose of liquid fertilizer. This is especially important when they are grown in containers.</p>
+                                <div className="text-center">
+                                    <div className=" mx-auto" style={{maxWidth:"500px",maxHeight:"625px"}}><img className="w-100 h-100" src="https://cdn11.bigcommerce.com/s-1b9100svju/product_images/uploaded_images/all-about-calla-lilies6.jpg" alt="callaLilies" /></div>
+                                </div>
+                            </section>
+                            <section style={{fontSize:"18px",fontWeight:500 ,marginBottom:"40px"}}>
+                                <h3>Caring for Calla Lilies After They Bloom </h3>
+                                <p>In warm climates where calla lilies are winter hardy (zones 8-10), the rhizomes may be left in the ground to bloom again the following summer. The plants may need to be divided every few years to keep them blooming well.</p>
+                                <p>In cooler areas (zones 3-7), calla lilies are usually treated as annuals, with new bulbs planted each spring. The bulbs may be dug up and overwintered indoors, but you may not get the same results the second year.</p>
+                                <p>If want to try saving your calla lilies for next year, here's what to do. Fertilize the plants throughout the growing season. Cut off the flower stems as soon as the blooms fade. Preventing the plants from setting seed will help conserve energy for next year’s flowers. Continue fertilizing until the foliage begins to yellow.</p>
+                                <p>When the leaves have died back, or after the first frost, dig up the rhizomes and trim off the foliage, leaving an inch or two of stem attached. Let the rhizomes cure in a warm, dry place for several days and then put them into a box with barely damp peat moss. Store the box in a dark place at 50-60°F. Check once or twice during the winter to make sure the rhizomes are not too moist (rotting) or too dry (shriveling). Replant in spring.</p>
+                            </section>
                         </div>
                         <div className="col-12 col-md-3">
                             <RightSidePart />
                         </div>
                     </div>
-
                 </div>
             </>
         )
@@ -405,7 +461,7 @@ const GeneralPageHouse = ()=>{
         <>
             <Routes>
                 <Route path="stopGrowing" element={<StopGrowing/>} />
-                <Route path="patchesOfBrown" element={<PatchesOfBrown/>} />
+                <Route path="callaLilies" element={<CallaLilies/>} />
                 <Route path="dieffenbachia" element={<Dieffenbachia/>} />
                 <Route path="citronella" element={<Citronella/>} />
                 <Route path="placement" element={<Placement/>} />

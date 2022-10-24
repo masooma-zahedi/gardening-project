@@ -30,9 +30,8 @@ function GeneralHousep() {
         afterStart: [
           {
             id: nanoid(6),
-            title:
-              "Patches Of Brown Leaves On Trees – Fall Color, Cicada Damage Or Something Else?",
-            linkTo: "subPageHousePlant/generalPageHouse/patchesOfBrown",
+            title:"Growing Indoor Calla Lilies – Care For Calla Lilies In The Home",
+            linkTo: "subPageHousePlant/generalPageHouse/callaLilies",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/12/calla-lily-indoors-400x533.jpg",
             alt: "Indoor Calla Lilies",
             author:
