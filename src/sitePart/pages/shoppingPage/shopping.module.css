@@ -1,0 +1,25 @@
+*{box-sizing: border-box !important;}
+
+.category{
+    background-color: rgb(220, 220, 237);
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 40px;
+    margin:0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.boxCategory{
+    border:2px solid #772290
+}
+.boxCategory ul{
+    list-style: none;
+    /* text-align: center; */
+    border: 2px solid #111;
+    /* padding: auto; */
+}
+.boxCategory ul li { 
+    border: 1px solid #333;
+    padding: 5px ;
+    margin-left:  auto;
+}

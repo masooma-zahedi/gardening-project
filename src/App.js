@@ -7,7 +7,7 @@ import HousePlant from "./sitePart/pages/HousePlant";
 import Problems from "./sitePart/pages/Problems";
 import "./App.css";
 import LawnCare from "./sitePart/pages/LawnCare";
-// import Composting from "./sitePart/pages/Composting";
+import Shopping from "./sitePart/pages/Shopping";
 import Diseases from "./sitePart/pages/problemsPage/Diseases";
 import Environmental from "./sitePart/pages/problemsPage/Environmental";
 import Pests from "./sitePart/pages/problemsPage/Pests";
@@ -80,13 +80,6 @@ function App() {
           <Route path="/gardens/special/*" element={<SubSpecialPage  />} />
 
           {/* /////////////////////////////////////////////////////////////////////////// */}
-
-
-
-
-
-
-
           {/* Houseplant Tab */}
           <Route path="/housePlant" element={<HousePlant />} />
           <Route path="/housePlant/specific" element={<SpecificHousep />} />
@@ -94,13 +87,6 @@ function App() {
 
           <Route path="/housePlant/general" element={<GeneralHousep />} />
           <Route path="/housePlant/general/subPageHousePlant/generalPageHouse/*" element={<GeneralPageHouse />} />
- 
-
-
-
-
-
-
 
           {/* Problems Tab */}
           {/* ///////////////////////////// I am working/////////////////////////// */}
@@ -116,7 +102,7 @@ function App() {
           <Route path="/lawnCare/substitute" element={<SubstituteLawn />} />
           <Route path="/lawnCare/grassesLawn" element={<GrassesLawn />} />
 
-          {/* <Route path="/composting" element={<Composting />} /> */}
+          <Route path="/shopping" element={<Shopping />} />
         </Routes>
         <Footer />
       </div>

@@ -494,11 +494,6 @@ const GeneralPageHouse = ()=>{
     }
 
 
-
-
-
-
-
 // /////////////////////////////////// Placement Page////////////////////////
     const Placement = ()=>{
         return(

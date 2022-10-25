@@ -181,8 +181,8 @@ const Navbottom =()=>{
           </div>
         </li> */}
         <li className={`${headercss.liclass } col-sm-12 col-md`}>
-          <Link to="/Gardening" className={headercss.topmenu}>
-            Gardening
+          <Link to="/shopping" className={headercss.topmenu}>
+            Shopping
           </Link>
           <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
