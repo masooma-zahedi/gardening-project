@@ -73,7 +73,7 @@ const Shopping = (params)=> {
                     </div>
                     <div className="test">
                         {anemone ? <h2> category is Anemone</h2> : ""}
-                        {asiatic ? <h2> category is Asiatic wwwwwww</h2>: ""}
+                        {asiatic ? <h2> category is Asiatic wwwwwww ffffff</h2>: ""}
                     </div>
             </div>
         </>
