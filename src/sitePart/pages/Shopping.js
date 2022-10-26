@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {Link} from "react-router-dom";
 import ShopCss from "./shoppingPage/shopping.module.css";
+import { shopData } from './shoppingPage/shopData';
 
 
 
@@ -20,14 +21,17 @@ const Shopping = (params)=> {
 
     const checkCategory = (e)=>{
         console.log(e.target.name);
-        // setAnemone(true)
+
+        setTimeout(()=>{
+            setShowSortbox(false)
+        },3000)
+
         if(e.target.name == "anemone" ){
             setAnemone(!anemone)
         }
         if(e.target.name == "asiatic" ){
             setAsiatic(!asiatic)
         }
-        // setCategory(!category)
     }
 
     return(
@@ -75,6 +79,28 @@ const Shopping = (params)=> {
                         {anemone ? <h2> category is Anemone</h2> : ""}
                         {asiatic ? <h2> category is Asiatic wwwwwww ffffff</h2>: ""}
                     </div>
+                    {/* /////////////////////// work on it//////////////////// */}
+                    <div className="row border ">
+                        {shopData.products.map((product, index)=>{
+                            return(
+                                <>
+                                    <div className=" col-12 col-sm-6 col-md-3" key={product.id} >
+                                        {console.log(product.id)}
+                                        <div className='card m-1' >
+                                            <img className="card-img-top" src={product.src} alt={product.title} />
+                                            <div className="card-body text-center">
+                                                <p className="card-text m-0">{product.star}</p>
+                                                <p className="card-text">{product.title}</p>
+                                                <p className="card-text h5 m-0">{product.discProduct}</p>
+                                                <p className="card-text h5 mt-1">{product.price} <del className='text-secondary'><small>{product.noPrice}</small></del></p>
+                                            </div>
+                                        </div>                    
+                                    </div>
+                                </>
+                            )
+                        })}
+                    </div>
+                    {/* ///// */}
             </div>
         </>
     )
