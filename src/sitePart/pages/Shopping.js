@@ -21,17 +21,55 @@ const Shopping = (params)=> {
 
     const checkCategory = (e)=>{
         console.log(e.target.name);
-
         setTimeout(()=>{
             setShowSortbox(false)
         },3000)
 
         if(e.target.name == "anemone" ){
+            console.log("i am anemone");
             setAnemone(!anemone)
         }
         if(e.target.name == "asiatic" ){
             setAsiatic(!asiatic)
         }
+
+        alert(`${e.target.name}`)
+    }
+
+    const FilterProduct = ({product})=>{
+        return(
+            <>
+                <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
+                    <div className='card m-1' >
+                        <img className="card-img-top" src={product.src} alt={product.title} />
+                        <div className="card-body text-center">
+                            <p className="card-text m-0">{product.star}</p>
+                            <p className="card-text">{product.title}</p>
+                            <p className="card-text h5 m-0">{product.discProduct}</p>
+                            <p className="card-text h5 mt-1">{product.price} <del className='text-secondary'><small>{product.noPrice}</small></del></p>
+                        </div>
+                    </div>                    
+                </div>
+            </>
+        )
+    }
+
+    const TotalProduct = ({product})=>{
+        return(
+            <>
+                <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
+                    <div className='card m-1' >
+                        <img className="card-img-top" src={product.src} alt={product.title} />
+                        <div className="card-body text-center">
+                            <p className="card-text m-0">{product.star}</p>
+                            <p className="card-text">{product.title}</p>
+                            <p className="card-text h5 m-0">{product.discProduct}</p>
+                            <p className="card-text h5 mt-1">{product.price} <del className='text-secondary'><small>{product.noPrice}</small></del></p>
+                        </div>
+                    </div>                    
+                </div>
+            </>
+        )
     }
 
     return(
@@ -53,39 +91,79 @@ const Shopping = (params)=> {
                         <span className="" style={{ color: "rgb(51 51 51)" }}>›</span>
                         <span style={{ color: "rgb(87 161 195)" }}>&nbsp;Shoppin</span>
                     </div>
-                    <div className="sort row">
-                        <div className={`col-md-3 ${ShopCss.boxCategory}`}>
-                            <div className={`${ShopCss.category}`} onClick={showSort}>Category</div>
-                            <div className={`${showSortbox ? "d-block" : "d-none"}`}>
+                    <div className="sort row mb-4">
+                        <div className={`col-6  col-md-5 col-lg-3 position-relative  ${ShopCss.boxCategory}`}>
+                            <div className={`${ShopCss.category} py-lg-2`} onClick={showSort}>Category</div>
+                            <div className={` ${showSortbox ? "d-block" : "d-none"} ${ShopCss.sortbox}`}  >
                                 <ul >
-                                    <li><input type="checkbox" name ="anemone" value={anemone} onChange={checkCategory}/>
+                                    <li><input type="checkbox" name ="anomone" value={anemone} onChange={checkCategory}/>
                                         Anemone
                                     </li>
-                                    <li><input type="checkbox" name ="asiatic" value={asiatic} onChange={checkCategory}/>
+                                    <li><input type="checkbox" name = "asiatic" value={asiatic} onChange={checkCategory}/>
                                         Asiatic
                                     </li>
                                     <li>Aviv</li>
-                                    <li>Aflatunenese</li>
+                                    <li>Aflatunenese </li>
                                     <li>Arendsii</li>
                                 </ul>
                             </div>
                         </div>
-                        <div className='col-md-3  '>
-                            <div className={`${ShopCss.category}`}>Color</div>
+                        <div className='col-6 col-md-5 col-lg-3  '>
+                            <div className={`${ShopCss.category} py-lg-2`}>Color</div>
                             <div></div>
                         </div>
                     </div>
-                    <div className="test">
-                        {anemone ? <h2> category is Anemone</h2> : ""}
+                    <div className="test  border border-danger">
+                        {anemone  ? 
+                            <div className=" border row">
+                                {shopData.products.filter((item)=> item.category == "anemone").map((product, index)=>{
+                                    return(
+                                        <>
+                                            <FilterProduct product={product} />
+                                        </>
+                                        )
+                                })}
+                            </div>
+                            :
+                            <div className="row border ">
+                                {shopData.products.map((product, index)=>{  
+                                    return(
+                                        <>
+                                            <TotalProduct product={product} />
+                                        </>
+                                    )      
+                                })}
+                            </div>
+                        }
+                        {asiatic  ? 
+                            <div className=" border row">
+                                {shopData.products.filter((item)=> item.category == "asiatic").map((product, index)=>{
+                                    return(
+                                        <>
+                                            <FilterProduct product={product} />
+                                        </>
+                                        )
+                                })}
+                            </div>
+                            :
+                            <div className="row border ">
+                                {shopData.products.map((product, index)=>{  
+                                    return(
+                                        <>
+                                            <TotalProduct product={product} />
+                                        </>
+                                    )      
+                                })}
+                            </div>
+                        }
                         {asiatic ? <h2> category is Asiatic wwwwwww ffffff</h2>: ""}
                     </div>
-                    {/* /////////////////////// work on it//////////////////// */}
-                    <div className="row border ">
+                    {/* /////////////////////// work on it dont touch it (main page first) /////////////////// */}
+                    {/* <div className="row border ">
                         {shopData.products.map((product, index)=>{
                             return(
                                 <>
-                                    <div className=" col-12 col-sm-6 col-md-3" key={product.id} >
-                                        {console.log(product.id)}
+                                    <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
                                         <div className='card m-1' >
                                             <img className="card-img-top" src={product.src} alt={product.title} />
                                             <div className="card-body text-center">
@@ -99,7 +177,21 @@ const Shopping = (params)=> {
                                 </>
                             )
                         })}
-                    </div>
+                    </div> */}
+                    <hr />
+
+
+
+
+
+
+
+
+
+
+                    
+                    {/* //////////// */}
+                    {shopData.products.filter((item)=> item.category == "anemone").map((flower,index)=><h2>{index+1} . {flower.title}</h2>)}
                     {/* ///// */}
             </div>
         </>

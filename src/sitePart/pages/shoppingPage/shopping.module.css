@@ -2,7 +2,7 @@
 
 .category{
     background-color: rgb(220, 220, 237);
-    padding: 10px 20px;
+    padding: 5px 20px;
     border: 2px solid #000;
     border-radius: 40px;
     margin:0 10px;
@@ -10,16 +10,28 @@
     cursor: pointer;
 }
 .boxCategory{
-    border:2px solid #772290
+    /* border:2px solid #772290 */
 }
 .boxCategory ul{
     list-style: none;
     /* text-align: center; */
-    border: 2px solid #111;
+    /* border: 2px solid #111; */
     /* padding: auto; */
+    padding: 0;
+    background-color: #fff;
 }
 .boxCategory ul li { 
     border: 1px solid #333;
-    padding: 5px ;
-    margin-left:  auto;
+    padding: 5px 30px;
+    /* margin-left:  auto; */
+}
+.sortbox{
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+    
+    color:#000;
+    left: 50px;
+    min-width: 180px;
+
 }

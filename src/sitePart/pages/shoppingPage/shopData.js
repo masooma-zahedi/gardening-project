@@ -21,7 +21,8 @@ export const shopData = {
             star:"**",
             discProduct:"2 rhizomes",
             price:"$15.00",
-            noPrice:" "
+            noPrice:" ",
+            category:"anemone"
         },
         {
             id:nanoid(6),
@@ -31,7 +32,8 @@ export const shopData = {
             star:"*****",
             discProduct:"10 bulbs",
             price:"$10.75",
-            noPrice:" "
+            noPrice:" ",
+            category:"masooma"
         },
         {
             id:nanoid(6),
@@ -41,7 +43,8 @@ export const shopData = {
             star:"*****",
             discProduct:"3 bulbs",
             price:"$13.25",
-            noPrice:"$15.00"
+            noPrice:"$15.00",
+            category:"",
         },
         {
             id:nanoid(6),
@@ -51,7 +54,8 @@ export const shopData = {
             star:"*****",
             discProduct:"25 bulbs",
             price:"$7.75",
-            noPrice:""
+            noPrice:"",
+            category:"anemone",
         },
         {
             id:nanoid(6),
@@ -61,7 +65,8 @@ export const shopData = {
             star:"*****",
             discProduct:"10 bulbs",
             price:"$8.70 ",
-            noPrice:"$14.50"
+            noPrice:"$14.50",
+            category:"asitic",
         },
         {
             id:nanoid(6),
@@ -71,7 +76,8 @@ export const shopData = {
             star:"****",
             discProduct:"25 corms",
             price:"$10.00",
-            noPrice:""
+            noPrice:"",
+            category:"",
         },
         {
             id:nanoid(6),
@@ -81,7 +87,8 @@ export const shopData = {
             star:"*****",
             discProduct:"25 bulbs",
             price:"$16.75",
-            noPrice:""
+            noPrice:"",
+            category:"",
         },
         {
             id:nanoid(6),
@@ -91,7 +98,8 @@ export const shopData = {
             star:"*****",
             discProduct:"25 corms",
             price:"$10.00",
-            noPrice:""
+            noPrice:"",
+            category:"asiatic",
         },
         {
             id:nanoid(6),
@@ -101,7 +109,8 @@ export const shopData = {
             star:"*****",
             discProduct:"10 corms",
             price:"$14.00",
-            noPrice:""
+            noPrice:"",
+            category:"asiatic",
         },
         {
             id:nanoid(6),
@@ -111,7 +120,8 @@ export const shopData = {
             star:"***",
             discProduct:"15 bulbs",
             price:"$14.25",
-            noPrice:"18.75"
+            noPrice:"18.75",
+            category:"anemone",
         },
         {
             id:nanoid(6),
@@ -121,7 +131,8 @@ export const shopData = {
             star:"*****",
             discProduct:"100 bulbs",
             price:"$65.75",
-            noPrice:""
+            noPrice:"",
+            category:"asiatic",
         },
         {
             id:nanoid(6),
@@ -131,7 +142,8 @@ export const shopData = {
             star:"*****",
             discProduct:"250 bulbs",
             price:"$31.75",
-            noPrice:""
+            noPrice:"",
+            category:"",
         },
         
     ]
