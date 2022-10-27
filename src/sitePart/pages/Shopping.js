@@ -156,7 +156,7 @@ const Shopping = (params)=> {
                                 })}
                             </div>
                         }
-                        {asiatic ? <h2> category is Asiatic wwwwwww ffffff</h2>: ""}
+                        {asiatic ? <h2> category is Asiatic nnnnn wwwwwww ffffff</h2>: ""}
                     </div>
                     {/* /////////////////////// work on it dont touch it (main page first) /////////////////// */}
                     {/* <div className="row border ">
