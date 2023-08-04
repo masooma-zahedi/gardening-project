@@ -45,7 +45,7 @@ const NavTop = ()=>{
             </div>
           </div>
           <div
-            className=" p-2 "
+            className=" p-2  d-none  d-md-block"
             style={{ color: "yellow" }}
           >
             <Link to="kj" style={{color:"yellow"}}>

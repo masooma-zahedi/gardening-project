@@ -73,9 +73,9 @@ export default function Footer() {
               <li>
                 <Link to="/lawnCare">Lawn Care</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/Gardening">Gardening Help</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className={`col-6 ${FooterCss.middleside}`}>

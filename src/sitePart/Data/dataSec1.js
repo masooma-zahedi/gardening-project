@@ -160,7 +160,7 @@ export const MainSec = {
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/02/elephant-ears-400x300.jpg",
         title: "Caladium Plant Problems – Caladium Plant Pests And Disease",
         linkTitle:
-        "/bulbs"
+        "/gardens/ornamental/subOrnamentalPage/bulbs"
       },
       {
         id: nanoid(6),
