@@ -4,7 +4,7 @@ import MainHerbs from "../pages/gardenPage/subPageGarden/ediblePage/Herbs";
 
 export const MainSec = {
   // section 1
-  leftSec1: [
+  leftSec1: [ 
     {
       id: nanoid(6),
       src: "https://www.gardeningknowhow.com/wp-content/uploads/2018/07/amsonia-transplant-400x267.jpg",
@@ -127,7 +127,7 @@ export const MainSec = {
         id: nanoid(6),
         src: "https://www.gardeningknowhow.com/wp-content/uploads/2019/07/rice-smut-400x263.jpg",
         title:
-          "Rice Leaf Smut Info – How To Treat Leaf Smut Of Rice Crops",
+          "Rice Leaf Smut Info – How To Treat Leaf Smut Of Rice Crops" ,
         linkTitle:
           "/gardens/edible/grains",
       },
@@ -135,47 +135,45 @@ export const MainSec = {
     midSect4: [
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2013/03/seedlings-400x300.jpg",
-        title: "Seed Starting Times: When To Start Seeds For Your Garden",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/12/citronellageranium-400x533.jpg",
+        title: "Citronella As A Houseplant – Can You Keep Mosquito Plant Citronella Indoors",
         linkTitle:
-          "https://www.gardeningknowhow.com/garden-how-to/propagation/seeds/when-to-start-seeds.htm",
+        "/houseplant/general/subPageHousePlant/generalPageHouse/citronella",
       },
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/03/outdoor-houseplant-400x300.jpg",
-        title: "Acclimating Houseplants Outdoors",
+        src:"https://www.gardeningknowhow.com/wp-content/uploads/2020/11/potted-plant-placement-400x515.jpg",
+        title:  "Houseplant Placement – Houseplants And Where To Put Them",
         linkTitle:
-          "https://www.gardeningknowhow.com/houseplants/hpgen/acclimating-houseplants-outdoors.htm",
+        "/houseplant/general/subPageHousePlant/generalPageHouse/placement",
       },
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2007/03/flowers-1-400x300.jpg",
-        title: "How To Start Your Flower Garden",
-        linkTitle:
-          "https://www.gardeningknowhow.com/special/starting/how-to-start-your-flower-garden.htm",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/12/calla-lily-indoors-400x533.jpg",
+        title:"Growing Indoor Calla Lilies – Care For Calla Lilies In The Home",
+        linkTitle:"/houseplant/general/subPageHousePlant/generalPageHouse/callaLilies",
       },
     ],
     rightSec4: [
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2017/04/asparagus-winter-400x267.jpg",
-        title: "Asparagus Winter Care: Tips On Winterizing Asparagus Beds",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2021/02/elephant-ears-400x300.jpg",
+        title: "Caladium Plant Problems – Caladium Plant Pests And Disease",
         linkTitle:
-          "https://www.gardeningknowhow.com/edible/vegetables/asparagus/winterizing-asparagus-beds.htm",
+        "/bulbs"
       },
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2015/12/kalanchoe-rebloom-400x281.jpg",
-        title: "Kalanchoe Flowering: How To Make A Kalanchoe Rebloom",
-        linkTitle:
-          "https://www.gardeningknowhow.com/houseplants/kalanchoe/make-a-kalanchoe-rebloom.htm",
+        src:"https://www.gardeningknowhow.com/wp-content/uploads/2018/07/amsonia-transplant-400x267.jpg",
+        title:"Amsonia Transplant Guide: Tips For Moving Amsonia Plants",
+        linkTitle:"/gardens/ornamental/subOrnamentalPage/flowers"
       },
       {
         id: nanoid(6),
-        src: "https://www.gardeningknowhow.com/wp-content/uploads/2018/06/mayhaw-prop-1-400x300.jpg",
-        title: "Mayhaw Propagation – Learn How To Propagate A Mayhaw Tree",
+        src: "https://www.gardeningknowhow.com/wp-content/uploads/2014/03/bloodleaf-400x300.jpg",
+        title:"Bloodleaf Plant Care",
         linkTitle:
-          "https://www.gardeningknowhow.com/ornamental/trees/hawthorn/how-to-propagate-a-mayhaw-tree.htm",
+          "/gardens/ornamental/subOrnamentalPage/foliage"
       },
     ],
   },

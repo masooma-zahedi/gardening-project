@@ -7,7 +7,7 @@ function Environmental() {
         const environmental = {
           topInfo: [
             {
-              title1: "Problems",
+              title1: "Problems" ,
               linkTo1:"/problems",
               title2: "Environmental Problems",
               src: "https://www.gardeningknowhow.com/wp-content/uploads/2012/11/environmental-150x150.jpg",

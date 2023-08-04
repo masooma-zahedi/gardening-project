@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {Link} from "react-router-dom";
 import ShopCss from "./shoppingPage/shopping.module.css";
 import { shopData } from './shoppingPage/shopData';
+import { useEffect } from 'react';
 
 
 
@@ -10,6 +11,9 @@ const Shopping = (params)=> {
     const [showSortbox,setShowSortbox] = useState(false);
     const [anemone,setAnemone] = useState(false)
     const [asiatic, setAsiatic] = useState(false)
+    const [filterP, setFilterP] = useState(shopData);
+    console.log("filterP original is : " );
+    console.log(filterP);
 
     const showSort = ()=>{
         if(showSortbox === false){
@@ -20,20 +24,29 @@ const Shopping = (params)=> {
     }
 
     const checkCategory = (e)=>{
-        console.log(e.target.name);
+        // console.log(e.target.name);
         setTimeout(()=>{
             setShowSortbox(false)
         },3000)
 
+        setFilterP(filterP=> filterP.products.filter(item=>item.category=="anemone") )
+            console.log("hi");
+            console.log(filterP);
         if(e.target.name == "anemone" ){
-            console.log("i am anemone");
-            setAnemone(!anemone)
+            setAnemone(!anemone);
+
+            // //////////////////////////////////
+            // //////////////////////////
+            // setFilterP(filterP=> filterP.products.filter(item=>item.category=="anemone") )
+            // console.log("hi");
+            // console.log(filterP);
+            // console.log("filterP anemone is : ");
+            // console.log(filterP);
         }
         if(e.target.name == "asiatic" ){
             setAsiatic(!asiatic)
         }
 
-        alert(`${e.target.name}`)
     }
 
     const FilterProduct = ({product})=>{
@@ -54,27 +67,33 @@ const Shopping = (params)=> {
         )
     }
 
-    const TotalProduct = ({product})=>{
-        return(
-            <>
-                <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
-                    <div className='card m-1' >
-                        <img className="card-img-top" src={product.src} alt={product.title} />
-                        <div className="card-body text-center">
-                            <p className="card-text m-0">{product.star}</p>
-                            <p className="card-text">{product.title}</p>
-                            <p className="card-text h5 m-0">{product.discProduct}</p>
-                            <p className="card-text h5 mt-1">{product.price} <del className='text-secondary'><small>{product.noPrice}</small></del></p>
-                        </div>
-                    </div>                    
-                </div>
-            </>
-        )
-    }
+useEffect(()=>{
+    return(
+        <FilterProduct/>
+    )
+},[filterP])
+
+    // const TotalProduct = ({product})=>{
+    //     return(
+    //         <>
+    //             <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
+    //                 <div className='card m-1' >
+    //                     <img className="card-img-top" src={product.src} alt={product.title} />
+    //                     <div className="card-body text-center">
+    //                         <p className="card-text m-0">{product.star}</p>
+    //                         <p className="card-text">{product.title}</p>
+    //                         <p className="card-text h5 m-0">{product.discProduct}</p>
+    //                         <p className="card-text h5 mt-1">{product.price} <del className='text-secondary'><small>{product.noPrice}</small></del></p>
+    //                     </div>
+    //                 </div>                    
+    //             </div>
+    //         </>
+    //     )
+    // }
 
     return(
         <>
-            <h1 >This is Shopping Page</h1>
+            <h1 >This page is not complate !!!!</h1>
             <div className="container border border-success" 
                 style={{ fontFamily: "'Roboto      Slab',Times New Roman,Times,serif" }}
             >
@@ -114,7 +133,7 @@ const Shopping = (params)=> {
                         </div>
                     </div>
                     <div className="test  border border-danger">
-                        {anemone  ? 
+                        {/* {anemone  ? 
                             <div className=" border row">
                                 {shopData.products.filter((item)=> item.category == "anemone").map((product, index)=>{
                                     return(
@@ -134,33 +153,13 @@ const Shopping = (params)=> {
                                     )      
                                 })}
                             </div>
-                        }
-                        {asiatic  ? 
-                            <div className=" border row">
-                                {shopData.products.filter((item)=> item.category == "asiatic").map((product, index)=>{
-                                    return(
-                                        <>
-                                            <FilterProduct product={product} />
-                                        </>
-                                        )
-                                })}
-                            </div>
-                            :
-                            <div className="row border ">
-                                {shopData.products.map((product, index)=>{  
-                                    return(
-                                        <>
-                                            <TotalProduct product={product} />
-                                        </>
-                                    )      
-                                })}
-                            </div>
-                        }
+                        } */}
                         {asiatic ? <h2> category is Asiatic nnnnn wwwwwww ffffff</h2>: ""}
                     </div>
                     {/* /////////////////////// work on it dont touch it (main page first) /////////////////// */}
-                    {/* <div className="row border ">
-                        {shopData.products.map((product, index)=>{
+                    <div className="row border ">
+                        {/* {filterP.products.map((product, index)=>{
+
                             return(
                                 <>
                                     <div className=" col-12 col-sm-6 col-md-4 col-lg-3" key={product.id} >
@@ -176,8 +175,8 @@ const Shopping = (params)=> {
                                     </div>
                                 </>
                             )
-                        })}
-                    </div> */}
+                        })} */}
+                    </div>
                     <hr />
 
 

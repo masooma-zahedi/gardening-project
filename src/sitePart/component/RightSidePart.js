@@ -13,7 +13,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
     }
       return (
     <>
-      <div className="">
+      <div className=" ">
         {/* ***** Newest Article Part****** */}
 
         <div className="">

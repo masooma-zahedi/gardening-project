@@ -6,7 +6,7 @@ import {TopTitle} from '../../../../component/subTabMenu/TopPartSubTab';
 import { Link, Route, Routes} from "react-router-dom";
 import { RightSidePart } from '../../../../component/RightSidePart';
 import {Section3, Section4} from '../../../../component/SectionsBottomPage';
-import MainContent from '../../../../component/MainContent';
+import MainContent from '../../../../component/MainContent' ;
 
 
 
@@ -180,7 +180,7 @@ const infoItems = {
                       {/* start main for apple tree */}
                       <MainContent infoItems={infoItems.benefitPlant[0]} innerImgIframePrint={innerImgIframePrint} />
                       {/* end of main for apple tree */}
-                      <div className="col-3 border"><RightSidePart /></div>
+                      <div className="col-sm-12 col-md-3 "><RightSidePart /></div>
                   </div>
                   <div className='pt-5'>
                       <Section3 />
@@ -249,11 +249,11 @@ const infoItems = {
                 <TopTitle dataTop={gazebo} addTitle={addTitle()}/>
 
                 </div>
-                <div className="subinfo mb-5 row">
+                <div className="subinfo mb-5 row ">
                     {/* start main for apple tree */}
                     <MainContent infoItems={infoItems.gazebo[0]} innerImgIframePrint={innerImgIframePrint} />
                     {/* end of main for apple tree */}
-                    <div className="col-12 col-md-3"><RightSidePart /></div>
+                    <div className="col-12 col-md-3 "><RightSidePart /></div>
                 </div>
                 <div className='pt-5'>
                     <Section3 />

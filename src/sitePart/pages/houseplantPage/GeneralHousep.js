@@ -62,7 +62,7 @@ function GeneralHousep() {
           // =====
           {
             id: nanoid(6),
-            title: "Houseplant Placement – Houseplants And Where To Put Them",
+            title: "Houseplant Placement – Houseplants And Where To Put Them" ,
             linkTo: "subPageHousePlant/generalPageHouse/placement",
             src: "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/potted-plant-placement-400x515.jpg",
             alt: "Flowers Toxic To Bees",

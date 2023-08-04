@@ -4,21 +4,6 @@ import { TopTitle } from '../../../../component/subTabMenu/TopPartSubTab';
 import {Section3, Section4} from '../../../../component/SectionsBottomPage';
 import MainContent from '../../../../component/MainContent';
 
-// *********************** Data for Page************************************
-        // {
-        //     mainTitle:"",
-        //     topTitle:"",
-        //     auther:"",
-        //     describe:"",
-        //     srcImg:"",
-        //     questoin:"",
-        //     answerQ:"",
-        //     iframe:"",
-        //     descIframe:"",
-        //     title1:"",
-        //     infoTitle1:"",
-        // }
-// *************************************************************************
 
 const infoItems = {
     astrantia  :[

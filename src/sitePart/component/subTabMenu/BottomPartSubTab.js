@@ -13,9 +13,9 @@ function BottomPartSubTab(props) {
             <div>
               <span>GET STARTED</span>
             </div>
-            <div className="row">
-              <div className="col-3">
-                <Link to={props.dataBottom.subInfo[0].getStarted[0].linkTo} >
+            <div className="row ">
+              <div className="col-sm-12 col-md-3">
+                <Link to={props.dataBottom.subInfo[0].getStarted[0].linkTo}>
                   <img
                     src={props.dataBottom.subInfo[0].getStarted[0].src}
                     alt={props.dataBottom.subInfo[0].getStarted[0].alt}
@@ -30,10 +30,10 @@ function BottomPartSubTab(props) {
                 >
                   {props.dataBottom.subInfo[0].getStarted[0].title}
                 </Link>
-                <div className="mb-1 fs-5" style={{ color: "rgb(58 109 37)" }}>
+                <div className="mb-1 fs-6" style={{ color: "rgb(58 109 37)" }}>
                   {props.dataBottom.subInfo[0].getStarted[0].author}
                 </div>
-                <p className="fs-5">
+                <p className="fs-6">
                   {props.dataBottom.subInfo[0].getStarted[0].desc}
                 </p>
               </div>
@@ -45,11 +45,11 @@ function BottomPartSubTab(props) {
                     <>
                     {/* console.log(data.id); */}
                       <div
-                        className="row mt-4 mb-4 "
+                        className="row mt-4 mb-4 p-2"
                         // key={data.id}
                       >
                         {/* {console.log(data.id)} */}
-                        <div className="col-3" style={{ height: "188px" }}>
+                        <div className="col-sm-12 col-md-3" style={{ height: "188px" }}>
                           <Link 
                             to={data.linkTo}
                             onClick={ScrollUp}
@@ -62,7 +62,7 @@ function BottomPartSubTab(props) {
                             />
                           </Link>
                         </div>
-                        <div className="col-9 pt-2  ">
+                        <div className="col-sm-12 col-md-9 pt-2  ">
                           <Link
                             to={data.linkTo}
                             onClick={ScrollUp}
@@ -72,12 +72,12 @@ function BottomPartSubTab(props) {
                             {data.title}
                           </Link>
                           <div
-                            className="mb-1 fs-5"
+                            className="mb-1 fs-6"
                             style={{ color: "rgb(58 109 37)" }}
                           >
                             {data.author}
                           </div>
-                          <p className="fs-5 m-0">
+                          <p className="fs-6 m-0">
                             {data.desc}
                           </p>
                         </div>

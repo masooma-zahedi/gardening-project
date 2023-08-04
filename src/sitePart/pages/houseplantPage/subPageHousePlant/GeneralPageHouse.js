@@ -378,21 +378,21 @@ const GeneralPageHouse = ()=>{
                             </div>
                             {/* work and design this part */}
                             <div className=" " >
-                                <ol className="list-unstyled px-5 py-3" >
+                                <ol className="list-unstyled px-sm-2 px-md-5 py-3" >
 
                                     {typeDieffen.map((item,index)=>{
                                         return(
                                             <>
                                                 <li id={`${item.id}`} className="py-5" style={{borderTop:"5px solid #aaa"}} key={item.id}>
                                                     <h3 style={{color:"#7d8a22"}}>{index+1}.{item.nameDieffen}</h3>
-                                                    <div className="px-4">
+                                                    <div className="px-sm-1 px-md-4 " >
                                                         <p>{item.p1} </p>
                                                         <p><b>{item.p2}</b></p>
                                                         <p>{item.p3}</p>
-                                                        <div className="text-center py-4" style={{height:"600px"}} ><img className="h-100 img-fluid" src={item.srcDieffen} alt={item.altImg} /></div>
+                                                        <div style={{height:"600px"}} className="text-center py-4 h-sm-50 h-md-100"  ><img className=" h-100 img-fluid" src={item.srcDieffen} alt={item.altImg} /></div>
                                                         <p>{item.p4}</p>
                                                         <p>{item.p5}</p>
-                                                        <div className="bg-light p-5 ">
+                                                        <div className="bg-light p-sm-2 p-md-5 ">
                                                         <h3>{item.note}</h3>
                                                         </div>
                                                     </div>
@@ -503,10 +503,10 @@ const GeneralPageHouse = ()=>{
                         <MyTitleTop newTitle={"placement"} />
                     </div>
                     <div className="row ">
-                        <div className="col-9 " style={{overflow:"hidden"}}>
+                        <div className="col-sm-12 col-md-9 " style={{overflow:"hidden"}}>
                             <iframe className="" style={{position:"relative",left:"-80px", top:"-230px"}} src="https://www.gardeningknowhow.com/houseplants/hpgen/houseplant-placement.htm" height="2800" width="900px" title="Iframe Example" scrolling="no" ></iframe>
                         </div>
-                        <div className="col-3">
+                        <div className="col-sm-12 col-md-3  ">
                             <RightSidePart />
                         </div>
                     </div>

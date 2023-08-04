@@ -161,30 +161,11 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        {/* <li className={`${headercss.liclass } col-sm-12 col-md`}>
-          <Link to="composting" className={headercss.topmenu}>
-            Composting
-          </Link>
-          <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
-              Composting Basics
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              Compost Ingredient
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              Composting Manures
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              Vermicomposting
-            </Link>
-          </div>
-        </li> */}
         <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="/shopping" className={headercss.topmenu}>
             Shopping
           </Link>
-          <div className={headercss.subdiv}>
+          {/* <div className={headercss.subdiv}>
             <Link to="hi" className={headercss.submenue}>
               Our Blog
             </Link>
@@ -200,7 +181,7 @@ const Navbottom =()=>{
             <Link to="hi" className={headercss.submenue}>
               USDA Planting Zones
             </Link>
-          </div>
+          </div> */}
         </li>
       </ul>
     </div>
