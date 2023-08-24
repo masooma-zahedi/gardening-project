@@ -161,28 +161,11 @@ const Navbottom =()=>{
             </Link>
           </div>
         </li>
-        <li className={`${headercss.liclass } col-sm-12 col-md`}>
+        {/* <li className={`${headercss.liclass } col-sm-12 col-md`}>
           <Link to="/shopping" className={headercss.topmenu}>
             Shopping
           </Link>
-          {/* <div className={headercss.subdiv}>
-            <Link to="hi" className={headercss.submenue}>
-              Our Blog
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              Ask A Gardening Question
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              School & Community Garden
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              Find a Local Extention Office
-            </Link>
-            <Link to="hi" className={headercss.submenue}>
-              USDA Planting Zones
-            </Link>
-          </div> */}
-        </li>
+        </li> */}
       </ul>
     </div>
   );

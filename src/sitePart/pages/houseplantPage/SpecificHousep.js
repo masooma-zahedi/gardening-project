@@ -17,7 +17,7 @@ function SpecificHousep() {
       {
         id: nanoid(6),
         title: "African Gardenia",
-        linkTo: "subPageHousePlant/specificPageHouse",
+        linkTo: "",
       },
       {
         id: nanoid(6),
