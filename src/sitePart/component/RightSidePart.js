@@ -16,7 +16,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
       <div className=" ">
         {/* ***** Newest Article Part****** */}
 
-        <div className="">
+        <div className="row">
           <h4 className="text-primary border border-2 border-secondary border-left-0 border-end-0 border-start-0 my-3 py-3 mt-5 text-center">
             Newest Article
           </h4>
@@ -32,9 +32,9 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                   {/* {console.log(data.id)} */}
                   <Link
                     to={data.link}
-                    className="d-flex flex-wrap text-decoration-none"
+                    className="d-flex flex-wrap text-decoration-none "
                   >
-                    <div className="w-25 ">
+                    <div className=" col-12 col-sm-6 col-md-3">
                       <img
                         src={data.src}
                         alt={data.title}
@@ -62,7 +62,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
         </div>
       </div>
 
-      <div className="">ads</div>
+      {/* <div className="">ads</div> */}
       <div className="">
         <h4 className="text-primary border border-2 border-secondary border-left-0 border-end-0 border-start-0 my-3 py-3 mt-5 text-center">
           You might also like
@@ -80,7 +80,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                   to={data.link}
                   className="d-flex flex-wrap text-decoration-none"
                 >
-                  <div className="w-25 " style={{ height: "80px" }}>
+                  <div className=" col-12 col-sm-6 col-md-3 " style={{ maxHeight: "300px" }}>
                     <img
                       src={data.src}
                       alt={data.title}
@@ -123,7 +123,7 @@ import { rightSidePages } from "../Data/dataRightSidePages";
                   to={data.link}
                   className="d-flex flex-wrap text-decoration-none"
                 >
-                  <div className="w-25 " style={{ height: "80px" }}>
+                  <div className=" col-12 col-sm-6 col-md-3 " style={{ maxHeight: "300px" }}>
                     <img
                       src={data.src}
                       alt={data.title}
@@ -146,7 +146,6 @@ import { rightSidePages } from "../Data/dataRightSidePages";
           );
         })}
       </div>
-      <div className="">ads</div>
     </>
   );
 }
